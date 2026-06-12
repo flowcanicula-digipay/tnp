@@ -169,7 +169,7 @@ export default function NotFound() {
           style={{ animationDelay: '0.5s' }}
         >
           <Link
-            href={`${base}/en/`}
+            href="/en/"
             className="group flex items-center gap-2.5 px-8 py-3.5 rounded-2xl bg-[#A97B3E] hover:bg-[#C8965A] text-white font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl"
             style={{ boxShadow: '0 0 0 0 rgba(200,150,90,0)', transition: 'background 0.3s, transform 0.3s, box-shadow 0.3s' }}
             onMouseEnter={(e) => (e.currentTarget.style.boxShadow = '0 8px 32px rgba(200,150,90,0.35)')}
@@ -179,7 +179,7 @@ export default function NotFound() {
             Back to Home
           </Link>
           <Link
-            href={`${base}/en/contact`}
+            href="/en/contact"
             className="flex items-center gap-2.5 px-8 py-3.5 rounded-2xl border border-[rgba(200,150,90,0.35)] hover:border-[rgba(200,150,90,0.8)] text-[#C8965A] hover:text-[#D4A96A] font-semibold text-sm transition-all duration-300 hover:bg-[rgba(200,150,90,0.07)] hover:scale-105"
           >
             <MessageCircle className="w-4 h-4" aria-hidden="true" />
