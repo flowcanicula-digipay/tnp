@@ -26,13 +26,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: p.meta.description,
       url: `${baseUrl}/${locale}/privacy/`,
       siteName: 'TNP',
-      images: [{ url: `${siteUrl}/${locale}/privacy/opengraph-image.png`, width: 1200, height: 630 }],
+      images: [{ url: `${siteUrl}/assets/images/company/company-2.jpg`, width: 1200, height: 800 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: p.meta.title,
       description: p.meta.description,
-      images: [`${siteUrl}/${locale}/privacy/opengraph-image.png`],
+      images: [`${siteUrl}/assets/images/company/company-2.jpg`],
     },
   };
 }

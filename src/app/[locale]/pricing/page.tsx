@@ -41,13 +41,13 @@ export async function generateMetadata({
       siteName: 'TNP',
       locale: ogLocale,
       type: 'website',
-      images: [{ url: `${siteUrl}/${locale}/pricing/opengraph-image.png`, width: 1200, height: 630, alt: meta.title }],
+      images: [{ url: `${siteUrl}/assets/images/installation/installation-4.jpg`, width: 1200, height: 800, alt: meta.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: [`${siteUrl}/${locale}/pricing/opengraph-image.png`],
+      images: [`${siteUrl}/assets/images/installation/installation-4.jpg`],
     },
   };
 }
