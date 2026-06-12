@@ -54,17 +54,43 @@ const config: Config = {
         '8xl': '88rem',
       },
       animation: {
-        'fade-up': 'fadeUp 0.6s ease-out forwards',
-        'fade-in': 'fadeIn 0.4s ease-out forwards',
+        'fade-up': 'fadeUp 0.6s ease-out both',
+        'fade-in': 'fadeIn 0.5s ease-out both',
+        'float': 'float 6s ease-in-out infinite',
+        'glow-pulse': 'glowPulse 3.5s ease-in-out infinite',
+        'scale-in': 'scaleIn 0.9s cubic-bezier(0.16,1,0.3,1) both',
+        'drift-up': 'driftUp 1.2s ease-out both',
       },
       keyframes: {
         fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '0%': { opacity: '0', transform: 'translateY(22px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'rotate(var(--rot,0deg)) translateY(0px)' },
+          '50%': { transform: 'rotate(var(--rot,0deg)) translateY(-22px)' },
+        },
+        glowPulse: {
+          '0%, 100%': {
+            opacity: '0.65',
+            filter: 'drop-shadow(0 0 10px rgba(200,150,90,0.18)) drop-shadow(0 0 40px rgba(200,150,90,0.06))',
+          },
+          '50%': {
+            opacity: '1',
+            filter: 'drop-shadow(0 0 28px rgba(200,150,90,0.55)) drop-shadow(0 0 70px rgba(200,150,90,0.22))',
+          },
+        },
+        scaleIn: {
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
+        },
+        driftUp: {
+          '0%': { opacity: '0', transform: 'translateY(40px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
     },
