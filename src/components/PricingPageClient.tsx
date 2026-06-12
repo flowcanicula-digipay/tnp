@@ -5,12 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Check, ChevronDown, StretchHorizontal, Armchair, Building2 } from 'lucide-react';
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 const tierIcons = [StretchHorizontal, Armchair, Building2] as const;
 const tierKeys = ['flooring', 'furniture', 'complete'] as const;
 const tierImages = [
-  '/assets/images/materials/materials-2.jpg',
-  '/assets/images/creation/creation.jpg',
-  '/assets/images/portfolio/portfolio-2.jpg',
+  `${base}/assets/images/materials/materials-2.jpg`,
+  `${base}/assets/images/creation/creation.jpg`,
+  `${base}/assets/images/portfolio/portfolio-2.jpg`,
 ];
 
 const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7'] as const;
@@ -70,7 +72,7 @@ export default function PricingPageClient({ locale, messages: p, cta }: PricingP
       <section className="relative py-24 bg-forest-900 overflow-hidden">
         <div className="absolute inset-0 opacity-15">
           <Image
-            src="/assets/images/materials/materials-3.jpg"
+            src={`${base}/assets/images/materials/materials-3.jpg`}
             alt=""
             fill
             className="object-cover"

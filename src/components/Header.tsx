@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
@@ -43,7 +45,7 @@ export default function Header({ messages }: HeaderProps) {
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-2 shrink-0">
             <Image
-              src="/assets/logo/tnp_logo_primary.png"
+              src={`${base}/assets/logo/tnp_logo_primary.png`}
               alt="TNP — Solid wood flooring and timber furniture"
               width={120}
               height={40}

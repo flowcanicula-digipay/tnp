@@ -107,6 +107,8 @@ export default async function HomePage({
     ],
   };
 
+  const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
   const pillars = [
     { key: 'heritage' as const, icon: Handshake },
     { key: 'hinoki' as const, icon: TreePine },
@@ -115,9 +117,9 @@ export default async function HomePage({
   ];
 
   const processSteps = [
-    { key: 'creation' as const, icon: Hammer, image: '/assets/images/creation/creation.jpg' },
-    { key: 'delivery' as const, icon: Truck, image: '/assets/images/installation/installation-2.jpg' },
-    { key: 'installation' as const, icon: Wrench, image: '/assets/images/installation/installation-1.jpg' },
+    { key: 'creation' as const, icon: Hammer, image: `${base}/assets/images/creation/creation.jpg` },
+    { key: 'delivery' as const, icon: Truck, image: `${base}/assets/images/installation/installation-2.jpg` },
+    { key: 'installation' as const, icon: Wrench, image: `${base}/assets/images/installation/installation-1.jpg` },
   ];
 
   return (
@@ -128,7 +130,7 @@ export default async function HomePage({
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-forest-900">
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/portfolio/portfolio-1.jpg"
+            src={`${base}/assets/images/portfolio/portfolio-1.jpg`}
             alt={h.hero.imageAlt}
             fill
             priority
@@ -197,7 +199,7 @@ export default async function HomePage({
             <figure className="relative">
               <div className="relative h-[520px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/assets/images/materials/materials-1.jpg"
+                  src={`${base}/assets/images/materials/materials-1.jpg`}
                   alt={h.about.imageAlt}
                   fill
                   className="object-cover"
@@ -278,7 +280,7 @@ export default async function HomePage({
             {[1, 2, 3, 4].map((i) => (
               <div key={i} className="relative h-48 rounded-xl overflow-hidden">
                 <Image
-                  src={`/assets/images/company/company-${i}.jpg`}
+                  src={`${base}/assets/images/company/company-${i}.jpg`}
                   alt="TNP factory and workshop — Biên Hòa, Vietnam"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -34,7 +36,7 @@ export default function Footer({ locale, messages }: FooterProps) {
           <div>
             <Link href={`/${locale}`}>
               <Image
-                src="/assets/logo/tnp_logo_primary.png"
+                src={`${base}/assets/logo/tnp_logo_primary.png`}
                 alt="TNP logo"
                 width={110}
                 height={36}
@@ -115,8 +117,9 @@ export default function Footer({ locale, messages }: FooterProps) {
             </h3>
             <p className="text-stone-400 text-sm leading-relaxed">{f.markets.text}</p>
             {/* TODO: add certifications (FSC, ISO, JAS) */}
-            <p className="mt-4 text-xs text-stone-600 italic">{f.certifications}: {/* TODO */}</p>
+            {/* <p className="mt-4 text-xs text-stone-600 italic">{f.certifications}:</p> */}
           </div>
+
         </div>
       </div>
 
