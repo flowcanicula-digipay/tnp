@@ -9,19 +9,19 @@ export function generateStaticParams() {
 
 const content = {
   en: {
-    label: 'TNP Pricing · Biên Hòa, Vietnam',
+    label: 'TNP Pricing · Bien Hoa, Vietnam',
     headline: 'Transparent pricing for flooring and furniture.',
     sub: 'Sourcing · Manufacturing · Delivery · Installation',
   },
   vi: {
-    label: 'TNP Báo giá · Biên Hòa, Việt Nam',
-    headline: 'Báo giá rõ ràng cho sàn gỗ và nội thất.',
-    sub: 'Từ nguồn gỗ đến lắp đặt hoàn chỉnh',
+    label: 'TNP Bao gia · Bien Hoa, Viet Nam',
+    headline: 'Bao gia ro rang cho san go va noi that.',
+    sub: 'Tu nguon go den lap dat hoan chinh',
   },
   ja: {
-    label: 'TNP 価格案内 · ベトナム・ビエンホア',
-    headline: 'フローリング・家具のわかりやすい価格。',
-    sub: '素材調達から設置まで一貫対応',
+    label: 'TNP Pricing · Bien Hoa, Vietnam',
+    headline: 'Transparent pricing for flooring and furniture.',
+    sub: 'Sourcing · Manufacturing · Delivery · Installation',
   },
 };
 

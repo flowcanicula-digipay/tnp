@@ -5,27 +5,6 @@ import { join } from 'path';
 export const OG_SIZE = { width: 1200, height: 630 };
 export const OG_CONTENT_TYPE = 'image/png';
 
-/** Fetch a single woff2 file from Google Fonts (build-time only). Falls back to null. */
-async function fetchFont(family: string, weight: number): Promise<ArrayBuffer | null> {
-  try {
-    const css = await fetch(
-      `https://fonts.googleapis.com/css2?family=${encodeURIComponent(family)}:wght@${weight}&display=swap`,
-      {
-        headers: {
-          // Use an older UA to receive a single full TTF/WOFF rather than subsetted woff2 shards
-          'User-Agent': 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)',
-        },
-      }
-    ).then((r) => r.text());
-
-    const fontUrl = css.match(/url\(([^)]+)\)/)?.[1];
-    if (!fontUrl) return null;
-    return fetch(fontUrl).then((r) => r.arrayBuffer());
-  } catch {
-    return null;
-  }
-}
-
 export interface OgContent {
   label: string;
   headline: string;
@@ -34,20 +13,17 @@ export interface OgContent {
 
 /**
  * Build a 1200×630 OG image using a company photo as the background.
- * The left side carries a dark forest gradient so text stays legible.
+ * Uses next/og's bundled Noto Sans (covers Latin + Latin Extended for EN/VI).
+ * No custom font fetching — avoids WOFF/WOFF2 build-time parse errors.
  */
 export async function buildOgImage(
-  locale: string,
-  bgRelPath: string, // relative to /public, e.g. "assets/images/portfolio/portfolio-1.jpg"
+  _locale: string,
+  bgRelPath: string,
   content: OgContent
 ): Promise<ImageResponse> {
-  const isJa = locale === 'ja';
-  const fontFamily = isJa ? 'Noto Sans JP' : 'Noto Sans';
-
-  const [logoBuf, bgBuf, fontData] = await Promise.all([
+  const [logoBuf, bgBuf] = await Promise.all([
     readFile(join(process.cwd(), 'public/assets/logo/tnp_logo_primary.png')),
     readFile(join(process.cwd(), 'public', ...bgRelPath.split('/'))),
-    fetchFont(isJa ? 'Noto Sans JP' : 'Noto Sans', 700),
   ]);
 
   const logoSrc = `data:image/png;base64,${logoBuf.toString('base64')}`;
@@ -63,7 +39,6 @@ export async function buildOgImage(
           height: '100%',
           position: 'relative',
           backgroundColor: '#0a1410',
-          fontFamily: `"${fontFamily}", system-ui, sans-serif`,
         }}
       >
         {/* Full-bleed background photo */}
@@ -80,7 +55,7 @@ export async function buildOgImage(
           alt=""
         />
 
-        {/* Left-heavy dark overlay — keeps text on the left legible while the photo shows through on the right */}
+        {/* Left-heavy dark overlay */}
         <div
           style={{
             position: 'absolute',
@@ -98,7 +73,7 @@ export async function buildOgImage(
           }}
         />
 
-        {/* Content layer */}
+        {/* Content */}
         <div
           style={{
             position: 'relative',
@@ -110,33 +85,20 @@ export async function buildOgImage(
             height: '100%',
           }}
         >
-          {/* Top row: logo left, domain right */}
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'flex-start',
-            }}
-          >
+          {/* Top: logo + domain */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <img
               src={logoSrc}
               style={{ height: 40, objectFit: 'contain', objectPosition: 'left' }}
               alt="TNP"
             />
-            <div
-              style={{
-                color: 'rgba(168,162,158,0.75)',
-                fontSize: 15,
-                letterSpacing: 1,
-              }}
-            >
+            <div style={{ color: 'rgba(168,162,158,0.75)', fontSize: 15, letterSpacing: 1 }}>
               tnpgr.vn
             </div>
           </div>
 
-          {/* Bottom: brand + headline + subtitle */}
+          {/* Bottom: text block */}
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            {/* Amber location label */}
             <div
               style={{
                 color: '#C8965A',
@@ -149,8 +111,6 @@ export async function buildOgImage(
             >
               {content.label}
             </div>
-
-            {/* Main headline */}
             <div
               style={{
                 color: '#ffffff',
@@ -163,26 +123,17 @@ export async function buildOgImage(
             >
               {content.headline}
             </div>
-
-            {/* Subtitle + divider */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
               <div style={{ color: '#a8a29e', fontSize: 17 }}>{content.sub}</div>
-              <div
-                style={{ width: 1, height: 16, backgroundColor: 'rgba(168,162,158,0.4)' }}
-              />
+              <div style={{ width: 1, height: 16, backgroundColor: 'rgba(168,162,158,0.4)' }} />
               <div style={{ color: 'rgba(168,162,158,0.6)', fontSize: 15 }}>
-                Biên Hòa, Vietnam
+                Bien Hoa, Vietnam
               </div>
             </div>
           </div>
         </div>
       </div>
     ),
-    {
-      ...OG_SIZE,
-      fonts: fontData
-        ? [{ name: fontFamily, data: fontData, weight: 700, style: 'normal' as const }]
-        : [],
-    }
+    { ...OG_SIZE }
   );
 }

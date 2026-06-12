@@ -9,19 +9,19 @@ export function generateStaticParams() {
 
 const content = {
   en: {
-    label: 'TNP · Biên Hòa, Vietnam',
+    label: 'TNP · Bien Hoa, Vietnam',
     headline: 'Solid wood flooring and timber furniture.',
     sub: 'Japanese quality · Vietnamese craftsmanship',
   },
   vi: {
-    label: 'TNP · Biên Hòa, Việt Nam',
-    headline: 'Sàn gỗ tự nhiên và nội thất gỗ cao cấp.',
-    sub: 'Chất lượng Nhật Bản · Tay nghề Việt Nam',
+    label: 'TNP · Bien Hoa, Viet Nam',
+    headline: 'San go tu nhien va noi that go cao cap.',
+    sub: 'Chat luong Nhat Ban · Tay nghe Viet Nam',
   },
   ja: {
-    label: 'TNP · ベトナム・ビエンホア',
-    headline: '無垢材フローリング・木製家具。',
-    sub: '日本品質・ベトナムの職人技',
+    label: 'TNP · Bien Hoa, Vietnam',
+    headline: 'Solid wood flooring and timber furniture.',
+    sub: 'Japanese quality · Vietnamese craftsmanship',
   },
 };
 
