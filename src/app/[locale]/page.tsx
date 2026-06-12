@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Hammer, Truck, Wrench, CheckCircle, Factory, TreePine, Handshake } from 'lucide-react';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
+import CtaBanner from '@/components/CtaBanner';
 import { routing } from '@/i18n/routing';
 
 export function generateStaticParams() {
@@ -293,16 +294,7 @@ export default async function HomePage({
       </section>
 
       {/* Section: Final CTA */}
-      <section className="section-padding bg-forest-900">
-        <div className="container-wide text-center">
-          <h2 className="font-serif text-display-lg text-white mb-4">{h.cta.title}</h2>
-          <p className="text-stone-400 text-lg max-w-xl mx-auto mb-10">{h.cta.body}</p>
-          <Link href={`/${locale}/contact`} className="btn-primary text-base px-8 py-4">
-            {h.cta.button}
-            <ArrowRight className="w-4 h-4" aria-hidden="true" />
-          </Link>
-        </div>
-      </section>
+      <CtaBanner locale={locale} messages={h.cta} />
     </>
   );
 }

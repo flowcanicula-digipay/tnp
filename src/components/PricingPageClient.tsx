@@ -17,6 +17,16 @@ const tierImages = [
 
 const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7'] as const;
 
+const includedImages = [
+  `${base}/assets/images/materials/materials-1.jpg`,
+  `${base}/assets/images/creation/building-2.jpg`,
+  `${base}/assets/images/creation/creation.jpg`,
+  `${base}/assets/images/creation/building-4.jpg`,
+  `${base}/assets/images/installation/installation-6.jpg`,
+  `${base}/assets/images/installation/installation-3.jpg`,
+  `${base}/assets/images/installation/installation-5.jpg`,
+];
+
 type TierKey = (typeof tierKeys)[number];
 type FaqKey = (typeof faqKeys)[number];
 
@@ -181,19 +191,50 @@ export default function PricingPageClient({ locale, messages: p, cta }: PricingP
       </section>
 
       {/* Section: Always Included */}
-      <section className="py-14 bg-timber-500">
-        <div className="container-wide">
-          <h2 className="text-center text-white font-serif text-2xl mb-8">
-            {p.included.title}
-          </h2>
-          <ul className="flex flex-wrap justify-center gap-3">
+      <section className="py-20 relative overflow-hidden bg-forest-950">
+        {/* Subtle background texture */}
+        <div className="absolute inset-0 pointer-events-none select-none">
+          <Image
+            src={`${base}/assets/images/creation/building-1.jpg`}
+            alt=""
+            fill
+            aria-hidden="true"
+            className="object-cover opacity-[0.08]"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-forest-950/60" />
+        </div>
+
+        <div className="relative container-wide">
+          <div className="text-center mb-12">
+            <p className="section-label text-timber-300 mb-3">TNP</p>
+            <h2 className="font-serif text-3xl lg:text-4xl text-white">{p.included.title}</h2>
+          </div>
+
+          <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {p.included.items.map((item: string, i: number) => (
-              <li
-                key={i}
-                className="flex items-center gap-2 bg-white/15 text-white text-sm px-4 py-2 rounded-full"
-              >
-                <Check className="w-4 h-4" aria-hidden="true" />
-                {item}
+              <li key={i} className="group relative rounded-2xl overflow-hidden h-36 lg:h-40 cursor-default">
+                {/* Background image */}
+                <Image
+                  src={includedImages[i % includedImages.length]}
+                  alt=""
+                  fill
+                  aria-hidden="true"
+                  className="object-cover brightness-[0.45] group-hover:brightness-[0.7] group-hover:scale-105 transition-all duration-500 ease-out"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                />
+                {/* Persistent gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/20 to-transparent" />
+                {/* Hover amber border */}
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 group-hover:ring-timber-400/70 transition-all duration-300" />
+
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end gap-3">
+                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-timber-500/80 group-hover:bg-timber-500 flex items-center justify-center transition-colors duration-300">
+                    <Check className="w-3.5 h-3.5 text-white" aria-hidden="true" />
+                  </div>
+                  <span className="text-white text-sm font-medium leading-snug">{item}</span>
+                </div>
               </li>
             ))}
           </ul>
