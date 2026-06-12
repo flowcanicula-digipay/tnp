@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python skills/ui-ux-pro-max/scripts/search.py \"premium timber furniture flooring Japanese Vietnamese craftsmanship luxury B2B export\" --design-system --persist -p \"TNP\" -f markdown)",
+      "Bash(Get-ChildItem -Recurse \"c:\\\\Users\\\\Flow\\\\Desktop\\\\tnp\\\\assets\")",
+      "Bash(Select-Object FullName, Length)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(python3 skills/ui-ux-pro-max/scripts/search.py \"premium timber furniture flooring Japanese Vietnamese craftsmanship luxury B2B export\" --design-system --persist -p \"TNP\" -f markdown)",
+      "Bash(py skills/ui-ux-pro-max/scripts/search.py \"premium timber furniture flooring Japanese Vietnamese craftsmanship luxury B2B export\" --design-system --persist -p \"TNP\" -f markdown)",
+      "PowerShell(Rename-Item \"c:\\\\Users\\\\Flow\\\\Desktop\\\\tnp\\\\src\\\\middleware.ts\" \"proxy.ts\")",
+      "Bash(npx next *)",
+      "Bash(dir \"c:\\\\Users\\\\Flow\\\\Desktop\\\\tnp\\\\public\\\\assets\\\\logo\")",
+      "Bash(dir \"c:\\\\Users\\\\Flow\\\\Desktop\\\\tnp\\\\public\\\\assets\\\\favicon\")",
+      "Bash(node -e \"const pkg = require\\('./node_modules/lucide-react/package.json'\\); console.log\\(pkg.version\\);\")",
+      "Bash(npx tsc *)",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\Flow\\\\Desktop\\\\tnp\\\\.github\\\\workflows\")"
+    ]
+  }
+}

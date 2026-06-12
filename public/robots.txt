@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# AI crawlers — allow indexing for AI search optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Disallow build artifacts
+Disallow: /_next/
+Disallow: /api/
+
+Sitemap: https://tnpgr.vn/sitemap.xml

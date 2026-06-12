@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "home": {
+      "title": "TNP — Premium Solid Wood Flooring & Custom Timber Furniture | Biên Hòa, Vietnam",
+      "description": "Factory-direct solid wood flooring and custom timber furniture. Keyaki, Hinoki, oak, walnut — manufactured to the highest Japanese standards in our own facility in Biên Hòa, Vietnam. Serving Vietnam, Japan, and international buyers. Free quote within 48 hours.",
+      "keywords": "solid wood flooring Vietnam, hardwood flooring manufacturer Vietnam, custom timber furniture Vietnam, Hinoki flooring Vietnam, Keyaki furniture Vietnam, Japanese wood flooring, wood flooring Bien Hoa, factory direct hardwood flooring, Hinoki cypress flooring, Keyaki zelkova furniture, premium solid wood floor, bespoke timber furniture Vietnam, wood flooring export Japan, solid wood flooring manufacturer"
+    },
+    "pricing": {
+      "title": "Pricing — Premium Solid Wood Flooring & Custom Timber Furniture | TNP Vietnam",
+      "description": "Transparent factory-direct pricing for Hinoki and hardwood flooring, custom timber furniture, and full-space room projects. No middlemen, no hidden fees. Free quote from our Biên Hòa factory.",
+      "keywords": "solid wood flooring price Vietnam, hardwood flooring cost Vietnam, Hinoki flooring price per m2, custom furniture price Vietnam, wood flooring quote Vietnam, factory direct flooring price, Keyaki furniture price, timber furniture manufacturing Vietnam"
+    },
+    "contact": {
+      "title": "Get a Free Quote — Solid Wood Flooring & Timber Furniture | TNP Vietnam",
+      "description": "Request a free quote from TNP — Vietnam's premium solid wood flooring and custom furniture manufacturer. We respond within 48 hours. Serving Vietnam, Japan, and international clients from our factory in Biên Hòa, Đồng Nai.",
+      "keywords": "contact wood flooring supplier Vietnam, request quote hardwood flooring, timber furniture quote Vietnam, solid wood flooring Bien Hoa, custom furniture order Vietnam, wood flooring manufacturer contact"
+    },
+    "siteName": "TNP",
+    "ogLocale": {
+      "en": "en_US",
+      "vi": "vi_VN",
+      "ja": "ja_JP"
+    }
+  },
+  "common": {
+    "nav": {
+      "home": "Home",
+      "pricing": "Pricing",
+      "contact": "Contact",
+      "getQuote": "Get a Quote"
+    },
+    "footer": {
+      "brand": {
+        "tagline": "Supplying solid wood flooring and timber furniture.",
+        "social": "Follow us"
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "home": "Home",
+        "about": "About",
+        "process": "How It Works",
+        "pricing": "Pricing",
+        "contact": "Contact",
+        "privacy": "Privacy Policy"
+      },
+      "contact": {
+        "title": "Contact",
+        "address": "Lô 35 đường số 9, KCN Tam Phước, Biên Hòa, Vietnam"
+      },
+      "markets": {
+        "title": "Markets",
+        "text": "Serving Vietnam, Japan, and international clients worldwide. Export-ready from our factory in Biên Hòa."
+      },
+      "copyright": "© {year} TNP. All rights reserved.",
+      "certifications": "Certifications"
+    },
+    "languageSwitcher": {
+      "label": "Select language",
+      "en": "English",
+      "vi": "Tiếng Việt",
+      "ja": "日本語"
+    },
+    "cta": {
+      "startProject": "Start Your Project",
+      "requestQuote": "Request a Free Quote",
+      "seeHowItWorks": "See How It Works",
+      "sendDetails": "Send My Project Details",
+      "learnMore": "Learn more"
+    },
+    "privacyBanner": {
+      "text": "We use a functional cookie to remember your preference. Contact data submitted via our form is processed in accordance with our",
+      "linkLabel": "Privacy Policy",
+      "accept": "Accept"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | TNP",
+      "description": "TNP Privacy Policy — how we collect, use, and protect your personal information."
+    },
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 2026",
+    "intro": "TNP (Lô 35 đường số 9, Khu Công Nghiệp Tam Phước, Biên Hòa, Vietnam) is committed to protecting your personal information. This policy explains what data we collect, how we use it, and your rights.",
+    "sections": {
+      "collect": {
+        "title": "What we collect",
+        "body": "When you submit our contact form, we collect your name, email address, phone number (optional), and project details. We use this information solely to respond to your enquiry and provide a quote. We do not collect data automatically through cookies beyond a single functional preference cookie."
+      },
+      "use": {
+        "title": "How we use your data",
+        "body": "Your contact details are used to: respond to your project enquiry, prepare and send a quote, and follow up if you have not received a response. We do not use your data for unsolicited marketing. We do not sell, rent, or share your data with third parties except where required by law."
+      },
+      "storage": {
+        "title": "Data storage",
+        "body": "Contact form submissions are processed via Formspree (formspree.io), a third-party form service. Formspree's privacy policy governs data processed through their platform. We retain your enquiry details for as long as necessary to fulfil your request or as required by applicable law."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "body": "This website uses a single functional cookie to remember your privacy banner acceptance. No tracking cookies, advertising pixels, or analytics scripts are used. We do not use Google Analytics or any third-party tracking services."
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": "You have the right to access, correct, or request deletion of your personal data. To exercise these rights, contact us at thuy@tnpgr.vn. We will respond within 30 days."
+      },
+      "contact": {
+        "title": "Contact us",
+        "body": "For privacy-related questions, reach TNP at thuy@tnpgr.vn or +84 90 333 37 29. Address: Lô 35 đường số 9, Khu Công Nghiệp Tam Phước, Biên Hòa, Vietnam."
+      }
+    },
+    "backToHome": "Back to home"
+  },
+  "home": {
+    "hero": {
+      "title": "Solid wood flooring and timber furniture.",
+      "titleAccent": "Japanese quality, built in Vietnam.",
+      "subtitle": "TNP brings together Japanese material standards and Vietnamese craftsmanship. From Hinoki flooring to custom timber furniture — we design, manufacture, deliver, and install. One team. One standard.",
+      "imageAlt": "TNP Hinoki solid wood flooring installed in a modern living room — warm grain, Japanese-Vietnamese craftsmanship"
+    },
+    "about": {
+      "ariaLabel": "About TNP — Japanese-Vietnamese timber company",
+      "title": "Where Japanese timber meets Vietnamese craft",
+      "narrative": "TNP was born from a connection between Japan and Vietnam. Japan has centuries of reverence for timber — particularly Keyaki, the exceptionally hard and beautiful hardwood prized for ancient temple pillars and premium furniture for its rich luster and durability, and Hinoki, the cypress valued for its fragrance, moisture resistance, and fine grain. Vietnam has generations of skilled woodworkers and a manufacturing tradition that turns raw timber into finished surfaces with precision and care. TNP brings both together. We source premium timbers — Keyaki, Hinoki, oak, walnut, ash, and select Southeast Asian hardwoods — and manufacture solid wood flooring and custom furniture in our own factory in Biên Hòa, Vietnam. Every board is kiln-dried, milled, finished, and inspected before it leaves our facility. We don't outsource. We don't cut corners. And we handle everything from first consultation to final installation.",
+      "pillars": {
+        "heritage": {
+          "title": "Japanese-Vietnamese heritage",
+          "text": "Japanese material standards, Vietnamese manufacturing excellence."
+        },
+        "hinoki": {
+          "title": "Keyaki, Hinoki & premium hardwoods",
+          "text": "Japan's most treasured timbers — Keyaki for its hardness and rich luster, Hinoki for its fragrance and durability — plus a full range of solid woods."
+        },
+        "factory": {
+          "title": "Factory-direct",
+          "text": "Our own facility in Biên Hòa — no middlemen, export-ready."
+        },
+        "endToEnd": {
+          "title": "End-to-end service",
+          "text": "Design, manufacturing, delivery, and installation by one team."
+        }
+      },
+      "imageAlt": "Close-up of Hinoki cypress grain — TNP's signature timber, sourced from Japan and manufactured in Vietnam"
+    },
+    "process": {
+      "title": "From raw timber to finished space",
+      "leadIn": "Every TNP project follows three stages. Whether you need solid wood flooring for an apartment in Tokyo or custom furniture for a home in Saigon — the process is the same.",
+      "steps": {
+        "creation": {
+          "number": "01",
+          "label": "Creation",
+          "title": "We source, design, and build it",
+          "text": "It starts with your project brief. What do you need — flooring, furniture, or both? What species and finish? For flooring, we assess the area and subfloor requirements. For furniture, we develop design mockups and material samples. Once you approve, our factory in Biên Hòa takes over. Keyaki, Hinoki, oak, walnut — whatever the timber, it's kiln-dried, precision-milled, joined, sanded, and finished in-house. Every piece passes quality inspection before it ships.",
+          "imageAlt": "TNP factory — Hinoki planks being precision-milled in the Biên Hòa workshop"
+        },
+        "delivery": {
+          "number": "02",
+          "label": "Delivery",
+          "title": "We ship it to you — anywhere",
+          "text": "When your order is ready, our logistics team packages, palletizes, and ships — domestically across Vietnam or internationally to Japan and beyond. We handle export documentation, containerization, and freight coordination. Your flooring or furniture arrives protected and on schedule, in the same condition it left our factory floor.",
+          "imageAlt": "Palletized Hinoki flooring planks export-packaged and ready for international shipment"
+        },
+        "installation": {
+          "number": "03",
+          "label": "Installation",
+          "title": "We install it perfectly",
+          "text": "For domestic clients, our crew handles everything on-site: subfloor preparation and flooring installation, furniture assembly, leveling, and anchoring. Wall-mounted pieces, built-in units, full-room flooring — we do it all. For international and export clients, we provide detailed installation guides, technical specs, and remote support. Before we consider any project done, we confirm you're satisfied.",
+          "imageAlt": "TNP technician laying Hinoki solid wood flooring — professional installation in a Vietnamese home"
+        }
+      }
+    },
+    "trust": {
+      "stat1": { "value": "500+", "label": "Projects completed" },
+      "stat2": { "value": "Japan & beyond", "label": "Export destinations" },
+      "stat3": { "value": "Biên Hòa, Vietnam", "label": "Our factory" },
+      "testimonialNote": "{/* TODO: add real testimonials/stats */}"
+    },
+    "cta": {
+      "title": "Ready to start?",
+      "body": "Tell us about your space and we'll get back to you within 48 hours with ideas and a free quote.",
+      "button": "Request a Free Quote"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Transparent pricing.",
+      "titleAccent": "Flooring and furniture, end to end.",
+      "subtitle": "Every TNP project covers sourcing, manufacturing, delivery, and installation where applicable. No hidden fees. Choose the product and service level that fits your project."
+    },
+    "tiers": {
+      "title": "Our Services",
+      "flooring": {
+        "name": "Solid Wood Flooring",
+        "tagline": "Premium timber flooring, factory-direct",
+        "description": "Solid wood flooring in Keyaki, Hinoki, oak, walnut, ash, or select hardwoods. Kiln-dried, precision-milled, and finished in our Biên Hòa factory. Available for domestic delivery with professional installation, or export-packaged for international shipment.",
+        "examples": "Apartment flooring · Commercial spaces · Renovation reflooring",
+        "priceNote": "Priced per m²",
+        "cta": "Request Quote",
+        "badge": "Most popular"
+      },
+      "furniture": {
+        "name": "Custom Timber Furniture",
+        "tagline": "Bespoke pieces, built to your specifications",
+        "description": "One-of-a-kind furniture designed and manufactured to your brief. Keyaki's rich luster and exceptional hardness, or Hinoki's natural fragrance — your choice of timber, built to your brief. Includes consultation, design mockups, premium timber sourcing, in-house manufacturing, delivery, and installation. Ideal for dining tables, shelving, cabinetry, desks, and bedroom sets.",
+        "examples": "Hinoki dining table · Walnut bookshelf wall · Full bedroom set",
+        "priceNote": "Quoted per project",
+        "cta": "Request Quote"
+      },
+      "complete": {
+        "name": "Complete Projects",
+        "tagline": "Flooring and furniture for an entire space",
+        "description": "End-to-end outfitting for one or more rooms — solid wood flooring plus custom furniture, designed to work together. TNP handles space planning, material coordination, phased manufacturing, delivery, and full installation.",
+        "examples": "Full apartment fit-out · Restaurant interior · Boutique hotel",
+        "priceNote": "Custom quote",
+        "cta": "Request Quote",
+        "badge": "Best value"
+      }
+    },
+    "included": {
+      "title": "Always included",
+      "items": [
+        "Material sourcing",
+        "Kiln-drying & milling",
+        "In-house manufacturing",
+        "Quality inspection",
+        "Delivery & protection",
+        "Professional installation (domestic)",
+        "Export packaging (international)"
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know before starting your project.",
+      "q1": {
+        "question": "What is Hinoki and why is it special?",
+        "answer": "Hinoki (檜 / ヒノキ) is Japanese cypress — one of Japan's most treasured building timbers. It's naturally aromatic, resistant to moisture, rot, and insects, and has a beautiful, fine grain. In Japan it's been used for centuries in temples, baths, and fine homes. TNP sources Hinoki and manufactures it into flooring and furniture at our factory in Vietnam, bringing this premium material to both domestic and international clients."
+      },
+      "q2": {
+        "question": "How long does a project take?",
+        "answer": "Flooring orders typically take 3–5 weeks from confirmation to delivery. Custom furniture takes 4–8 weeks depending on complexity. Full-space projects with both flooring and furniture take 8–12 weeks. We confirm your timeline before any work begins."
+      },
+      "q3": {
+        "question": "What timber species do you work with?",
+        "answer": "Our signature materials are Keyaki (Japanese zelkova) and Hinoki (Japanese cypress). Keyaki is prized for its exceptional hardness, rich luster, and durability — used in ancient temple pillars and high-end furniture and tableware. Hinoki is valued for its natural fragrance, moisture resistance, and fine grain. We also work with oak, walnut, ash, teak, and select Vietnamese and Southeast Asian hardwoods. You choose the species during the consultation — we'll provide samples and explain the characteristics of each."
+      },
+      "q4": {
+        "question": "Do you ship internationally?",
+        "answer": "Yes. TNP is export-ready. We serve domestic clients across Vietnam and ship to Japan and international markets. Export orders include containerization, freight coordination, and all necessary documentation. International shipping is quoted based on destination and volume."
+      },
+      "q5": {
+        "question": "Is installation included?",
+        "answer": "For domestic clients in Vietnam — yes. Our crew handles flooring installation (subfloor prep, laying, finishing) and furniture assembly on-site. For international clients, we provide detailed installation guides and remote technical support."
+      },
+      "q6": {
+        "question": "What if I need changes after installation?",
+        "answer": "We offer a post-install adjustment period for domestic projects. If flooring needs a touch-up or a furniture piece needs realignment, we come back and fix it — no extra charge within the adjustment window."
+      },
+      "q7": {
+        "question": "Can I visit your factory?",
+        "answer": "Absolutely. Our facility is in Tam Phước Industrial Zone, Biên Hòa — about an hour from Ho Chi Minh City. Contact us to arrange a visit and see our production process firsthand."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let's build something",
+      "titleAccent": "together.",
+      "subtitle": "Tell us about your project — flooring, furniture, or both. We'll get back to you within 48 hours with ideas and a free, no-obligation quote covering sourcing, manufacturing, delivery, and installation."
+    },
+    "form": {
+      "title": "Start Your Project",
+      "name": {
+        "label": "Full name",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "you@example.com"
+      },
+      "phone": {
+        "label": "Phone / WhatsApp / Zalo",
+        "placeholder": "+84 or international number",
+        "hint": "Optional — Zalo for Vietnam, WhatsApp or LINE for international clients"
+      },
+      "projectType": {
+        "label": "Project type",
+        "placeholder": "Select project type",
+        "options": {
+          "flooring": "Solid wood flooring",
+          "furniture": "Custom furniture",
+          "both": "Flooring + furniture",
+          "commercial": "Commercial / developer project",
+          "other": "Other"
+        }
+      },
+      "timberPreference": {
+        "label": "Timber preference",
+        "hint": "Select all that apply",
+        "options": {
+          "keyaki": "Keyaki (Japanese zelkova)",
+          "hinoki": "Hinoki (Japanese cypress)",
+          "oak": "Oak",
+          "walnut": "Walnut",
+          "ash": "Ash",
+          "teak": "Teak",
+          "other": "Other / not sure yet"
+        }
+      },
+      "location": {
+        "label": "Your location",
+        "placeholder": "Select location",
+        "options": {
+          "vietnam": "Vietnam (domestic)",
+          "japan": "Japan",
+          "international": "Other international"
+        }
+      },
+      "quantity": {
+        "label": "Approximate area or quantity",
+        "placeholder": "e.g. 50m² flooring or 1 dining table + 6 chairs"
+      },
+      "budget": {
+        "label": "Approximate budget range",
+        "placeholder": "Select budget range"
+      },
+      "language": {
+        "label": "Preferred language for follow-up",
+        "options": {
+          "en": "English",
+          "vi": "Tiếng Việt",
+          "ja": "日本語"
+        }
+      },
+      "description": {
+        "label": "Brief description of your project",
+        "placeholder": "Tell us about your space, style preferences, or any specific requirements...",
+        "hint": "Optional — the more detail you share, the better our quote will be"
+      },
+      "fileNote": "Have reference photos, floor plans, or specs? Mention it here and we'll send you a link to share files.",
+      "submit": "Send My Project Details",
+      "privacy": "We respond within 48 hours. Your information is never shared with third parties.",
+      "successTitle": "Thank you!",
+      "successText": "We've received your project details and will be in touch within 48 hours."
+    },
+    "sidebar": {
+      "directContact": {
+        "title": "Direct contact",
+        "hours": "{/* TODO: insert business hours */}"
+      },
+      "nextSteps": {
+        "title": "What happens next?",
+        "step1": "We review your project details and respond within 48 hours.",
+        "step2": "We discuss materials, timeline, and logistics — on-site, virtual, or by email.",
+        "step3": "You receive a detailed quote covering manufacturing, delivery, and installation."
+      },
+      "trust": {
+        "title": "Factory-direct from Vietnam",
+        "text": "Every quote covers sourcing, manufacturing, delivery, and installation — one price, one team, factory-direct from Vietnam."
+      }
+    }
+  }
+}

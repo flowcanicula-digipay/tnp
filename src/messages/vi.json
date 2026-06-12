@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "home": {
+      "title": "TNP — Sàn Gỗ Tự Nhiên Cao Cấp & Nội Thất Gỗ Đặt Riêng | Biên Hòa, Đồng Nai",
+      "description": "Sàn gỗ tự nhiên và nội thất gỗ đặt riêng trực tiếp từ xưởng sản xuất. Keyaki, Hinoki, sồi, óc chó — tiêu chuẩn chất lượng Nhật Bản, tay nghề Việt Nam. Giao hàng toàn quốc, xuất khẩu Nhật Bản và quốc tế. Báo giá miễn phí trong 48 giờ.",
+      "keywords": "sàn gỗ tự nhiên, sàn gỗ Hinoki, nội thất gỗ Keyaki, sàn gỗ tự nhiên Biên Hòa, xưởng sản xuất sàn gỗ, nội thất gỗ cao cấp, sàn gỗ tự nhiên Đồng Nai, nội thất gỗ tự nhiên đặt riêng, sàn gỗ Hinoki nhập khẩu, xưởng sản xuất nội thất gỗ Việt Nam, sàn gỗ xuất khẩu Nhật Bản, sàn gỗ tự nhiên giá tốt, nội thất gỗ Nhật Bản Việt Nam"
+    },
+    "pricing": {
+      "title": "Bảng Giá — Sàn Gỗ Tự Nhiên & Nội Thất Gỗ Cao Cấp | TNP Biên Hòa",
+      "description": "Bảng giá minh bạch cho sàn gỗ Hinoki, Keyaki và gỗ cứng cao cấp, nội thất gỗ đặt riêng và dự án trọn gói. Trực tiếp từ xưởng sản xuất Biên Hòa — không qua trung gian, không phí ẩn.",
+      "keywords": "giá sàn gỗ tự nhiên, bảng giá sàn gỗ Hinoki, giá nội thất gỗ đặt riêng, báo giá sàn gỗ tự nhiên Biên Hòa, giá sàn gỗ tự nhiên Việt Nam, giá nội thất gỗ cao cấp, giá sàn gỗ Keyaki"
+    },
+    "contact": {
+      "title": "Nhận Báo Giá Miễn Phí — Sàn Gỗ & Nội Thất Gỗ Tự Nhiên | TNP Việt Nam",
+      "description": "Liên hệ TNP — nhà sản xuất sàn gỗ tự nhiên và nội thất gỗ cao cấp tại Biên Hòa. Phản hồi báo giá trong vòng 48 giờ. Phục vụ khách hàng Việt Nam, Nhật Bản và quốc tế.",
+      "keywords": "liên hệ nhà sản xuất sàn gỗ Việt Nam, báo giá sàn gỗ tự nhiên, đặt hàng nội thất gỗ Biên Hòa, yêu cầu báo giá sàn gỗ, xưởng nội thất gỗ Đồng Nai"
+    },
+    "siteName": "TNP",
+    "ogLocale": {
+      "en": "en_US",
+      "vi": "vi_VN",
+      "ja": "ja_JP"
+    }
+  },
+  "common": {
+    "nav": {
+      "home": "Trang chủ",
+      "pricing": "Bảng giá",
+      "contact": "Liên hệ",
+      "getQuote": "Nhận báo giá"
+    },
+    "footer": {
+      "brand": {
+        "tagline": "Cung cấp sàn gỗ tự nhiên và nội thất gỗ.",
+        "social": "Theo dõi chúng tôi"
+      },
+      "quickLinks": {
+        "title": "Liên kết nhanh",
+        "home": "Trang chủ",
+        "about": "Giới thiệu",
+        "process": "Quy trình",
+        "pricing": "Bảng giá",
+        "contact": "Liên hệ",
+        "privacy": "Chính sách bảo mật"
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "address": "Lô 35 đường số 9, KCN Tam Phước, Biên Hòa, Việt Nam"
+      },
+      "markets": {
+        "title": "Thị trường",
+        "text": "Phục vụ khách hàng tại Việt Nam, Nhật Bản và quốc tế. Sản xuất và xuất khẩu trực tiếp từ xưởng Biên Hòa."
+      },
+      "copyright": "© {year} TNP. Bản quyền thuộc về TNP.",
+      "certifications": "Chứng nhận"
+    },
+    "languageSwitcher": {
+      "label": "Chọn ngôn ngữ",
+      "en": "English",
+      "vi": "Tiếng Việt",
+      "ja": "日本語"
+    },
+    "cta": {
+      "startProject": "Bắt đầu dự án",
+      "requestQuote": "Nhận báo giá miễn phí",
+      "seeHowItWorks": "Xem quy trình",
+      "sendDetails": "Gửi thông tin dự án",
+      "learnMore": "Tìm hiểu thêm"
+    },
+    "privacyBanner": {
+      "text": "Chúng tôi sử dụng cookie chức năng để lưu tùy chọn của bạn. Dữ liệu liên hệ gửi qua biểu mẫu được xử lý theo",
+      "linkLabel": "Chính sách bảo mật",
+      "accept": "Đồng ý"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Chính Sách Bảo Mật | TNP",
+      "description": "Chính sách bảo mật của TNP — cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn."
+    },
+    "title": "Chính Sách Bảo Mật",
+    "lastUpdated": "Cập nhật lần cuối: Tháng 6 năm 2026",
+    "intro": "TNP (Lô 35 đường số 9, Khu Công Nghiệp Tam Phước, Biên Hòa, Việt Nam) cam kết bảo vệ thông tin cá nhân của bạn. Chính sách này giải thích dữ liệu chúng tôi thu thập, cách sử dụng và quyền của bạn.",
+    "sections": {
+      "collect": {
+        "title": "Dữ liệu chúng tôi thu thập",
+        "body": "Khi bạn gửi biểu mẫu liên hệ, chúng tôi thu thập họ tên, địa chỉ email, số điện thoại (tùy chọn) và thông tin dự án. Thông tin này chỉ được dùng để phản hồi yêu cầu và cung cấp báo giá. Chúng tôi không thu thập dữ liệu tự động qua cookie ngoài một cookie chức năng duy nhất."
+      },
+      "use": {
+        "title": "Cách chúng tôi sử dụng dữ liệu",
+        "body": "Thông tin liên hệ của bạn được dùng để: phản hồi yêu cầu dự án, chuẩn bị và gửi báo giá, và theo dõi nếu bạn chưa nhận được phản hồi. Chúng tôi không sử dụng dữ liệu của bạn để marketing không mong muốn. Chúng tôi không bán, cho thuê hoặc chia sẻ dữ liệu của bạn với bên thứ ba, trừ khi pháp luật yêu cầu."
+      },
+      "storage": {
+        "title": "Lưu trữ dữ liệu",
+        "body": "Biểu mẫu liên hệ được xử lý qua Formspree (formspree.io), dịch vụ biểu mẫu của bên thứ ba. Chính sách bảo mật của Formspree áp dụng cho dữ liệu xử lý qua nền tảng của họ. Chúng tôi lưu giữ thông tin yêu cầu của bạn trong thời gian cần thiết để đáp ứng yêu cầu hoặc theo quy định pháp luật."
+      },
+      "cookies": {
+        "title": "Cookie",
+        "body": "Trang web này chỉ sử dụng một cookie chức năng để ghi nhớ lựa chọn chấp nhận của bạn. Không có cookie theo dõi, pixel quảng cáo hay script phân tích nào được sử dụng. Chúng tôi không dùng Google Analytics hay bất kỳ dịch vụ theo dõi của bên thứ ba nào."
+      },
+      "rights": {
+        "title": "Quyền của bạn",
+        "body": "Bạn có quyền truy cập, chỉnh sửa hoặc yêu cầu xóa dữ liệu cá nhân của mình. Để thực hiện các quyền này, hãy liên hệ thuy@tnpgr.vn. Chúng tôi sẽ phản hồi trong vòng 30 ngày."
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "body": "Với các câu hỏi về bảo mật, liên hệ TNP tại thuy@tnpgr.vn hoặc +84 90 333 37 29. Địa chỉ: Lô 35 đường số 9, Khu Công Nghiệp Tam Phước, Biên Hòa, Việt Nam."
+      }
+    },
+    "backToHome": "Về trang chủ"
+  },
+  "home": {
+    "hero": {
+      "title": "Sàn gỗ tự nhiên và nội thất gỗ.",
+      "titleAccent": "Chất lượng Nhật Bản, sản xuất tại Việt Nam.",
+      "subtitle": "TNP kết hợp tiêu chuẩn vật liệu Nhật Bản với tay nghề thủ công Việt Nam. Từ sàn gỗ Hinoki đến nội thất gỗ đặt riêng — chúng tôi thiết kế, sản xuất, vận chuyển và lắp đặt. Một đội ngũ. Một tiêu chuẩn.",
+      "imageAlt": "Sàn gỗ Hinoki tự nhiên do TNP thi công — vân gỗ ấm áp, chất lượng Nhật-Việt"
+    },
+    "about": {
+      "ariaLabel": "Giới thiệu TNP — công ty gỗ Nhật-Việt",
+      "title": "Nơi gỗ Nhật Bản gặp gỡ nghề thủ công Việt Nam",
+      "narrative": "TNP ra đời từ sự giao thoa giữa Nhật Bản và Việt Nam. Nhật Bản có hàng thế kỷ trân trọng gỗ — đặc biệt là Keyaki, loại gỗ cứng đặc biệt được yêu chuộng từ cột đền cổ đến đồ nội thất và đồ mộc cao cấp nhờ vân gỗ óng ánh và độ bền ngoại hạng, cùng Hinoki, loại gỗ bách nổi tiếng với hương thơm tự nhiên và khả năng kháng ẩm, kháng côn trùng. Việt Nam có nhiều thế hệ thợ mộc lành nghề và truyền thống sản xuất chuyển hóa gỗ thô thành những bề mặt hoàn thiện với sự chính xác và tâm huyết. TNP mang cả hai lại với nhau. Chúng tôi cung cấp các loại gỗ cao cấp — Keyaki, Hinoki, sồi, óc chó, tần bì và các loại gỗ cứng chọn lọc từ Đông Nam Á — rồi sản xuất sàn gỗ tự nhiên và nội thất đặt riêng ngay tại xưởng của mình ở Biên Hòa. Từng tấm ván đều được sấy khô, xay xát, hoàn thiện và kiểm tra trước khi xuất xưởng. Chúng tôi không thuê ngoài. Không cắt xén chất lượng. Và chúng tôi lo từ A đến Z — từ tư vấn ban đầu đến lắp đặt hoàn chỉnh.",
+      "pillars": {
+        "heritage": {
+          "title": "Di sản Nhật-Việt",
+          "text": "Tiêu chuẩn vật liệu Nhật Bản, năng lực sản xuất Việt Nam xuất sắc."
+        },
+        "hinoki": {
+          "title": "Keyaki, Hinoki & gỗ cứng cao cấp",
+          "text": "Hai loại gỗ quý nhất Nhật Bản — Keyaki với vân óng ánh và độ cứng vượt trội, Hinoki với hương thơm và độ bền thiên nhiên — cùng dải gỗ cứng cao cấp phong phú."
+        },
+        "factory": {
+          "title": "Trực tiếp từ xưởng",
+          "text": "Xưởng sản xuất riêng tại Biên Hòa — không qua trung gian, sẵn sàng xuất khẩu."
+        },
+        "endToEnd": {
+          "title": "Dịch vụ trọn gói",
+          "text": "Thiết kế, sản xuất, vận chuyển và lắp đặt bởi một đội ngũ duy nhất."
+        }
+      },
+      "imageAlt": "Cận cảnh vân gỗ Hinoki — nguyên liệu đặc trưng của TNP, nhập từ Nhật Bản và sản xuất tại Việt Nam"
+    },
+    "process": {
+      "title": "Từ gỗ thô đến không gian hoàn thiện",
+      "leadIn": "Mọi dự án của TNP đều trải qua ba giai đoạn. Dù bạn cần sàn gỗ tự nhiên cho căn hộ ở Tokyo hay nội thất đặt riêng cho ngôi nhà ở Sài Gòn — quy trình luôn nhất quán.",
+      "steps": {
+        "creation": {
+          "number": "01",
+          "label": "Sáng tạo",
+          "title": "Chúng tôi tìm nguồn, thiết kế và sản xuất",
+          "text": "Tất cả bắt đầu từ yêu cầu dự án của bạn. Bạn cần gì — sàn gỗ, nội thất hay cả hai? Loại gỗ và bề mặt hoàn thiện nào? Với sàn gỗ, chúng tôi đánh giá diện tích và yêu cầu nền móng. Với nội thất, chúng tôi phát triển bản phác thảo và mẫu vật liệu. Sau khi bạn duyệt, xưởng Biên Hòa bắt tay vào sản xuất. Keyaki, Hinoki, sồi, óc chó — dù loại gỗ nào, tất cả đều được sấy khô, xay xát chính xác, ghép nối, đánh bóng và hoàn thiện ngay tại xưởng. Từng sản phẩm đều qua kiểm tra chất lượng trước khi xuất đi.",
+          "imageAlt": "Xưởng TNP — gỗ Hinoki đang được xay xát tại cơ sở sản xuất Biên Hòa"
+        },
+        "delivery": {
+          "number": "02",
+          "label": "Giao hàng",
+          "title": "Chúng tôi vận chuyển đến bạn — khắp nơi",
+          "text": "Khi đơn hàng hoàn tất, đội logistics của chúng tôi đóng gói, palletize và vận chuyển — nội địa khắp Việt Nam hoặc quốc tế đến Nhật Bản và xa hơn. Chúng tôi xử lý tài liệu xuất khẩu, containerization và điều phối vận tải. Sàn gỗ hoặc nội thất của bạn sẽ đến nơi an toàn, đúng lịch, nguyên vẹn như khi rời xưởng.",
+          "imageAlt": "Sàn gỗ Hinoki đóng gói xuất khẩu — sẵn sàng vận chuyển quốc tế"
+        },
+        "installation": {
+          "number": "03",
+          "label": "Lắp đặt",
+          "title": "Chúng tôi lắp đặt hoàn hảo",
+          "text": "Với khách hàng trong nước, đội ngũ của chúng tôi xử lý toàn bộ tại công trình: chuẩn bị nền và thi công sàn gỗ, lắp ráp nội thất, cân chỉnh và cố định. Ốp tường, nội thất âm tường, sàn toàn phòng — chúng tôi làm tất cả. Với khách hàng xuất khẩu, chúng tôi cung cấp hướng dẫn lắp đặt chi tiết, thông số kỹ thuật và hỗ trợ từ xa. Dự án chưa hoàn thành cho đến khi bạn hài lòng.",
+          "imageAlt": "Thợ TNP thi công sàn gỗ Hinoki tự nhiên — lắp đặt chuyên nghiệp tại nhà khách hàng Việt Nam"
+        }
+      }
+    },
+    "trust": {
+      "stat1": { "value": "500+", "label": "Dự án đã hoàn thành" },
+      "stat2": { "value": "Nhật Bản & quốc tế", "label": "Thị trường xuất khẩu" },
+      "stat3": { "value": "Biên Hòa, Việt Nam", "label": "Xưởng sản xuất" },
+      "testimonialNote": "{/* TODO: thêm đánh giá thực tế từ khách hàng */}"
+    },
+    "cta": {
+      "title": "Sẵn sàng bắt đầu?",
+      "body": "Hãy kể cho chúng tôi nghe về không gian của bạn — chúng tôi sẽ phản hồi trong vòng 48 giờ với ý tưởng và báo giá miễn phí.",
+      "button": "Nhận báo giá miễn phí"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Bảng giá minh bạch.",
+      "titleAccent": "Sàn gỗ và nội thất, trọn gói.",
+      "subtitle": "Mọi dự án TNP đều bao gồm tìm nguồn nguyên liệu, sản xuất, vận chuyển và lắp đặt. Không phát sinh chi phí ẩn. Chọn sản phẩm và mức dịch vụ phù hợp với dự án của bạn."
+    },
+    "tiers": {
+      "title": "Dịch vụ của chúng tôi",
+      "flooring": {
+        "name": "Sàn Gỗ Tự Nhiên",
+        "tagline": "Sàn gỗ cao cấp, trực tiếp từ xưởng",
+        "description": "Sàn gỗ tự nhiên từ Keyaki, Hinoki, sồi, óc chó, tần bì hoặc các loại gỗ cứng chọn lọc. Sấy khô lò, xay xát chính xác và hoàn thiện tại xưởng Biên Hòa. Giao hàng nội địa với lắp đặt chuyên nghiệp hoặc đóng gói xuất khẩu quốc tế.",
+        "examples": "Sàn căn hộ · Không gian thương mại · Tái lát sàn khi cải tạo",
+        "priceNote": "Tính theo m²",
+        "cta": "Yêu cầu báo giá",
+        "badge": "Phổ biến nhất"
+      },
+      "furniture": {
+        "name": "Nội Thất Gỗ Đặt Riêng",
+        "tagline": "Sản phẩm độc bản, đúng theo yêu cầu của bạn",
+        "description": "Nội thất được thiết kế và sản xuất theo yêu cầu của bạn. Bao gồm tư vấn, phác thảo thiết kế, tìm nguồn gỗ cao cấp, sản xuất tại xưởng, vận chuyển và lắp đặt. Phù hợp cho bàn ăn, kệ sách, tủ bếp, bàn làm việc và bộ phòng ngủ.",
+        "examples": "Bàn ăn gỗ Keyaki · Kệ sách gỗ óc chó · Bộ nội thất phòng ngủ gỗ Hinoki",
+        "priceNote": "Báo giá theo dự án",
+        "cta": "Yêu cầu báo giá"
+      },
+      "complete": {
+        "name": "Dự Án Trọn Gói",
+        "tagline": "Sàn gỗ và nội thất cho toàn bộ không gian",
+        "description": "Trang bị từ A đến Z cho một hoặc nhiều phòng — sàn gỗ tự nhiên kết hợp nội thất đặt riêng, thiết kế đồng bộ. TNP xử lý quy hoạch không gian, phối hợp vật liệu, sản xuất phân kỳ, vận chuyển và lắp đặt hoàn chỉnh.",
+        "examples": "Căn hộ trọn gói · Nội thất nhà hàng · Khách sạn boutique",
+        "priceNote": "Báo giá tùy chỉnh",
+        "cta": "Yêu cầu báo giá",
+        "badge": "Tốt nhất"
+      }
+    },
+    "included": {
+      "title": "Luôn bao gồm",
+      "items": [
+        "Tìm nguồn nguyên liệu",
+        "Sấy khô & xay xát",
+        "Sản xuất tại xưởng",
+        "Kiểm tra chất lượng",
+        "Vận chuyển & bảo vệ hàng hóa",
+        "Lắp đặt chuyên nghiệp (nội địa)",
+        "Đóng gói xuất khẩu (quốc tế)"
+      ]
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "subtitle": "Mọi thứ bạn cần biết trước khi bắt đầu dự án.",
+      "q1": {
+        "question": "Gỗ Hinoki là gì và tại sao đặc biệt?",
+        "answer": "Hinoki (檜 / ヒノキ) là gỗ bách Nhật Bản — một trong những loại gỗ xây dựng quý giá nhất của Nhật. Gỗ có mùi thơm tự nhiên, kháng ẩm, kháng mục và kháng côn trùng, với vân gỗ mịn đẹp. Tại Nhật, gỗ này đã được dùng trong đền chùa, nhà tắm truyền thống và những ngôi nhà tinh tế hàng thế kỷ nay. TNP tìm nguồn Hinoki và sản xuất thành sàn gỗ, nội thất tại xưởng Việt Nam, mang vật liệu cao cấp này đến cả khách hàng trong nước lẫn quốc tế."
+      },
+      "q2": {
+        "question": "Một dự án mất bao lâu?",
+        "answer": "Đơn hàng sàn gỗ thường mất 3–5 tuần từ khi xác nhận đến giao hàng. Nội thất đặt riêng mất 4–8 tuần tùy độ phức tạp. Dự án trọn gói gồm cả sàn lẫn nội thất mất 8–12 tuần. Chúng tôi xác nhận tiến độ cụ thể trước khi bắt đầu thi công."
+      },
+      "q3": {
+        "question": "TNP làm việc với những loại gỗ nào?",
+        "answer": "Vật liệu đặc trưng của chúng tôi là Keyaki (zelkova Nhật Bản) và Hinoki (bách Nhật Bản). Keyaki được yêu chuộng vì độ cứng ngoại hạng, vân gỗ óng ánh và độ bền cao — được dùng trong cột đền chùa cổ, nội thất và đồ mộc cao cấp. Hinoki nổi bật với hương thơm tự nhiên, kháng ẩm và vân gỗ mịn đẹp. Chúng tôi cũng làm với sồi, óc chó, tần bì, gỗ tếch và các loại gỗ cứng chọn lọc từ Việt Nam và Đông Nam Á. Bạn chọn loại gỗ trong buổi tư vấn — chúng tôi sẽ cung cấp mẫu vật và giải thích đặc tính từng loại."
+      },
+      "q4": {
+        "question": "TNP có vận chuyển quốc tế không?",
+        "answer": "Có. TNP sẵn sàng xuất khẩu. Chúng tôi phục vụ khách hàng nội địa khắp Việt Nam và xuất hàng sang Nhật Bản cùng các thị trường quốc tế. Đơn hàng xuất khẩu bao gồm containerization, điều phối vận tải và đầy đủ giấy tờ. Phí vận chuyển quốc tế được báo giá theo điểm đến và khối lượng."
+      },
+      "q5": {
+        "question": "Có bao gồm lắp đặt không?",
+        "answer": "Với khách hàng trong nước tại Việt Nam — có. Đội ngũ của chúng tôi xử lý thi công sàn gỗ (chuẩn bị nền, lát sàn, hoàn thiện) và lắp ráp nội thất tại công trình. Với khách hàng quốc tế, chúng tôi cung cấp hướng dẫn lắp đặt chi tiết và hỗ trợ kỹ thuật từ xa."
+      },
+      "q6": {
+        "question": "Nếu cần điều chỉnh sau lắp đặt thì sao?",
+        "answer": "Chúng tôi có thời gian bảo hành điều chỉnh sau lắp đặt cho các dự án nội địa. Nếu sàn cần xử lý thêm hoặc nội thất cần cân chỉnh, chúng tôi sẽ quay lại và sửa — miễn phí trong thời gian bảo hành."
+      },
+      "q7": {
+        "question": "Tôi có thể tham quan xưởng không?",
+        "answer": "Hoàn toàn được. Xưởng của chúng tôi nằm tại KCN Tam Phước, Biên Hòa — khoảng một tiếng từ TP.HCM. Liên hệ để đặt lịch tham quan và tận mắt chứng kiến quy trình sản xuất."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Hãy cùng tạo nên",
+      "titleAccent": "điều gì đó đặc biệt.",
+      "subtitle": "Kể cho chúng tôi nghe về dự án của bạn — sàn gỗ, nội thất hoặc cả hai. Chúng tôi sẽ phản hồi trong vòng 48 giờ với ý tưởng và báo giá miễn phí, không ràng buộc — bao gồm tìm nguồn nguyên liệu, sản xuất, vận chuyển và lắp đặt."
+    },
+    "form": {
+      "title": "Bắt đầu dự án của bạn",
+      "name": {
+        "label": "Họ và tên",
+        "placeholder": "Họ tên đầy đủ của bạn"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "email@cua-ban.com"
+      },
+      "phone": {
+        "label": "Điện thoại / WhatsApp / Zalo",
+        "placeholder": "Số điện thoại của bạn",
+        "hint": "Không bắt buộc — Zalo cho khách hàng Việt Nam, WhatsApp hoặc LINE cho khách quốc tế"
+      },
+      "projectType": {
+        "label": "Loại dự án",
+        "placeholder": "Chọn loại dự án",
+        "options": {
+          "flooring": "Sàn gỗ tự nhiên",
+          "furniture": "Nội thất gỗ đặt riêng",
+          "both": "Sàn gỗ + nội thất",
+          "commercial": "Dự án thương mại / chủ đầu tư",
+          "other": "Khác"
+        }
+      },
+      "timberPreference": {
+        "label": "Loại gỗ mong muốn",
+        "hint": "Có thể chọn nhiều",
+        "options": {
+          "keyaki": "Keyaki (zelkova Nhật Bản)",
+          "hinoki": "Hinoki (bách Nhật Bản)",
+          "oak": "Sồi",
+          "walnut": "Óc chó",
+          "ash": "Tần bì",
+          "teak": "Tếch",
+          "other": "Khác / chưa xác định"
+        }
+      },
+      "location": {
+        "label": "Địa điểm của bạn",
+        "placeholder": "Chọn địa điểm",
+        "options": {
+          "vietnam": "Việt Nam (trong nước)",
+          "japan": "Nhật Bản",
+          "international": "Quốc tế khác"
+        }
+      },
+      "quantity": {
+        "label": "Diện tích hoặc số lượng ước tính",
+        "placeholder": "VD: 50m² sàn hoặc 1 bàn ăn + 6 ghế"
+      },
+      "budget": {
+        "label": "Ngân sách dự kiến",
+        "placeholder": "Chọn mức ngân sách"
+      },
+      "language": {
+        "label": "Ngôn ngữ tư vấn ưu tiên",
+        "options": {
+          "en": "English",
+          "vi": "Tiếng Việt",
+          "ja": "日本語"
+        }
+      },
+      "description": {
+        "label": "Mô tả ngắn về dự án",
+        "placeholder": "Hãy kể về không gian, phong cách yêu thích hoặc yêu cầu cụ thể của bạn...",
+        "hint": "Không bắt buộc — càng nhiều thông tin, báo giá càng chính xác"
+      },
+      "fileNote": "Có ảnh tham khảo, bản vẽ mặt bằng hoặc thông số kỹ thuật? Đề cập ở đây và chúng tôi sẽ gửi link để bạn chia sẻ file.",
+      "submit": "Gửi thông tin dự án",
+      "privacy": "Chúng tôi phản hồi trong vòng 48 giờ. Thông tin của bạn được bảo mật tuyệt đối.",
+      "successTitle": "Cảm ơn bạn!",
+      "successText": "Chúng tôi đã nhận được thông tin dự án và sẽ liên hệ trong vòng 48 giờ."
+    },
+    "sidebar": {
+      "directContact": {
+        "title": "Liên hệ trực tiếp",
+        "hours": "{/* TODO: thêm giờ làm việc */}"
+      },
+      "nextSteps": {
+        "title": "Chuyện gì xảy ra tiếp theo?",
+        "step1": "Chúng tôi xem xét thông tin dự án và phản hồi trong vòng 48 giờ.",
+        "step2": "Chúng tôi thảo luận về vật liệu, tiến độ và logistics — trực tiếp, trực tuyến hoặc qua email.",
+        "step3": "Bạn nhận được báo giá chi tiết bao gồm sản xuất, vận chuyển và lắp đặt."
+      },
+      "trust": {
+        "title": "Trực tiếp từ xưởng Việt Nam",
+        "text": "Mỗi báo giá bao gồm tìm nguồn nguyên liệu, sản xuất, vận chuyển và lắp đặt — một mức giá, một đội ngũ, trực tiếp từ xưởng Việt Nam."
+      }
+    }
+  }
+}
