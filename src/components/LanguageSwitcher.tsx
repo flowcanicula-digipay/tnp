@@ -19,9 +19,10 @@ function getCurrentLocale(pathname: string): LocaleCode {
 
 interface Props {
   label: string;
+  align?: 'left' | 'right';
 }
 
-export default function LanguageSwitcher({ label }: Props) {
+export default function LanguageSwitcher({ label, align = 'right' }: Props) {
   const pathname = usePathname();
   const router = useRouter();
   const locale = getCurrentLocale(pathname);
@@ -69,7 +70,7 @@ export default function LanguageSwitcher({ label }: Props) {
         <ul
           role="listbox"
           aria-label={label}
-          className="absolute right-0 top-full mt-1 w-40 bg-white rounded-xl shadow-lg border border-cream-200 py-1 z-50"
+          className={`absolute top-full mt-1 w-40 bg-white rounded-xl shadow-lg border border-cream-200 py-1 z-50 ${align === 'left' ? 'left-0' : 'right-0'}`}
         >
           {LOCALES.map(({ code, label: localeLabel }) => (
             <li key={code} role="option" aria-selected={code === locale}>

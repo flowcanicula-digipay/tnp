@@ -109,7 +109,7 @@ export default function Header({ messages }: HeaderProps) {
               </li>
             ))}
             <li className="pt-2 border-t border-cream-100 flex items-center justify-between">
-              <LanguageSwitcher label={languageSwitcher.label} />
+              <LanguageSwitcher label={languageSwitcher.label} align="left" />
               <Link
                 href={`/${locale}/contact`}
                 onClick={() => setMobileOpen(false)}
