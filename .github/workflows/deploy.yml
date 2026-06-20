@@ -30,6 +30,17 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
+      - name: Run unit tests (coverage gate ≥80%)
+        run: npm run test:coverage
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: ./coverage
+          retention-days: 14
+
       - name: Build
         run: npm run build
         env:

@@ -60,6 +60,8 @@ const config: Config = {
         'glow-pulse': 'glowPulse 3.5s ease-in-out infinite',
         'scale-in': 'scaleIn 0.9s cubic-bezier(0.16,1,0.3,1) both',
         'drift-up': 'driftUp 1.2s ease-out both',
+        'ken-burns': 'kenBurns 16s ease-in-out infinite alternate',
+        'underline-grow': 'underlineGrow 1.1s cubic-bezier(0.16,1,0.3,1) 0.6s both',
       },
       keyframes: {
         fadeUp: {
@@ -91,6 +93,14 @@ const config: Config = {
         driftUp: {
           '0%': { opacity: '0', transform: 'translateY(40px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        kenBurns: {
+          '0%': { transform: 'scale(1) translate(0, 0)' },
+          '100%': { transform: 'scale(1.12) translate(-1.5%, -1%)' },
+        },
+        underlineGrow: {
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
         },
       },
     },

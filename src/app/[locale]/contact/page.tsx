@@ -122,7 +122,7 @@ export default async function ContactPage({
             fill
             priority
             aria-hidden="true"
-            className="object-cover object-center opacity-35"
+            className="object-cover object-center opacity-35 animate-ken-burns"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-forest-950/90 via-forest-950/70 to-forest-900/40" />
@@ -136,7 +136,7 @@ export default async function ContactPage({
             alt=""
             fill
             aria-hidden="true"
-            className="object-cover object-left opacity-30"
+            className="object-cover object-left opacity-30 animate-ken-burns"
             sizes="38vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-forest-950 to-transparent" />
@@ -144,14 +144,25 @@ export default async function ContactPage({
 
         <div className="relative container-wide py-24">
           <div className="max-w-2xl">
-            <p className="section-label text-timber-300 mb-5">TNP — Biên Hòa, Vietnam</p>
-            <h1 className="font-serif text-display-xl text-white leading-tight mb-2">
+            <p className="section-label text-timber-300 mb-5 animate-drift-up" style={{ animationDelay: '0.1s' }}>
+              TNP — Biên Hòa, Vietnam
+            </p>
+            <h1
+              className="font-serif text-display-xl text-white leading-tight mb-2 animate-drift-up"
+              style={{ animationDelay: '0.25s' }}
+            >
               {c.hero.title}
             </h1>
-            <p className="font-serif text-display-md text-timber-300 mb-6">
+            <p
+              className="font-serif text-display-md text-timber-300 mb-6 animate-drift-up"
+              style={{ animationDelay: '0.4s' }}
+            >
               {c.hero.titleAccent}
             </p>
-            <p className="text-stone-400 text-lg leading-relaxed max-w-xl">
+            <p
+              className="text-stone-400 text-lg leading-relaxed max-w-xl animate-drift-up"
+              style={{ animationDelay: '0.55s' }}
+            >
               {c.hero.subtitle}
             </p>
           </div>

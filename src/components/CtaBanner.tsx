@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import Reveal from './Reveal';
 
 const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
@@ -43,62 +44,71 @@ export default function CtaBanner({ locale, messages }: { locale: string; messag
 
           {/* Left — Content */}
           <div>
-            <p className="section-label text-timber-300 mb-6">TNP</p>
-            <h2 className="font-serif text-display-lg text-white leading-tight mb-6">
-              {messages.title}
-            </h2>
-            <p className="text-stone-400 text-lg leading-relaxed mb-10 max-w-md">
-              {messages.body}
-            </p>
-            <Link
-              href={`/${locale}/contact`}
-              className="btn-primary text-base px-8 py-4 inline-flex"
-            >
-              {messages.button}
-              <ArrowRight className="w-4 h-4" aria-hidden="true" />
-            </Link>
+            <Reveal delay={0}>
+              <p className="section-label text-timber-300 mb-6">TNP</p>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <h2 className="font-serif text-display-lg text-white leading-tight mb-6">
+                {messages.title}
+              </h2>
+            </Reveal>
+            <Reveal delay={0.2}>
+              <p className="text-stone-400 text-lg leading-relaxed mb-10 max-w-md">
+                {messages.body}
+              </p>
+            </Reveal>
+            <Reveal delay={0.3}>
+              <Link
+                href={`/${locale}/contact`}
+                className="btn-primary text-base px-8 py-4 inline-flex transition-transform duration-300 hover:scale-105"
+              >
+                {messages.button}
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              </Link>
+            </Reveal>
           </div>
 
           {/* Right — Interactive image mosaic */}
           <div className="grid grid-cols-2 gap-3 h-72 sm:h-80 lg:h-[420px]">
             {mosaicImages.map(({ src, alt }, i) => (
-              <button
-                key={i}
-                type="button"
-                aria-label={alt}
-                className="relative rounded-2xl overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-timber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-forest-950"
-                onMouseEnter={() => setHovered(i)}
-                onMouseLeave={() => setHovered(null)}
-                onFocus={() => setHovered(i)}
-                onBlur={() => setHovered(null)}
-                onClick={() => setHovered(hovered === i ? null : i)}
-              >
-                <Image
-                  src={src}
-                  alt={alt}
-                  fill
-                  className={`object-cover transition-all duration-500 ease-out ${
-                    hovered === null
-                      ? 'scale-100 brightness-[0.6]'
-                      : hovered === i
-                      ? 'scale-110 brightness-90'
-                      : 'scale-100 brightness-[0.3]'
-                  }`}
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 40vw, 230px"
-                />
-                {/* Bottom gradient on active */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-t from-forest-950/70 via-transparent to-transparent transition-opacity duration-300 ${
-                    hovered === i ? 'opacity-100' : 'opacity-0'
-                  }`}
-                />
-                {/* Amber ring on active */}
-                <div
-                  className={`absolute inset-0 rounded-2xl ring-2 ring-inset ring-timber-400 transition-opacity duration-200 ${
-                    hovered === i ? 'opacity-100' : 'opacity-0'
-                  }`}
-                />
-              </button>
+              <Reveal key={i} direction="right" delay={0.1 + i * 0.1} className="h-full">
+                <button
+                  type="button"
+                  aria-label={alt}
+                  className="relative w-full h-full rounded-2xl overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-timber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-forest-950"
+                  onMouseEnter={() => setHovered(i)}
+                  onMouseLeave={() => setHovered(null)}
+                  onFocus={() => setHovered(i)}
+                  onBlur={() => setHovered(null)}
+                  onClick={() => setHovered(hovered === i ? null : i)}
+                >
+                  <Image
+                    src={src}
+                    alt={alt}
+                    fill
+                    className={`object-cover transition-all duration-500 ease-out ${
+                      hovered === null
+                        ? 'scale-100 brightness-[0.6]'
+                        : hovered === i
+                        ? 'scale-110 brightness-90'
+                        : 'scale-100 brightness-[0.3]'
+                    }`}
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 40vw, 230px"
+                  />
+                  {/* Bottom gradient on active */}
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-t from-forest-950/70 via-transparent to-transparent transition-opacity duration-300 ${
+                      hovered === i ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  />
+                  {/* Amber ring on active */}
+                  <div
+                    className={`absolute inset-0 rounded-2xl ring-2 ring-inset ring-timber-400 transition-opacity duration-200 ${
+                      hovered === i ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  />
+                </button>
+              </Reveal>
             ))}
           </div>
 

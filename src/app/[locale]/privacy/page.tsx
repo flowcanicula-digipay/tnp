@@ -48,14 +48,21 @@ export default async function PrivacyPage({ params }: Props) {
   return (
     <div className="bg-cream-50 min-h-screen">
       {/* Hero */}
-      <section className="bg-forest-900 py-16">
+      <section className="bg-forest-900 py-16 overflow-hidden">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3 mb-6 animate-drift-up" style={{ animationDelay: '0.1s' }}>
             <Shield className="w-7 h-7 text-timber-300" aria-hidden="true" />
             <span className="text-timber-300 text-sm font-semibold uppercase tracking-wider">TNP</span>
           </div>
-          <h1 className="font-serif text-4xl sm:text-5xl text-white mb-4">{p.title}</h1>
-          <p className="text-stone-400 text-sm">{p.lastUpdated}</p>
+          <h1
+            className="font-serif text-4xl sm:text-5xl text-white mb-4 animate-drift-up"
+            style={{ animationDelay: '0.25s' }}
+          >
+            {p.title}
+          </h1>
+          <p className="text-stone-400 text-sm animate-drift-up" style={{ animationDelay: '0.4s' }}>
+            {p.lastUpdated}
+          </p>
         </div>
       </section>
 

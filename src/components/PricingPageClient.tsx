@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Check, ChevronDown, StretchHorizontal, Armchair, Building2 } from 'lucide-react';
+import Reveal from './Reveal';
 
 const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
@@ -85,20 +86,31 @@ export default function PricingPageClient({ locale, messages: p, cta }: PricingP
             src={`${base}/assets/images/materials/materials-3.jpg`}
             alt=""
             fill
-            className="object-cover"
+            className="object-cover animate-ken-burns"
             sizes="100vw"
             aria-hidden="true"
           />
         </div>
         <div className="relative container-wide text-center">
-          <p className="section-label text-timber-300 mb-4">TNP</p>
-          <h1 className="font-serif text-display-xl text-white leading-tight mb-2">
+          <p className="section-label text-timber-300 mb-4 animate-drift-up" style={{ animationDelay: '0.1s' }}>
+            TNP
+          </p>
+          <h1
+            className="font-serif text-display-xl text-white leading-tight mb-2 animate-drift-up"
+            style={{ animationDelay: '0.25s' }}
+          >
             {p.hero.title}
           </h1>
-          <p className="font-serif text-display-md text-timber-300 mb-6">
+          <p
+            className="font-serif text-display-md text-timber-300 mb-6 animate-drift-up"
+            style={{ animationDelay: '0.4s' }}
+          >
             {p.hero.titleAccent}
           </p>
-          <p className="text-stone-400 text-lg max-w-2xl mx-auto">
+          <p
+            className="text-stone-400 text-lg max-w-2xl mx-auto animate-drift-up"
+            style={{ animationDelay: '0.55s' }}
+          >
             {p.hero.subtitle}
           </p>
         </div>
@@ -107,9 +119,11 @@ export default function PricingPageClient({ locale, messages: p, cta }: PricingP
       {/* Section: Pricing Tiers */}
       <section className="section-padding bg-cream-50">
         <div className="container-wide">
-          <header className="text-center mb-14">
-            <h2 className="section-title">{p.tiers.title}</h2>
-          </header>
+          <Reveal>
+            <header className="text-center mb-14">
+              <h2 className="section-title">{p.tiers.title}</h2>
+            </header>
+          </Reveal>
 
           <div className="grid md:grid-cols-3 gap-6 items-start">
             {tierKeys.map((key: TierKey, idx) => {
@@ -119,71 +133,72 @@ export default function PricingPageClient({ locale, messages: p, cta }: PricingP
               const isHighlighted = isSelected || (selectedTier === null && idx === 0);
 
               return (
-                <article
-                  key={key}
-                  role="button"
-                  tabIndex={0}
-                  aria-pressed={isSelected}
-                  onClick={() => setSelectedTier(isSelected ? null : key)}
-                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSelectedTier(isSelected ? null : key); } }}
-                  className={`relative rounded-2xl overflow-hidden flex flex-col bg-white cursor-pointer transition-all duration-200 ${
-                    isHighlighted
-                      ? 'ring-2 ring-timber-500 shadow-2xl scale-[1.01]'
-                      : 'border border-cream-200 shadow-lg hover:shadow-xl hover:border-timber-200'
-                  }`}
-                >
-                  {tier.badge && !isSelected && (
-                    <div className="absolute top-4 right-4 bg-timber-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-                      {tier.badge}
-                    </div>
-                  )}
-                  {isSelected && (
-                    <div className="absolute top-4 right-4 bg-timber-500 text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 flex items-center gap-1.5">
-                      <Check className="w-3 h-3" aria-hidden="true" />
-                      Selected
-                    </div>
-                  )}
+                <Reveal key={key} delay={idx * 0.12}>
+                  <article
+                    role="button"
+                    tabIndex={0}
+                    aria-pressed={isSelected}
+                    onClick={() => setSelectedTier(isSelected ? null : key)}
+                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSelectedTier(isSelected ? null : key); } }}
+                    className={`relative rounded-2xl overflow-hidden flex flex-col bg-white cursor-pointer transition-all duration-200 ${
+                      isHighlighted
+                        ? 'ring-2 ring-timber-500 shadow-2xl scale-[1.01]'
+                        : 'border border-cream-200 shadow-lg hover:shadow-xl hover:border-timber-200'
+                    }`}
+                  >
+                    {tier.badge && !isSelected && (
+                      <div className="absolute top-4 right-4 bg-timber-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                        {tier.badge}
+                      </div>
+                    )}
+                    {isSelected && (
+                      <div className="absolute top-4 right-4 bg-timber-500 text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 flex items-center gap-1.5">
+                        <Check className="w-3 h-3" aria-hidden="true" />
+                        Selected
+                      </div>
+                    )}
 
-                  <div className="relative h-48 bg-cream-100">
-                    <Image
-                      src={tierImages[idx]}
-                      alt={tier.name}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
-                  </div>
-
-                  <div className="p-6 flex flex-col flex-1">
-                    <div className="flex items-center gap-2 mb-3">
-                      <Icon className={`w-5 h-5 ${isSelected ? 'text-timber-600' : 'text-timber-500'}`} aria-hidden="true" />
-                      <h3 className="font-serif text-xl font-semibold text-forest-900">
-                        {tier.name}
-                      </h3>
+                    <div className="relative h-48 bg-cream-100">
+                      <Image
+                        src={tierImages[idx]}
+                        alt={tier.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
                     </div>
-                    <p className="text-timber-500 text-sm font-medium mb-4">{tier.tagline}</p>
-                    <p className="text-stone-600 text-sm leading-relaxed mb-4 flex-1">{tier.description}</p>
-                    <p className="text-xs text-stone-400 italic mb-6">{tier.examples}</p>
 
-                    <div className="border-t border-cream-100 pt-5">
-                      <p className="text-xs text-stone-400 uppercase tracking-wide mb-1">{tier.priceNote}</p>
-                      {/* TODO: set price per m² / per project */}
-                      <p className="font-serif text-2xl font-bold text-forest-900 mb-5">—</p>
-                      <Link
-                        href={`/${locale}/contact?type=${key}`}
-                        onClick={(e) => e.stopPropagation()}
-                        className={`w-full flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-semibold text-sm transition-colors duration-200 ${
-                          isHighlighted
-                            ? 'bg-timber-500 hover:bg-timber-600 text-white'
-                            : 'bg-cream-100 hover:bg-cream-200 text-forest-800'
-                        }`}
-                      >
-                        {tier.cta}
-                        <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                      </Link>
+                    <div className="p-6 flex flex-col flex-1">
+                      <div className="flex items-center gap-2 mb-3">
+                        <Icon className={`w-5 h-5 ${isSelected ? 'text-timber-600' : 'text-timber-500'}`} aria-hidden="true" />
+                        <h3 className="font-serif text-xl font-semibold text-forest-900">
+                          {tier.name}
+                        </h3>
+                      </div>
+                      <p className="text-timber-500 text-sm font-medium mb-4">{tier.tagline}</p>
+                      <p className="text-stone-600 text-sm leading-relaxed mb-4 flex-1">{tier.description}</p>
+                      <p className="text-xs text-stone-400 italic mb-6">{tier.examples}</p>
+
+                      <div className="border-t border-cream-100 pt-5">
+                        <p className="text-xs text-stone-400 uppercase tracking-wide mb-1">{tier.priceNote}</p>
+                        {/* TODO: set price per m² / per project */}
+                        <p className="font-serif text-2xl font-bold text-forest-900 mb-5">—</p>
+                        <Link
+                          href={`/${locale}/contact?type=${key}`}
+                          onClick={(e) => e.stopPropagation()}
+                          className={`w-full flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-semibold text-sm transition-colors duration-200 ${
+                            isHighlighted
+                              ? 'bg-timber-500 hover:bg-timber-600 text-white'
+                              : 'bg-cream-100 hover:bg-cream-200 text-forest-800'
+                          }`}
+                        >
+                          {tier.cta}
+                          <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                </Reveal>
               );
             })}
           </div>
@@ -206,35 +221,39 @@ export default function PricingPageClient({ locale, messages: p, cta }: PricingP
         </div>
 
         <div className="relative container-wide">
-          <div className="text-center mb-12">
-            <p className="section-label text-timber-300 mb-3">TNP</p>
-            <h2 className="font-serif text-3xl lg:text-4xl text-white">{p.included.title}</h2>
-          </div>
+          <Reveal>
+            <div className="text-center mb-12">
+              <p className="section-label text-timber-300 mb-3">TNP</p>
+              <h2 className="font-serif text-3xl lg:text-4xl text-white">{p.included.title}</h2>
+            </div>
+          </Reveal>
 
           <ul className="flex flex-wrap justify-center gap-4">
             {p.included.items.map((item: string, i: number) => (
-              <li key={i} className="group relative rounded-2xl overflow-hidden h-40 sm:h-44 cursor-default w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-[calc(25%-12px)]">
-                {/* Background image */}
-                <Image
-                  src={includedImages[i % includedImages.length]}
-                  alt=""
-                  fill
-                  aria-hidden="true"
-                  className="object-cover brightness-[0.45] group-hover:brightness-[0.7] group-hover:scale-105 transition-all duration-500 ease-out"
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                />
-                {/* Persistent gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/20 to-transparent" />
-                {/* Hover amber border */}
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 group-hover:ring-timber-400/70 transition-all duration-300" />
+              <li key={i} className="group w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-[calc(25%-12px)]">
+                <Reveal delay={(i % 4) * 0.1} className="relative rounded-2xl overflow-hidden h-40 sm:h-44 cursor-default">
+                  {/* Background image */}
+                  <Image
+                    src={includedImages[i % includedImages.length]}
+                    alt=""
+                    fill
+                    aria-hidden="true"
+                    className="object-cover brightness-[0.45] group-hover:brightness-[0.7] group-hover:scale-105 transition-all duration-500 ease-out"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  />
+                  {/* Persistent gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/20 to-transparent" />
+                  {/* Hover amber border */}
+                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 group-hover:ring-timber-400/70 transition-all duration-300" />
 
-                {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end gap-3">
-                  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-timber-500/80 group-hover:bg-timber-500 flex items-center justify-center transition-colors duration-300">
-                    <Check className="w-3.5 h-3.5 text-white" aria-hidden="true" />
+                  {/* Content */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end gap-3">
+                    <div className="flex-shrink-0 w-7 h-7 rounded-full bg-timber-500/80 group-hover:bg-timber-500 flex items-center justify-center transition-colors duration-300">
+                      <Check className="w-3.5 h-3.5 text-white" aria-hidden="true" />
+                    </div>
+                    <span className="text-white text-sm font-medium leading-snug">{item}</span>
                   </div>
-                  <span className="text-white text-sm font-medium leading-snug">{item}</span>
-                </div>
+                </Reveal>
               </li>
             ))}
           </ul>
@@ -285,17 +304,23 @@ export default function PricingPageClient({ locale, messages: p, cta }: PricingP
       {/* Section: CTA */}
       <section className="section-padding bg-cream-100">
         <div className="container-wide text-center">
-          <h2 className="section-title mb-4">Ready to start?</h2>
-          <p className="text-stone-500 max-w-lg mx-auto mb-8">
-            Tell us about your space and we&apos;ll get back within 48 hours with a free quote.
-          </p>
-          <Link
-            href={selectedTier ? `/${locale}/contact?type=${selectedTier}` : `/${locale}/contact`}
-            className="btn-primary text-base px-8 py-4"
-          >
-            {cta.requestQuote}
-            <ArrowRight className="w-4 h-4" aria-hidden="true" />
-          </Link>
+          <Reveal delay={0}>
+            <h2 className="section-title mb-4">Ready to start?</h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="text-stone-500 max-w-lg mx-auto mb-8">
+              Tell us about your space and we&apos;ll get back within 48 hours with a free quote.
+            </p>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <Link
+              href={selectedTier ? `/${locale}/contact?type=${selectedTier}` : `/${locale}/contact`}
+              className="btn-primary text-base px-8 py-4 transition-transform duration-300 hover:scale-105"
+            >
+              {cta.requestQuote}
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            </Link>
+          </Reveal>
         </div>
       </section>
     </>

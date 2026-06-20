@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { ArrowRight, Hammer, Truck, Wrench, CheckCircle, Factory, TreePine, Handshake } from 'lucide-react';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
 import CtaBanner from '@/components/CtaBanner';
+import Reveal from '@/components/Reveal';
+import StatCounter from '@/components/StatCounter';
 import { routing } from '@/i18n/routing';
 
 export function generateStaticParams() {
@@ -137,7 +139,7 @@ export default async function HomePage({
             alt={h.hero.imageAlt}
             fill
             priority
-            className="object-cover object-center opacity-40"
+            className="object-cover object-center opacity-40 animate-ken-burns"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-forest-950/80 via-forest-900/60 to-transparent" />
@@ -145,18 +147,35 @@ export default async function HomePage({
 
         <div className="relative container-wide py-24">
           <div className="max-w-2xl">
-            <p className="section-label text-timber-300 mb-6">TNP — Biên Hòa, Vietnam</p>
-            <h1 className="font-serif text-display-xl text-white leading-tight mb-2">
+            <p className="section-label text-timber-300 mb-6 animate-drift-up" style={{ animationDelay: '0.1s' }}>
+              TNP — Biên Hòa, Vietnam
+            </p>
+            <h1
+              className="font-serif text-display-xl text-white leading-tight mb-2 animate-drift-up"
+              style={{ animationDelay: '0.25s' }}
+            >
               {h.hero.title}
             </h1>
-            <p className="font-serif text-display-md text-timber-300 mb-8">
+            <p
+              className="font-serif text-display-md text-timber-300 mb-8 animate-drift-up"
+              style={{ animationDelay: '0.4s' }}
+            >
               {h.hero.titleAccent}
             </p>
-            <p className="text-cream-200 text-lg leading-relaxed mb-10 max-w-xl">
+            <p
+              className="text-cream-200 text-lg leading-relaxed mb-10 max-w-xl animate-drift-up"
+              style={{ animationDelay: '0.55s' }}
+            >
               {h.hero.subtitle}
             </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <Link href={`/${locale}/contact`} className="btn-primary text-base px-8 py-3.5">
+            <div
+              className="flex flex-wrap items-center gap-4 animate-drift-up"
+              style={{ animationDelay: '0.7s' }}
+            >
+              <Link
+                href={`/${locale}/contact`}
+                className="btn-primary text-base px-8 py-3.5 transition-transform duration-300 hover:scale-105"
+              >
                 {cta.startProject}
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
@@ -221,16 +240,18 @@ export default async function HomePage({
       {/* Section: Process */}
       <section id="process" className="section-padding bg-white">
         <div className="container-wide">
-          <header className="text-center mb-16">
-            <p className="section-label mb-4">TNP</p>
-            <h2 className="section-title max-w-2xl mx-auto mb-6">{h.process.title}</h2>
-            <p className="text-stone-500 max-w-xl mx-auto text-base">{h.process.leadIn}</p>
-          </header>
+          <Reveal>
+            <header className="text-center mb-16">
+              <p className="section-label mb-4">TNP</p>
+              <h2 className="section-title max-w-2xl mx-auto mb-6">{h.process.title}</h2>
+              <p className="text-stone-500 max-w-xl mx-auto text-base">{h.process.leadIn}</p>
+            </header>
+          </Reveal>
 
           <ol className="flex flex-col gap-24">
             {processSteps.map(({ key, icon: Icon, image }, idx) => (
               <li key={key} className={`grid lg:grid-cols-2 gap-12 items-center ${idx % 2 === 1 ? 'lg:[&>*:first-child]:order-2' : ''}`}>
-                <div>
+                <Reveal direction={idx % 2 === 1 ? 'right' : 'left'}>
                   <div className="flex items-center gap-3 mb-4">
                     <span className="font-serif text-6xl font-bold text-cream-200 leading-none">
                       {h.process.steps[key].number}
@@ -245,16 +266,18 @@ export default async function HomePage({
                     {h.process.steps[key].title}
                   </h3>
                   <p className="text-stone-600 leading-relaxed">{h.process.steps[key].text}</p>
-                </div>
-                <figure className="relative h-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-lg">
-                  <Image
-                    src={image}
-                    alt={h.process.steps[key].imageAlt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                </figure>
+                </Reveal>
+                <Reveal direction={idx % 2 === 1 ? 'left' : 'right'} delay={0.15}>
+                  <figure className="relative h-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-lg group">
+                    <Image
+                      src={image}
+                      alt={h.process.steps[key].imageAlt}
+                      fill
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  </figure>
+                </Reveal>
               </li>
             ))}
           </ol>
@@ -266,10 +289,7 @@ export default async function HomePage({
         <div className="container-wide">
           <div className="grid sm:grid-cols-3 gap-8 text-center text-white">
             {([h.trust.stat1, h.trust.stat2, h.trust.stat3]).map((stat, i) => (
-              <div key={i} className="py-4">
-                <p className="font-serif text-4xl lg:text-5xl font-bold mb-2">{stat.value}</p>
-                <p className="text-timber-100 text-sm font-medium uppercase tracking-wide">{stat.label}</p>
-              </div>
+              <StatCounter key={i} value={stat.value} label={stat.label} delay={i * 0.15} />
             ))}
           </div>
           {/* TODO: add real testimonials/stats */}
