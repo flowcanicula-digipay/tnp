@@ -133,22 +133,53 @@ When a visitor hits `/`, the site automatically redirects to the right locale:
 
 ---
 
-## Owner Action Items
+## Unit Tests
 
-These are not yet configured and need real values before going live:
+Tests run on [Vitest](https://vitest.dev) + React Testing Library. The test tree lives in `test/` at the repo root (a sibling of `src/`, not co-located with the source files) and mirrors the `src/` layout 1:1.
 
-| Item | Where |
-|---|---|
-| **Formspree endpoint** | `src/components/ContactForm.tsx` line 61 — replace `YOUR_FORM_ID` |
-| **Pricing / budget ranges** | `src/messages/en.json` → `pricing.tiers.*.priceNote` + `contact.form.budget.options` |
-| **Business hours** | `src/messages/*.json` → `contact.sidebar.directContact.hours` |
-| **Social media URLs** | Facebook: https://www.facebook.com/Thinhnguyenphat.traocamgiacbinhyen ✓ |
-| **Certifications** | `src/components/Footer.tsx` TODO comment (FSC, ISO, JAS) |
-| **Real testimonials** | `src/app/[locale]/page.tsx` trust section |
-| **OG images** | `public/assets/og/og-en.jpg`, `og-vi.jpg`, `og-ja.jpg` (1200×630 px) |
-| **Sitemap domain** | `public/sitemap.xml` — replace placeholder domain with `https://tnpgr.vn` |
+```bash
+npm test               # run the suite once
+npm run test:watch     # watch mode while developing
+npm run test:coverage  # run once + print a coverage report (also written to coverage/)
+```
+
+```
+test/
+├── app/                    # mirrors src/app — pages, layouts, generateMetadata
+├── components/             # mirrors src/components
+├── i18n/, lib/             # mirrors src/i18n, src/lib
+├── mocks/next.ts           # vi.mock for next/image, next/link, next/navigation
+├── renderServerPage.tsx    # helper: await + render an async Server Component
+├── renderWithIntl.tsx      # standard render() for client components
+└── setup.ts                # global setup — IntersectionObserver, localStorage, etc.
+```
+
+**Coverage gate:** `vitest.config.ts` enforces a minimum of **80%** across statements, branches, functions, and lines (`coverage.thresholds`). `vitest run --coverage` exits non-zero if any metric falls below that, so a regression fails the run locally and in CI.
+
+**CI:** `.github/workflows/deploy.yml` runs `npm run test:coverage` as its own step before `npm run build` — a failing test or a coverage drop below 80% blocks the deploy. The HTML coverage report is uploaded as a workflow artifact (`coverage-report`) on every run, pass or fail, for inspection.
+
+When adding a new component or page, add its test under the matching path in `test/` (e.g. a new `src/components/Foo.tsx` gets `test/components/Foo.test.tsx`) so the mirror stays accurate and coverage keeps tracking the right files.
 
 ---
+
+## Developer Action Items
+
+Open TODOs left in the codebase that need either real business input (pricing, hours, certifications) or follow-up engineering work before launch. Search `TODO` across the repo to find the exact comment for each.
+
+| Item | Where | Needs |
+|---|---|---|
+| **Pricing / budget ranges** | `src/components/PricingPageClient.tsx` (price display) + `src/components/ContactForm.tsx` line ~236 (budget select options, currently hardcoded in USD) | Real per-m²/per-project prices and currency (USD vs VND) from the client |
+| **Business hours** | `src/messages/*.json` → `contact.sidebar.directContact.hours` (currently a TODO placeholder, and unused — `src/app/[locale]/contact/page.tsx` hardcodes hours inline instead). Wire the page to read from messages once real hours are set, or remove the unused key | Confirmed hours from the client |
+| **Certifications** | `src/components/Footer.tsx` — TODO comment for FSC/ISO/JAS badges | Certification logos/links, if applicable |
+| **Real testimonials / stats** | `src/app/[locale]/page.tsx` trust section + `home.trust.testimonialNote` in `src/messages/*.json` | Client quotes or verified project/stat numbers |
+| **Formspree endpoint** | `src/components/ContactForm.tsx` — already pointed at a live Formspree form ID | Confirm it's the client's account, not a placeholder, before launch |
+| **Sitemap / OG images** | `public/sitemap.xml`, `public/assets/og/og-default.png` | Already correct/automated (`scripts/generate-og.mjs` runs on `prebuild`) — no action needed unless the domain changes |
+
+---
+
+## Author
+
+Built by **Jaime Canicula** (jaime.canicula@gmail.com), based in the Philippines, for a client in Vietnam.
 
 ## Contact
 
