@@ -29,6 +29,6 @@ describe('SITE_URL', () => {
     delete process.env.NEXT_PUBLIC_SITE_URL;
     delete process.env.VERCEL_URL;
     const { SITE_URL } = await import('@/lib/siteUrl');
-    expect(SITE_URL).toBe('https://tnpgr.vn');
+    expect(SITE_URL).toBe('https://flow-canicula.github.io/tnp');
   });
 });

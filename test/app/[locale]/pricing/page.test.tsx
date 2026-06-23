@@ -12,8 +12,8 @@ describe('Pricing page metadata', () => {
 
   it('builds canonical + alternate URLs scoped to /pricing/', async () => {
     const meta = await generateMetadata({ params: Promise.resolve({ locale: 'vi' }) });
-    expect(meta.alternates?.canonical).toBe('https://tnpgr.vn/vi/pricing/');
-    expect(meta.alternates?.languages?.en).toBe('https://tnpgr.vn/en/pricing/');
+    expect(meta.alternates?.canonical).toBe('https://flow-canicula.github.io/tnp/vi/pricing/');
+    expect(meta.alternates?.languages?.en).toBe('https://flow-canicula.github.io/tnp/en/pricing/');
     expect(meta.title).toBe(vi.meta.pricing.title);
   });
 });
@@ -41,6 +41,6 @@ describe('PricingPage', () => {
     );
     const script = container.querySelector('script[type="application/ld+json"]');
     const [, , breadcrumb] = JSON.parse(script!.innerHTML);
-    expect(breadcrumb.itemListElement[1].item).toBe('https://tnpgr.vn/ja/pricing/');
+    expect(breadcrumb.itemListElement[1].item).toBe('https://flow-canicula.github.io/tnp/ja/pricing/');
   });
 });
