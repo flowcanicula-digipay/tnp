@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const messages = (await import(`@/messages/${locale}.json`)).default;
   const p = messages.privacy;
   const siteUrl = SITE_URL;
-  const baseUrl = 'https://tnpgr.vn';
+  const baseUrl = 'https://flow-canicula.github.io/tnp';
   return {
     title: p.meta.title,
     description: p.meta.description,

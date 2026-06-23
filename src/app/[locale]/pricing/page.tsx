@@ -17,7 +17,7 @@ export async function generateMetadata({
   const messages = (await import(`@/messages/${locale}.json`)).default;
   const meta = messages.meta.pricing;
   const siteUrl = SITE_URL;
-  const baseUrl = 'https://tnpgr.vn';
+  const baseUrl = 'https://flow-canicula.github.io/tnp';
   const ogLocale = locale === 'vi' ? 'vi_VN' : locale === 'ja' ? 'ja_JP' : 'en_US';
 
   return {
@@ -94,8 +94,8 @@ export default async function PricingPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TNP', item: `https://tnpgr.vn/${locale}/` },
-      { '@type': 'ListItem', position: 2, name: 'Pricing', item: `https://tnpgr.vn/${locale}/pricing/` },
+      { '@type': 'ListItem', position: 1, name: 'TNP', item: `https://flow-canicula.github.io/tnp/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: 'Pricing', item: `https://flow-canicula.github.io/tnp/${locale}/pricing/` },
     ],
   };
 

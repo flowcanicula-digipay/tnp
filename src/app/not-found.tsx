@@ -195,7 +195,7 @@ export default function NotFound() {
       >
         <div className="w-12 h-px bg-[rgba(200,150,90,0.25)]" />
         <span className="text-[#4a4a44] text-[10px] tracking-[0.35em] uppercase font-medium">
-          tnpgr.vn · supplying solid wood flooring &amp; timber furniture
+          flow-canicula.github.io/tnp · supplying solid wood flooring &amp; timber furniture
         </span>
         <div className="w-12 h-px bg-[rgba(200,150,90,0.25)]" />
       </div>

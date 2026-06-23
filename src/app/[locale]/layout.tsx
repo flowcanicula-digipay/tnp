@@ -31,10 +31,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://tnpgr.vn/#organization',
+    '@id': 'https://flow-canicula.github.io/tnp/#organization',
     name: 'TNP',
-    url: 'https://tnpgr.vn',
-    logo: 'https://tnpgr.vn/assets/logo/tnp_logo_primary.png',
+    url: 'https://flow-canicula.github.io/tnp',
+    logo: 'https://flow-canicula.github.io/tnp/assets/logo/tnp_logo_primary.png',
     description: 'Premium solid wood flooring and custom timber furniture manufacturer. Japanese material standards, Vietnamese craftsmanship. Factory-direct from Biên Hòa, Vietnam.',
     telephone: '+84903333729',
     email: 'thuy@tnpgr.vn',
@@ -58,11 +58,11 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://tnpgr.vn/#website',
-    url: 'https://tnpgr.vn',
+    '@id': 'https://flow-canicula.github.io/tnp/#website',
+    url: 'https://flow-canicula.github.io/tnp',
     name: 'TNP',
     description: 'Supplying solid wood flooring and timber furniture.',
-    publisher: { '@id': 'https://tnpgr.vn/#organization' },
+    publisher: { '@id': 'https://flow-canicula.github.io/tnp/#organization' },
     inLanguage: ['en', 'vi', 'ja'],
   };
 
@@ -71,7 +71,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     '@type': 'FurnitureStore',
     name: 'TNP',
     description: 'Supplying solid wood flooring and timber furniture. Japanese material standards, Vietnamese manufacturing excellence.',
-    url: 'https://tnpgr.vn',
+    url: 'https://flow-canicula.github.io/tnp',
     telephone: '+84903333729',
     email: 'thuy@tnpgr.vn',
     address: {

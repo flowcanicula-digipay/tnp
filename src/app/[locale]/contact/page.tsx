@@ -19,7 +19,7 @@ export async function generateMetadata({
   const msgs = (await import(`@/messages/${locale}.json`)).default;
   const meta = msgs.meta.contact;
   const siteUrl = SITE_URL;
-  const baseUrl = 'https://tnpgr.vn';
+  const baseUrl = 'https://flow-canicula.github.io/tnp';
   const ogLocale = locale === 'vi' ? 'vi_VN' : locale === 'ja' ? 'ja_JP' : 'en_US';
 
   return {
@@ -74,8 +74,8 @@ export default async function ContactPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TNP', item: `https://tnpgr.vn/${locale}/` },
-      { '@type': 'ListItem', position: 2, name: 'Contact', item: `https://tnpgr.vn/${locale}/contact/` },
+      { '@type': 'ListItem', position: 1, name: 'TNP', item: `https://flow-canicula.github.io/tnp/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: `https://flow-canicula.github.io/tnp/${locale}/contact/` },
     ],
   };
 
@@ -84,7 +84,7 @@ export default async function ContactPage({
     '@type': 'ContactPage',
     name: 'Contact TNP',
     description: 'Request a free quote for solid wood flooring or custom timber furniture from TNP.',
-    url: `https://tnpgr.vn/${locale}/contact/`,
+    url: `https://flow-canicula.github.io/tnp/${locale}/contact/`,
     mainEntity: {
       '@type': 'LocalBusiness',
       name: 'TNP',

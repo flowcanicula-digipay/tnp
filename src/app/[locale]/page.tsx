@@ -23,7 +23,7 @@ export async function generateMetadata({
   const msgs = (await import(`@/messages/${locale}.json`)).default;
   const meta = msgs.meta.home;
   const siteUrl = SITE_URL;
-  const baseUrl = 'https://tnpgr.vn';
+  const baseUrl = 'https://flow-canicula.github.io/tnp';
   const ogLocale = locale === 'vi' ? 'vi_VN' : locale === 'ja' ? 'ja_JP' : 'en_US';
 
   return {
@@ -87,7 +87,7 @@ export default async function HomePage({
         name: 'Solid Wood Flooring',
         serviceType: 'Flooring Manufacturing and Installation',
         description: 'Premium solid wood flooring in Keyaki (Japanese zelkova), Hinoki (Japanese cypress), oak, walnut, ash and select hardwoods. Kiln-dried, precision-milled, and finished in-house at our Biên Hòa factory. Professional installation for domestic clients; export-packaged for Japan and international markets.',
-        provider: { '@type': 'Organization', name: 'TNP', url: 'https://tnpgr.vn' },
+        provider: { '@type': 'Organization', name: 'TNP', url: 'https://flow-canicula.github.io/tnp' },
         areaServed: ['VN', 'JP'],
         keywords: 'solid wood flooring, Hinoki flooring, Keyaki flooring, hardwood floor Vietnam',
       },
@@ -97,7 +97,7 @@ export default async function HomePage({
         name: 'Custom Timber Furniture',
         serviceType: 'Bespoke Furniture Manufacturing',
         description: 'One-of-a-kind furniture designed and manufactured to specification. Keyaki for its exceptional hardness and rich luster; Hinoki for its natural fragrance. Dining tables, shelving, cabinetry, desks, bedroom sets. Consultation, design, in-house manufacturing, delivery and installation all included.',
-        provider: { '@type': 'Organization', name: 'TNP', url: 'https://tnpgr.vn' },
+        provider: { '@type': 'Organization', name: 'TNP', url: 'https://flow-canicula.github.io/tnp' },
         areaServed: ['VN', 'JP'],
         keywords: 'custom timber furniture, Keyaki furniture, Hinoki furniture, bespoke hardwood furniture Vietnam',
       },
@@ -107,7 +107,7 @@ export default async function HomePage({
         name: 'Delivery & Professional Installation',
         serviceType: 'Logistics and On-Site Installation',
         description: 'Scheduled and protected delivery across Vietnam and internationally to Japan and beyond. Professional on-site flooring and furniture installation for domestic clients. Export documentation, containerization, and installation guides for international orders.',
-        provider: { '@type': 'Organization', name: 'TNP', url: 'https://tnpgr.vn' },
+        provider: { '@type': 'Organization', name: 'TNP', url: 'https://flow-canicula.github.io/tnp' },
         areaServed: ['VN', 'JP'],
       },
     ],

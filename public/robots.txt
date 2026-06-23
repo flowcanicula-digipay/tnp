@@ -24,4 +24,4 @@ Allow: /
 Disallow: /_next/
 Disallow: /api/
 
-Sitemap: https://tnpgr.vn/sitemap.xml
+Sitemap: https://flow-canicula.github.io/tnp/sitemap.xml
