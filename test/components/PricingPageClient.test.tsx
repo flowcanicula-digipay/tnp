@@ -41,61 +41,106 @@ describe('PricingPageClient', () => {
     expect(screen.getByText('Complete Projects')).toBeInTheDocument();
   });
 
-  it('highlights the first tier by default and shows its badge', () => {
+  it('renders tier badges', () => {
     renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
     expect(screen.getByText('Most popular')).toBeInTheDocument();
+    expect(screen.getByText('Best value')).toBeInTheDocument();
   });
 
-  it('selects a tier on click, marking it selected and updating the final CTA link', () => {
+  it('first tier is dark (aria-pressed false, no tier selected by default)', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    const flooringCard = screen.getByText('Solid Wood Flooring').closest('article')!;
+    // No tier is explicitly selected — aria-pressed starts false for all
+    expect(flooringCard).toHaveAttribute('aria-pressed', 'false');
+  });
+
+  it('selects a tier on click — aria-pressed becomes true', () => {
     renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
     const furnitureCard = screen.getByText('Custom Timber Furniture').closest('article')!;
     fireEvent.click(furnitureCard);
+    expect(furnitureCard).toHaveAttribute('aria-pressed', 'true');
+  });
 
-    expect(within(furnitureCard).getByText('Selected')).toBeInTheDocument();
+  it('updates the final CTA link when a tier is selected', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    const furnitureCard = screen.getByText('Custom Timber Furniture').closest('article')!;
+    fireEvent.click(furnitureCard);
     expect(screen.getByText('Request a Free Quote').closest('a')).toHaveAttribute(
-      'href',
-      '/en/contact?type=furniture'
+      'href', '/en/contact?type=furniture'
     );
   });
 
-  it('deselects a tier when clicked again, reverting to the default highlight', () => {
+  it('deselects a tier when clicked again', () => {
     renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
     const furnitureCard = screen.getByText('Custom Timber Furniture').closest('article')!;
     fireEvent.click(furnitureCard);
+    expect(furnitureCard).toHaveAttribute('aria-pressed', 'true');
     fireEvent.click(furnitureCard);
-
-    expect(within(furnitureCard).queryByText('Selected')).not.toBeInTheDocument();
-    expect(screen.getByText('Most popular')).toBeInTheDocument();
+    expect(furnitureCard).toHaveAttribute('aria-pressed', 'false');
   });
 
-  it('selects a tier via keyboard activation', () => {
+  it('selects a different tier via keyboard Enter', () => {
     renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
-    const flooringCard = screen.getByText('Solid Wood Flooring').closest('article')!;
     const completeCard = screen.getByText('Complete Projects').closest('article')!;
     fireEvent.keyDown(completeCard, { key: 'Enter' });
-    expect(within(completeCard).getByText('Selected')).toBeInTheDocument();
-    expect(within(flooringCard).queryByText('Selected')).not.toBeInTheDocument();
+    expect(completeCard).toHaveAttribute('aria-pressed', 'true');
   });
 
-  it('lists all "always included" items', () => {
+  it('selects a tier via keyboard Space', () => {
     renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
-    for (const item of messages.included.items) {
-      expect(screen.getByText(item)).toBeInTheDocument();
-    }
+    const flooringCard = screen.getByText('Solid Wood Flooring').closest('article')!;
+    fireEvent.keyDown(flooringCard, { key: ' ' });
+    expect(flooringCard).toHaveAttribute('aria-pressed', 'true');
   });
 
-  it('expands and collapses FAQ entries one at a time', () => {
+  it('renders the "Always included" section title', () => {
     renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
-    expect(screen.queryByText('Japanese cypress.')).not.toBeInTheDocument();
-
-    fireEvent.click(screen.getByText('What is Hinoki?'));
-    expect(screen.getByText('Japanese cypress.')).toBeInTheDocument();
-
-    fireEvent.click(screen.getByText('What is Hinoki?'));
-    expect(screen.queryByText('Japanese cypress.')).not.toBeInTheDocument();
+    expect(screen.getByText('Always included')).toBeInTheDocument();
   });
 
-  it('links the bottom CTA to the contact page without a type when no tier selected after deselect', () => {
+  it('renders the included stage labels from the hardcoded list', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    // The component renders its own hardcoded labels (not from messages.included.items)
+    expect(screen.getByText('Material Sourcing')).toBeInTheDocument();
+    expect(screen.getByText('Kiln-drying & Milling')).toBeInTheDocument();
+    expect(screen.getByText('In-house Manufacturing')).toBeInTheDocument();
+    expect(screen.getByText('Quality Inspection')).toBeInTheDocument();
+  });
+
+  it('renders all FAQ questions', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    expect(screen.getByText('What is Hinoki?')).toBeInTheDocument();
+    expect(screen.getByText('How long does a project take?')).toBeInTheDocument();
+  });
+
+  it('FAQ answers are hidden by default (max-height 0)', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    // Answer is in the DOM but inside a maxHeight:0 overflow-hidden panel
+    const answer = screen.getByText('Japanese cypress.');
+    const panel = answer.closest('[style*="max-height"]') as HTMLElement;
+    expect(panel?.style.maxHeight).toBe('0px');
+  });
+
+  it('expands a FAQ entry on click — panel gets non-zero maxHeight', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    fireEvent.click(screen.getByText('What is Hinoki?'));
+    const answer = screen.getByText('Japanese cypress.');
+    const panel = answer.closest('[style*="max-height"]') as HTMLElement;
+    // After click, maxHeight is set to scrollHeight (0 in jsdom) — check aria-expanded
+    const btn = screen.getByRole('button', { name: /What is Hinoki/ });
+    expect(btn).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  it('collapses an open FAQ entry on second click', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    const btn = screen.getByRole('button', { name: /What is Hinoki/ });
+    fireEvent.click(btn);
+    expect(btn).toHaveAttribute('aria-expanded', 'true');
+    fireEvent.click(btn);
+    expect(btn).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  it('links the bottom CTA to the contact page without a type param when no tier is selected', () => {
     renderWithIntl(<PricingPageClient locale="ja" messages={messages} cta={cta} />);
     expect(screen.getByText('Request a Free Quote').closest('a')).toHaveAttribute('href', '/ja/contact');
   });

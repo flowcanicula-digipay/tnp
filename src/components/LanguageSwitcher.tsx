@@ -2,12 +2,12 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import { useTransition, useRef, useState, useEffect } from 'react';
-import { Globe, ChevronDown } from 'lucide-react';
+import { Globe } from 'lucide-react';
 
 const LOCALES = [
-  { code: 'en', label: 'English' },
-  { code: 'vi', label: 'Tiếng Việt' },
-  { code: 'ja', label: '日本語' },
+  { code: 'en', label: 'English',     short: 'EN' },
+  { code: 'vi', label: 'Tiếng Việt',  short: 'VI' },
+  { code: 'ja', label: '日本語',       short: 'JA' },
 ] as const;
 
 type LocaleCode = (typeof LOCALES)[number]['code'];
@@ -50,44 +50,71 @@ export default function LanguageSwitcher({ label, align = 'right' }: Props) {
 
   return (
     <div ref={ref} className="relative">
+      {/* Trigger */}
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label={label}
         aria-expanded={open}
         aria-haspopup="listbox"
         disabled={isPending}
-        className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium text-forest-800 hover:bg-cream-100 transition-colors duration-200 cursor-pointer disabled:opacity-50"
+        className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-forest-800 hover:text-timber-500 transition-colors duration-200 cursor-pointer disabled:opacity-40 select-none"
       >
-        <Globe className="w-4 h-4 text-timber-500" aria-hidden="true" />
-        <span className="hidden sm:inline">{current?.label}</span>
-        <ChevronDown
-          className={`w-3.5 h-3.5 text-stone-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+        <Globe className="w-4 h-4 text-timber-500 shrink-0" aria-hidden="true" />
+        <span className="hidden sm:inline text-[13px] font-semibold tracking-wide">{current?.short}</span>
+        {/* Thin chevron drawn with CSS — no icon component */}
+        <svg
+          width="10" height="6" viewBox="0 0 10 6" fill="none"
           aria-hidden="true"
-        />
+          className={`text-stone-400 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
+        >
+          <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
       </button>
 
-      {open && (
-        <ul
-          role="listbox"
-          aria-label={label}
-          className={`absolute top-full mt-1 w-40 bg-white rounded-xl shadow-lg border border-cream-200 py-1 z-50 ${align === 'left' ? 'left-0' : 'right-0'}`}
-        >
-          {LOCALES.map(({ code, label: localeLabel }) => (
-            <li key={code} role="option" aria-selected={code === locale}>
+      {/* Dropdown panel */}
+      <div
+        role="listbox"
+        aria-label={label}
+        className={`
+          absolute top-full mt-2 w-44 z-50
+          bg-white/95 backdrop-blur-md
+          rounded-xl overflow-hidden
+          shadow-[0_8px_32px_rgba(15,14,12,0.12),0_2px_8px_rgba(15,14,12,0.06)]
+          border border-cream-200/60
+          transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]
+          origin-top
+          ${open ? 'opacity-100 scale-y-100 translate-y-0 pointer-events-auto' : 'opacity-0 scale-y-95 -translate-y-1 pointer-events-none'}
+          ${align === 'left' ? 'left-0' : 'right-0'}
+        `}
+      >
+        {LOCALES.map(({ code, label: localeLabel, short }, i) => {
+          const isActive = code === locale;
+          return (
+            <div key={code}>
+              {i > 0 && <div className="mx-4 h-px bg-cream-200/80" />}
               <button
+                role="option"
+                aria-selected={isActive}
                 onClick={() => switchLocale(code)}
-                className={`w-full text-left px-4 py-2.5 text-sm transition-colors duration-150 cursor-pointer ${
-                  code === locale
-                    ? 'text-timber-500 font-semibold bg-cream-50'
-                    : 'text-forest-800 hover:bg-cream-50'
-                }`}
+                className={`
+                  w-full flex items-center justify-between gap-3
+                  px-4 py-3 text-left cursor-pointer
+                  transition-colors duration-150
+                  ${isActive
+                    ? 'text-timber-600 bg-cream-50'
+                    : 'text-forest-800 hover:bg-cream-50 hover:text-timber-500'
+                  }
+                `}
               >
-                {localeLabel}
+                <span className="text-[13px] font-medium">{localeLabel}</span>
+                {isActive && (
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-timber-500/60">{short}</span>
+                )}
               </button>
-            </li>
-          ))}
-        </ul>
-      )}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

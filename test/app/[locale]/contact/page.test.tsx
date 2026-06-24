@@ -20,7 +20,8 @@ describe('ContactPage', () => {
   it('renders the hero, contact form, and sidebar for the given locale', async () => {
     await renderServerPage(ContactPage({ params: Promise.resolve({ locale: 'en' }) }));
 
-    expect(screen.getByText(en.contact.hero.title)).toBeInTheDocument();
+    // Title appears in both hero and the statement wipe-in — use getAllByText
+    expect(screen.getAllByText(en.contact.hero.title).length).toBeGreaterThanOrEqual(1);
     expect(screen.getByRole('form', { name: en.contact.form.title })).toBeInTheDocument();
     expect(screen.getByText('+84 90 333 37 29')).toBeInTheDocument();
   });
