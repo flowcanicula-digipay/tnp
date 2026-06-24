@@ -150,7 +150,7 @@ interface FooterProps {
         brand: { tagline: string; social: string };
         quickLinks: {
           title: string; home: string; about: string; process: string;
-          pricing: string; contact: string; privacy: string;
+          portfolio: string; pricing: string; contact: string; privacy: string;
         };
         contact: { title: string; address: string };
         markets: { title: string; text: string };
@@ -337,12 +337,13 @@ export default function Footer({ locale, messages }: FooterProps) {
             </h3>
             <ul className="flex flex-col gap-2.5">
               {[
-                { href: `/${locale}`,          label: f.quickLinks.home    },
-                { href: `/${locale}#about`,     label: f.quickLinks.about   },
-                { href: `/${locale}#process`,   label: f.quickLinks.process },
-                { href: `/${locale}/pricing`,   label: f.quickLinks.pricing },
-                { href: `/${locale}/contact`,   label: f.quickLinks.contact },
-                { href: `/${locale}/privacy`,   label: f.quickLinks.privacy },
+                { href: `/${locale}`,           label: f.quickLinks.home      },
+                { href: `/${locale}#about`,      label: f.quickLinks.about     },
+                { href: `/${locale}#process`,    label: f.quickLinks.process   },
+                { href: `/${locale}/portfolio`,  label: f.quickLinks.portfolio },
+                { href: `/${locale}/pricing`,    label: f.quickLinks.pricing   },
+                { href: `/${locale}/contact`,    label: f.quickLinks.contact   },
+                { href: `/${locale}/privacy`,    label: f.quickLinks.privacy   },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <Link href={href} className="text-stone-600 hover:text-timber-400 text-sm transition-colors duration-200">
@@ -411,7 +412,7 @@ export default function Footer({ locale, messages }: FooterProps) {
             {f.quickLinks.privacy}
           </Link>
         </div>
-        <LanguageSwitcher label={messages.common.languageSwitcher.label} />
+        <LanguageSwitcher label={messages.common.languageSwitcher.label} align="left" openUpward />
       </div>
 
     </footer>

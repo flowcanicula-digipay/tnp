@@ -20,9 +20,11 @@ function getCurrentLocale(pathname: string): LocaleCode {
 interface Props {
   label: string;
   align?: 'left' | 'right';
+  /** Opens the panel above the trigger instead of below — use for footer placements. */
+  openUpward?: boolean;
 }
 
-export default function LanguageSwitcher({ label, align = 'right' }: Props) {
+export default function LanguageSwitcher({ label, align = 'right', openUpward = false }: Props) {
   const pathname = usePathname();
   const router = useRouter();
   const locale = getCurrentLocale(pathname);
@@ -76,14 +78,17 @@ export default function LanguageSwitcher({ label, align = 'right' }: Props) {
         role="listbox"
         aria-label={label}
         className={`
-          absolute top-full mt-2 w-44 z-50
+          absolute w-44 z-50
+          ${openUpward ? 'bottom-full mb-2 origin-bottom' : 'top-full mt-2 origin-top'}
           bg-white/95 backdrop-blur-md
           rounded-xl overflow-hidden
           shadow-[0_8px_32px_rgba(15,14,12,0.12),0_2px_8px_rgba(15,14,12,0.06)]
           border border-cream-200/60
           transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]
-          origin-top
-          ${open ? 'opacity-100 scale-y-100 translate-y-0 pointer-events-auto' : 'opacity-0 scale-y-95 -translate-y-1 pointer-events-none'}
+          ${open
+            ? 'opacity-100 scale-y-100 translate-y-0 pointer-events-auto'
+            : `opacity-0 scale-y-95 pointer-events-none ${openUpward ? 'translate-y-1' : '-translate-y-1'}`
+          }
           ${align === 'left' ? 'left-0' : 'right-0'}
         `}
       >

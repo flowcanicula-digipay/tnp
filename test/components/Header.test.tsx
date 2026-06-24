@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import { renderWithIntl } from '../renderWithIntl';
 
 const messages = {
-  nav: { home: 'Home', pricing: 'Pricing', contact: 'Contact', getQuote: 'Get a Quote' },
+  nav: { home: 'Home', portfolio: 'Portfolio', pricing: 'Pricing', contact: 'Contact', getQuote: 'Get a Quote' },
   languageSwitcher: { label: 'Language' },
 };
 

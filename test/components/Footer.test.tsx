@@ -11,7 +11,7 @@ const messages = {
       brand: { tagline: 'Supplying solid wood flooring and timber furniture.', social: 'Follow us' },
       quickLinks: {
         title: 'Quick links', home: 'Home', about: 'About', process: 'Process',
-        pricing: 'Pricing', contact: 'Contact', privacy: 'Privacy',
+        portfolio: 'Portfolio', pricing: 'Pricing', contact: 'Contact', privacy: 'Privacy',
       },
       contact: { title: 'Contact', address: 'Lô 35 đường số 9, Biên Hòa' },
       markets: { title: 'Markets served', text: 'Vietnam, Japan, and worldwide.' },

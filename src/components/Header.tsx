@@ -18,7 +18,7 @@ function useLocaleFromPath(): string {
 }
 
 interface HeaderMessages {
-  nav: { home: string; pricing: string; contact: string; getQuote: string };
+  nav: { home: string; portfolio: string; pricing: string; contact: string; getQuote: string };
   languageSwitcher: { label: string };
 }
 
@@ -33,6 +33,7 @@ export default function Header({ messages }: HeaderProps) {
 
   const navLinks = [
     { href: `/${locale}`, label: nav.home },
+    { href: `/${locale}/portfolio`, label: nav.portfolio },
     { href: `/${locale}/pricing`, label: nav.pricing },
     { href: `/${locale}/contact`, label: nav.contact },
   ];

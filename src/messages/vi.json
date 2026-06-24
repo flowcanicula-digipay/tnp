@@ -10,6 +10,11 @@
       "description": "Bảng giá minh bạch cho sàn gỗ Hinoki, Keyaki và gỗ cứng cao cấp, nội thất gỗ đặt riêng và dự án trọn gói. Trực tiếp từ xưởng sản xuất Biên Hòa — không qua trung gian, không phí ẩn.",
       "keywords": "giá sàn gỗ tự nhiên, bảng giá sàn gỗ Hinoki, giá nội thất gỗ đặt riêng, báo giá sàn gỗ tự nhiên Biên Hòa, giá sàn gỗ tự nhiên Việt Nam, giá nội thất gỗ cao cấp, giá sàn gỗ Keyaki"
     },
+    "portfolio": {
+      "title": "Dự Án — Công Trình Sàn Gỗ & Nội Thất Gỗ Thực Tế | TNP Việt Nam",
+      "description": "Bộ sưu tập các dự án sàn gỗ tự nhiên và nội thất gỗ của TNP trên toàn Việt Nam và thị trường xuất khẩu — địa chỉ thực, tay nghề trực tiếp từ xưởng, kể thật.",
+      "keywords": "dự án sàn gỗ tự nhiên Việt Nam, công trình nội thất gỗ, dự án sàn gỗ Hinoki, bộ sưu tập nội thất gỗ Keyaki, sàn gỗ TP.HCM, nội thất gỗ đặt riêng dự án thực tế"
+    },
     "contact": {
       "title": "Nhận Báo Giá Miễn Phí — Sàn Gỗ & Nội Thất Gỗ Tự Nhiên | TNP Việt Nam",
       "description": "Liên hệ TNP — nhà sản xuất sàn gỗ tự nhiên và nội thất gỗ cao cấp tại Biên Hòa. Phản hồi báo giá trong vòng 48 giờ. Phục vụ khách hàng Việt Nam, Nhật Bản và quốc tế.",
@@ -25,6 +30,7 @@
   "common": {
     "nav": {
       "home": "Trang chủ",
+      "portfolio": "Dự án",
       "pricing": "Bảng giá",
       "contact": "Liên hệ",
       "getQuote": "Nhận báo giá"
@@ -45,6 +51,7 @@
         "home": "Trang chủ",
         "about": "Giới thiệu",
         "process": "Quy trình",
+        "portfolio": "Dự án",
         "pricing": "Bảng giá",
         "contact": "Liên hệ",
         "privacy": "Chính sách bảo mật"
@@ -85,31 +92,39 @@
       "description": "Chính sách bảo mật của TNP — cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn."
     },
     "title": "Chính Sách Bảo Mật",
+    "titleAccent": "Không trung gian. Không theo dõi.",
+    "heroSubtitle": "Chúng tôi làm sàn gỗ và nội thất, không xây hồ sơ người dùng. Đây chính xác là những gì chúng tôi thu thập, vì sao, và cách để bạn yêu cầu xóa.",
     "lastUpdated": "Cập nhật lần cuối: Tháng 6 năm 2026",
     "intro": "TNP (Lô 35 đường số 9, Khu Công Nghiệp Tam Phước, Biên Hòa, Việt Nam) cam kết bảo vệ thông tin cá nhân của bạn. Chính sách này giải thích dữ liệu chúng tôi thu thập, cách sử dụng và quyền của bạn.",
     "sections": {
       "collect": {
         "title": "Dữ liệu chúng tôi thu thập",
+        "claim": "Một biểu mẫu. Vài trường thông tin. Không gì bị theo dõi ngầm.",
         "body": "Khi bạn gửi biểu mẫu liên hệ, chúng tôi thu thập họ tên, địa chỉ email, số điện thoại (tùy chọn) và thông tin dự án. Thông tin này chỉ được dùng để phản hồi yêu cầu và cung cấp báo giá. Chúng tôi không thu thập dữ liệu tự động qua cookie ngoài một cookie chức năng duy nhất."
       },
       "use": {
         "title": "Cách chúng tôi sử dụng dữ liệu",
+        "claim": "Thông tin của bạn đổi lấy một báo giá — không phải một danh sách quảng cáo.",
         "body": "Thông tin liên hệ của bạn được dùng để: phản hồi yêu cầu dự án, chuẩn bị và gửi báo giá, và theo dõi nếu bạn chưa nhận được phản hồi. Chúng tôi không sử dụng dữ liệu của bạn để marketing không mong muốn. Chúng tôi không bán, cho thuê hoặc chia sẻ dữ liệu của bạn với bên thứ ba, trừ khi pháp luật yêu cầu."
       },
       "storage": {
         "title": "Lưu trữ dữ liệu",
+        "claim": "Chúng tôi chỉ giữ những gì cần, chỉ trong thời gian cần thiết.",
         "body": "Biểu mẫu liên hệ được xử lý qua Formspree (formspree.io), dịch vụ biểu mẫu của bên thứ ba. Chính sách bảo mật của Formspree áp dụng cho dữ liệu xử lý qua nền tảng của họ. Chúng tôi lưu giữ thông tin yêu cầu của bạn trong thời gian cần thiết để đáp ứng yêu cầu hoặc theo quy định pháp luật."
       },
       "cookies": {
         "title": "Cookie",
+        "claim": "Không theo dõi. Không pixel quảng cáo. Không script phân tích — chấm hết.",
         "body": "Trang web này chỉ sử dụng một cookie chức năng để ghi nhớ lựa chọn chấp nhận của bạn. Không có cookie theo dõi, pixel quảng cáo hay script phân tích nào được sử dụng. Chúng tôi không dùng Google Analytics hay bất kỳ dịch vụ theo dõi của bên thứ ba nào."
       },
       "rights": {
         "title": "Quyền của bạn",
+        "claim": "Yêu cầu chúng tôi xóa dữ liệu của bạn, và chúng tôi sẽ làm — trong vòng 30 ngày.",
         "body": "Bạn có quyền truy cập, chỉnh sửa hoặc yêu cầu xóa dữ liệu cá nhân của mình. Để thực hiện các quyền này, hãy liên hệ thuy@tnpgr.vn. Chúng tôi sẽ phản hồi trong vòng 30 ngày."
       },
       "contact": {
         "title": "Liên hệ",
+        "claim": "Một nhà xưởng thật, một địa chỉ thật, một con người thật sẽ trả lời.",
         "body": "Với các câu hỏi về bảo mật, liên hệ TNP tại thuy@tnpgr.vn hoặc +84 90 333 37 29. Địa chỉ: Lô 35 đường số 9, Khu Công Nghiệp Tam Phước, Biên Hòa, Việt Nam."
       }
     },
@@ -385,6 +400,70 @@
       },
       "privacyNote": "Thông tin của bạn chỉ được dùng để trao đổi về dự án.",
       "photoAlt": "Sàn gỗ tự nhiên do TNP lắp đặt, không gian đã hoàn thiện"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "eyebrow": "TNP · Dự án",
+      "title": "Công trình thật,",
+      "titleAccent": "không phải lời quảng cáo.",
+      "subtitle": "Bộ sưu tập sàn gỗ tự nhiên và nội thất gỗ mà chúng tôi đã sản xuất, vận chuyển và lắp đặt — dự án thật, địa chỉ thật, kể đúng như nó là.",
+      "ctaPrimary": "Bắt đầu dự án",
+      "ctaSecondary": "Xem dịch vụ của chúng tôi",
+      "imageAlt": "Một dự án TNP đã hoàn thiện — sàn gỗ tự nhiên và nội thất gỗ lắp đặt trong nhà tại Việt Nam"
+    },
+    "philosophy": {
+      "eyebrow": "Đây Là Gì",
+      "line1": "Một bộ sưu tập dự án,",
+      "line2": "không phải video quảng cáo.",
+      "sub": "Không dựng cảnh, không mượn ảnh. Mỗi tấm sàn và mỗi món nội thất ở đây đều được xẻ tại xưởng của chúng tôi, chở bằng xe của chúng tôi, và lắp đặt bởi chính đội ngũ của chúng tôi."
+    },
+    "geo": {
+      "eyebrow": "Nơi Chúng Tôi Thi Công",
+      "title": "Gốc ở Biên Hòa. Vươn tới mọi tỉnh thành.",
+      "subtitle": "Từ xưởng sản xuất tại Đồng Nai, TNP vận chuyển sàn gỗ tự nhiên và nội thất gỗ đi khắp Việt Nam — và xuất khẩu sang Nhật Bản cùng các thị trường quốc tế khác.",
+      "locations": [
+        "Phú Mỹ Hưng",
+        "Thảo Điền",
+        "Vinhomes Central Park",
+        "Thủ Thiêm",
+        "An Phú",
+        "Quận 10",
+        "Vinhomes Golden River"
+      ],
+      "yourPlace": "Nhà bạn?",
+      "exportNote": "+ Xuất khẩu sang Nhật Bản & quốc tế"
+    },
+    "gallery": {
+      "eyebrow": "Dự Án Tiêu Biểu",
+      "title": "Sàn gỗ, nội thất, và những không gian gắn kết chúng.",
+      "subtitle": "Lọc theo nhu cầu của bạn — sàn gỗ, nội thất, hoặc dự án trọn gói.",
+      "filters": {
+        "all": "Tất cả",
+        "flooring": "Sàn gỗ",
+        "furniture": "Nội thất",
+        "complete": "Dự án trọn gói"
+      },
+      "viewProject": "Xem dự án",
+      "items": [
+        { "title": "Cầu Thang Gỗ Óc Chó & Đá Marble", "category": "flooring" },
+        { "title": "Tủ Bar Gỗ Sơn", "category": "furniture" },
+        { "title": "Tủ Tường Đa Năng", "category": "complete" },
+        { "title": "Cửa Gỗ Sơn Xanh Navy", "category": "complete" },
+        { "title": "Cầu Thang Gỗ Óc Chó & Đá Marble, Sảnh Cong", "category": "flooring" },
+        { "title": "Nội Thất Quầy Bar Gỗ", "category": "complete" },
+        { "title": "Tủ Quần Áo Đặt Riêng", "category": "furniture" },
+        { "title": "Cửa Đôi Hình Vòm", "category": "complete" },
+        { "title": "Bàn Làm Việc Gỗ Sồi Soi Chỉ", "category": "furniture" },
+        { "title": "Bồn Rửa Phòng Tắm, Xuất Khẩu Sang Nhật", "category": "furniture" },
+        { "title": "Cửa Vòm Cong, Đang Sản Xuất Tại Xưởng", "category": "complete" },
+        { "title": "Bệ Trưng Bày", "category": "furniture" }
+      ]
+    },
+    "closingCta": {
+      "title": "Thích những gì bạn thấy?",
+      "subtitle": "Kể cho chúng tôi về không gian của bạn và chúng tôi sẽ cho bạn thấy chúng tôi sẽ xây dựng nó như thế nào.",
+      "button": "Bắt đầu dự án"
     }
   }
 }

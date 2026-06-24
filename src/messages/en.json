@@ -10,6 +10,11 @@
       "description": "Transparent factory-direct pricing for Hinoki and hardwood flooring, custom timber furniture, and full-space room projects. No middlemen, no hidden fees. Free quote from our Biên Hòa factory.",
       "keywords": "solid wood flooring price Vietnam, hardwood flooring cost Vietnam, Hinoki flooring price per m2, custom furniture price Vietnam, wood flooring quote Vietnam, factory direct flooring price, Keyaki furniture price, timber furniture manufacturing Vietnam"
     },
+    "portfolio": {
+      "title": "Portfolio — Real Solid Wood Flooring & Timber Furniture Projects | TNP Vietnam",
+      "description": "A gallery of TNP's solid wood flooring and timber furniture projects across Vietnam and export markets — real addresses, factory-direct craftsmanship, told honestly.",
+      "keywords": "solid wood flooring portfolio Vietnam, timber furniture projects Vietnam, Hinoki flooring projects, Keyaki furniture gallery, wood flooring case studies Vietnam, custom furniture Ho Chi Minh City"
+    },
     "contact": {
       "title": "Get a Free Quote — Solid Wood Flooring & Timber Furniture | TNP Vietnam",
       "description": "Request a free quote from TNP — Vietnam's premium solid wood flooring and custom furniture manufacturer. We respond within 48 hours. Serving Vietnam, Japan, and international clients from our factory in Biên Hòa, Đồng Nai.",
@@ -25,6 +30,7 @@
   "common": {
     "nav": {
       "home": "Home",
+      "portfolio": "Portfolio",
       "pricing": "Pricing",
       "contact": "Contact",
       "getQuote": "Get a Quote"
@@ -45,6 +51,7 @@
         "home": "Home",
         "about": "About",
         "process": "How It Works",
+        "portfolio": "Portfolio",
         "pricing": "Pricing",
         "contact": "Contact",
         "privacy": "Privacy Policy"
@@ -85,31 +92,39 @@
       "description": "TNP Privacy Policy — how we collect, use, and protect your personal information."
     },
     "title": "Privacy Policy",
+    "titleAccent": "No middlemen. No surveillance.",
+    "heroSubtitle": "We build floors and furniture, not user profiles. Here is exactly what we collect, why, and how to make us delete it.",
     "lastUpdated": "Last updated: June 2026",
     "intro": "TNP (Lô 35 đường số 9, Khu Công Nghiệp Tam Phước, Biên Hòa, Vietnam) is committed to protecting your personal information. This policy explains what data we collect, how we use it, and your rights.",
     "sections": {
       "collect": {
         "title": "What we collect",
+        "claim": "One form. A handful of fields. Nothing tracked in the background.",
         "body": "When you submit our contact form, we collect your name, email address, phone number (optional), and project details. We use this information solely to respond to your enquiry and provide a quote. We do not collect data automatically through cookies beyond a single functional preference cookie."
       },
       "use": {
         "title": "How we use your data",
+        "claim": "Your details get you a quote — never a marketing list.",
         "body": "Your contact details are used to: respond to your project enquiry, prepare and send a quote, and follow up if you have not received a response. We do not use your data for unsolicited marketing. We do not sell, rent, or share your data with third parties except where required by law."
       },
       "storage": {
         "title": "Data storage",
+        "claim": "We keep only what we need, for only as long as we need it.",
         "body": "Contact form submissions are processed via Formspree (formspree.io), a third-party form service. Formspree's privacy policy governs data processed through their platform. We retain your enquiry details for as long as necessary to fulfil your request or as required by applicable law."
       },
       "cookies": {
         "title": "Cookies",
+        "claim": "No trackers. No ad pixels. No analytics scripts — period.",
         "body": "This website uses a single functional cookie to remember your privacy banner acceptance. No tracking cookies, advertising pixels, or analytics scripts are used. We do not use Google Analytics or any third-party tracking services."
       },
       "rights": {
         "title": "Your rights",
+        "claim": "Ask us to delete your data, and we will — within 30 days.",
         "body": "You have the right to access, correct, or request deletion of your personal data. To exercise these rights, contact us at thuy@tnpgr.vn. We will respond within 30 days."
       },
       "contact": {
         "title": "Contact us",
+        "claim": "A real factory, a real address, a real person who answers.",
         "body": "For privacy-related questions, reach TNP at thuy@tnpgr.vn or +84 90 333 37 29. Address: Lô 35 đường số 9, Khu Công Nghiệp Tam Phước, Biên Hòa, Vietnam."
       }
     },
@@ -385,6 +400,70 @@
       },
       "privacyNote": "Your details are used only to discuss your project.",
       "photoAlt": "TNP-installed solid wood flooring, finished room"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "eyebrow": "TNP · Portfolio",
+      "title": "The work,",
+      "titleAccent": "not the pitch.",
+      "subtitle": "A gallery of solid wood flooring and timber furniture we've built, delivered, and installed — real projects, real addresses, told honestly.",
+      "ctaPrimary": "Start Your Project",
+      "ctaSecondary": "See Our Services",
+      "imageAlt": "A finished TNP project — solid wood flooring and timber furniture installed in a Vietnamese home"
+    },
+    "philosophy": {
+      "eyebrow": "What This Is",
+      "line1": "A portfolio,",
+      "line2": "not a highlight reel.",
+      "sub": "No staged renders, no borrowed photos. Every floor and every piece here was milled in our factory, delivered on our trucks, and installed by our own crew."
+    },
+    "geo": {
+      "eyebrow": "Where We Build",
+      "title": "Rooted in Biên Hòa. Reaching every province.",
+      "subtitle": "From our factory floor in Đồng Nai, TNP ships solid wood flooring and timber furniture across Vietnam — and to Japan and international clients beyond.",
+      "locations": [
+        "Phú Mỹ Hưng",
+        "Thảo Điền",
+        "Vinhomes Central Park",
+        "Thủ Thiêm",
+        "An Phú",
+        "District 10",
+        "Vinhomes Golden River"
+      ],
+      "yourPlace": "Your place?",
+      "exportNote": "+ Export to Japan & beyond"
+    },
+    "gallery": {
+      "eyebrow": "Selected Work",
+      "title": "Flooring, furniture, and the spaces they share.",
+      "subtitle": "Filter by what you're planning — flooring, furniture, or a complete space.",
+      "filters": {
+        "all": "All",
+        "flooring": "Flooring",
+        "furniture": "Furniture",
+        "complete": "Complete Projects"
+      },
+      "viewProject": "View project",
+      "items": [
+        { "title": "Walnut & Marble Staircase", "category": "flooring" },
+        { "title": "Painted Timber Bar Cabinet", "category": "furniture" },
+        { "title": "Built-In Media Wall", "category": "complete" },
+        { "title": "Navy Lacquer Interior Door", "category": "complete" },
+        { "title": "Walnut & Marble Staircase, Curved Hall", "category": "flooring" },
+        { "title": "Timber Bar Interior Fit-Out", "category": "complete" },
+        { "title": "Custom Wardrobe", "category": "furniture" },
+        { "title": "Arched Double Door", "category": "complete" },
+        { "title": "Fluted Oak Built-In Desk", "category": "furniture" },
+        { "title": "Bathroom Vanity, Export to Japan", "category": "furniture" },
+        { "title": "Arched Door, In Production at Our Factory", "category": "complete" },
+        { "title": "Display Pedestal", "category": "furniture" }
+      ]
+    },
+    "closingCta": {
+      "title": "Like what you see?",
+      "subtitle": "Tell us about your space and we'll show you what we'd build.",
+      "button": "Start Your Project"
     }
   }
 }
