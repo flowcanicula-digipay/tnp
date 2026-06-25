@@ -3,8 +3,8 @@ import RootLayout, { metadata } from '@/app/layout';
 
 describe('RootLayout', () => {
   it('declares the site-wide metadata', () => {
-    expect(metadata.title).toBe('TNP');
-    expect(metadata.description).toBe('Supplying solid wood flooring and timber furniture.');
+    expect(metadata.title).toBe('TNP — Premium Solid Wood Flooring & Custom Timber Furniture | Biên Hòa, Vietnam');
+    expect(metadata.description).toBe('Factory-direct solid wood flooring and custom timber furniture. Keyaki, Hinoki, oak, walnut — manufactured to the highest Japanese standards in our own facility in Biên Hòa, Vietnam. Serving Vietnam, Japan, and international buyers.');
   });
 
   it('wraps children in an <html lang="en"> / <body> shell with favicon links', () => {
