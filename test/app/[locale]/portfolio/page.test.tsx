@@ -12,8 +12,8 @@ describe('Portfolio page metadata', () => {
 
   it('builds canonical + alternate URLs scoped to /portfolio/', async () => {
     const meta = await generateMetadata({ params: Promise.resolve({ locale: 'vi' }) });
-    expect(meta.alternates?.canonical).toBe('https://flow-canicula.github.io/tnp/vi/portfolio/');
-    expect(meta.alternates?.languages?.en).toBe('https://flow-canicula.github.io/tnp/en/portfolio/');
+    expect(meta.alternates?.canonical).toBe('https://tnp.skaldris.com/vi/portfolio/');
+    expect(meta.alternates?.languages?.en).toBe('https://tnp.skaldris.com/en/portfolio/');
     expect(meta.title).toBe(vi.meta.portfolio.title);
   });
 });
@@ -40,6 +40,6 @@ describe('PortfolioPage', () => {
     );
     const script = container.querySelector('script[type="application/ld+json"]');
     const [, breadcrumb] = JSON.parse(script!.innerHTML);
-    expect(breadcrumb.itemListElement[1].item).toBe('https://flow-canicula.github.io/tnp/vi/portfolio/');
+    expect(breadcrumb.itemListElement[1].item).toBe('https://tnp.skaldris.com/vi/portfolio/');
   });
 });

@@ -5,109 +5,145 @@
 >
   <!-- Home — English -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/en/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/en/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/"/>
   </url>
 
   <!-- Home — Vietnamese -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/vi/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/vi/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/"/>
   </url>
 
   <!-- Home — Japanese -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/ja/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/ja/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/"/>
   </url>
 
   <!-- Pricing — English -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/en/pricing/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/en/pricing/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/pricing/"/>
   </url>
 
   <!-- Pricing — Vietnamese -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/vi/pricing/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/vi/pricing/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/pricing/"/>
   </url>
 
   <!-- Pricing — Japanese -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/ja/pricing/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/ja/pricing/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/pricing/"/>
   </url>
 
   <!-- Contact — English -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/en/contact/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/en/contact/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/contact/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/contact/"/>
   </url>
 
   <!-- Contact — Vietnamese -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/vi/contact/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/vi/contact/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/contact/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/contact/"/>
   </url>
 
   <!-- Contact — Japanese -->
   <url>
-    <loc>https://flow-canicula.github.io/tnp/ja/contact/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://tnp.skaldris.com/ja/contact/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://flow-canicula.github.io/tnp/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://flow-canicula.github.io/tnp/vi/contact/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://flow-canicula.github.io/tnp/ja/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flow-canicula.github.io/tnp/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/contact/"/>
+  </url>
+
+  <!-- Portfolio — English -->
+  <url>
+    <loc>https://tnp.skaldris.com/en/portfolio/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/portfolio/"/>
+  </url>
+
+  <!-- Portfolio — Vietnamese -->
+  <url>
+    <loc>https://tnp.skaldris.com/vi/portfolio/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/portfolio/"/>
+  </url>
+
+  <!-- Portfolio — Japanese -->
+  <url>
+    <loc>https://tnp.skaldris.com/ja/portfolio/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tnp.skaldris.com/en/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tnp.skaldris.com/vi/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tnp.skaldris.com/ja/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tnp.skaldris.com/en/portfolio/"/>
   </url>
 </urlset>

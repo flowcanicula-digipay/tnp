@@ -11,7 +11,7 @@ describe('Contact page metadata', () => {
 
   it('builds canonical + geo metadata scoped to /contact/', async () => {
     const meta = await generateMetadata({ params: Promise.resolve({ locale: 'en' }) });
-    expect(meta.alternates?.canonical).toBe('https://flow-canicula.github.io/tnp/en/contact/');
+    expect(meta.alternates?.canonical).toBe('https://tnp.skaldris.com/en/contact/');
     expect(meta.other?.['geo.placename']).toBe('Biên Hòa, Đồng Nai, Vietnam');
   });
 });

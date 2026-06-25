@@ -16,8 +16,6 @@ export async function generateMetadata({
   const { locale } = await params;
   const msgs = (await import(`@/messages/${locale}.json`)).default;
   const meta = msgs.meta.contact;
-  const siteUrl = SITE_URL;
-  const baseUrl = 'https://flow-canicula.github.io/tnp';
   const ogLocale = locale === 'vi' ? 'vi_VN' : locale === 'ja' ? 'ja_JP' : 'en_US';
 
   return {
@@ -25,30 +23,30 @@ export async function generateMetadata({
     description: meta.description,
     keywords: meta.keywords,
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-    authors: [{ name: 'TNP', url: baseUrl }],
+    authors: [{ name: 'TNP', url: SITE_URL }],
     alternates: {
-      canonical: `${baseUrl}/${locale}/contact/`,
+      canonical: `${SITE_URL}/${locale}/contact/`,
       languages: {
-        en: `${baseUrl}/en/contact/`,
-        vi: `${baseUrl}/vi/contact/`,
-        ja: `${baseUrl}/ja/contact/`,
-        'x-default': `${baseUrl}/en/contact/`,
+        en: `${SITE_URL}/en/contact/`,
+        vi: `${SITE_URL}/vi/contact/`,
+        ja: `${SITE_URL}/ja/contact/`,
+        'x-default': `${SITE_URL}/en/contact/`,
       },
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `${baseUrl}/${locale}/contact/`,
+      url: `${SITE_URL}/${locale}/contact/`,
       siteName: 'TNP',
       locale: ogLocale,
       type: 'website',
-      images: [{ url: `${siteUrl}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.title }],
+      images: [{ url: `${SITE_URL}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: [`${siteUrl}/assets/og/og-default.png`],
+      images: [`${SITE_URL}/assets/og/og-default.png`],
     },
     other: {
       'geo.region': 'VN-39',
@@ -71,8 +69,8 @@ export default async function ContactPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TNP', item: `https://flow-canicula.github.io/tnp/${locale}/` },
-      { '@type': 'ListItem', position: 2, name: 'Contact', item: `https://flow-canicula.github.io/tnp/${locale}/contact/` },
+      { '@type': 'ListItem', position: 1, name: 'TNP', item: `${SITE_URL}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: `${SITE_URL}/${locale}/contact/` },
     ],
   };
 
@@ -81,7 +79,7 @@ export default async function ContactPage({
     '@type': 'ContactPage',
     name: 'Contact TNP',
     description: 'Request a free quote for solid wood flooring or custom timber furniture from TNP.',
-    url: `https://flow-canicula.github.io/tnp/${locale}/contact/`,
+    url: `${SITE_URL}/${locale}/contact/`,
     mainEntity: {
       '@type': 'LocalBusiness',
       name: 'TNP',

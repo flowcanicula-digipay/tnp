@@ -16,8 +16,6 @@ export async function generateMetadata({
   const { locale } = await params;
   const messages = (await import(`@/messages/${locale}.json`)).default;
   const meta = messages.meta.pricing;
-  const siteUrl = SITE_URL;
-  const baseUrl = 'https://flow-canicula.github.io/tnp';
   const ogLocale = locale === 'vi' ? 'vi_VN' : locale === 'ja' ? 'ja_JP' : 'en_US';
 
   return {
@@ -25,30 +23,30 @@ export async function generateMetadata({
     description: meta.description,
     keywords: meta.keywords,
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-    authors: [{ name: 'TNP', url: baseUrl }],
+    authors: [{ name: 'TNP', url: SITE_URL }],
     alternates: {
-      canonical: `${baseUrl}/${locale}/pricing/`,
+      canonical: `${SITE_URL}/${locale}/pricing/`,
       languages: {
-        en: `${baseUrl}/en/pricing/`,
-        vi: `${baseUrl}/vi/pricing/`,
-        ja: `${baseUrl}/ja/pricing/`,
-        'x-default': `${baseUrl}/en/pricing/`,
+        en: `${SITE_URL}/en/pricing/`,
+        vi: `${SITE_URL}/vi/pricing/`,
+        ja: `${SITE_URL}/ja/pricing/`,
+        'x-default': `${SITE_URL}/en/pricing/`,
       },
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `${baseUrl}/${locale}/pricing/`,
+      url: `${SITE_URL}/${locale}/pricing/`,
       siteName: 'TNP',
       locale: ogLocale,
       type: 'website',
-      images: [{ url: `${siteUrl}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.title }],
+      images: [{ url: `${SITE_URL}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: [`${siteUrl}/assets/og/og-default.png`],
+      images: [`${SITE_URL}/assets/og/og-default.png`],
     },
   };
 }
@@ -94,8 +92,8 @@ export default async function PricingPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TNP', item: `https://flow-canicula.github.io/tnp/${locale}/` },
-      { '@type': 'ListItem', position: 2, name: 'Pricing', item: `https://flow-canicula.github.io/tnp/${locale}/pricing/` },
+      { '@type': 'ListItem', position: 1, name: 'TNP', item: `${SITE_URL}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: 'Pricing', item: `${SITE_URL}/${locale}/pricing/` },
     ],
   };
 

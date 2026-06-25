@@ -22,8 +22,6 @@ export async function generateMetadata({
   const { locale } = await params;
   const msgs = (await import(`@/messages/${locale}.json`)).default;
   const meta = msgs.meta.home;
-  const siteUrl = SITE_URL;
-  const baseUrl = 'https://flow-canicula.github.io/tnp';
   const ogLocale = locale === 'vi' ? 'vi_VN' : locale === 'ja' ? 'ja_JP' : 'en_US';
 
   return {
@@ -31,30 +29,30 @@ export async function generateMetadata({
     description: meta.description,
     keywords: meta.keywords,
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-    authors: [{ name: 'TNP', url: baseUrl }],
+    authors: [{ name: 'TNP', url: SITE_URL }],
     alternates: {
-      canonical: `${baseUrl}/${locale}/`,
+      canonical: `${SITE_URL}/${locale}/`,
       languages: {
-        en: `${baseUrl}/en/`,
-        vi: `${baseUrl}/vi/`,
-        ja: `${baseUrl}/ja/`,
-        'x-default': `${baseUrl}/en/`,
+        en: `${SITE_URL}/en/`,
+        vi: `${SITE_URL}/vi/`,
+        ja: `${SITE_URL}/ja/`,
+        'x-default': `${SITE_URL}/en/`,
       },
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `${baseUrl}/${locale}/`,
+      url: `${SITE_URL}/${locale}/`,
       siteName: 'TNP',
       locale: ogLocale,
       type: 'website',
-      images: [{ url: `${siteUrl}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.title }],
+      images: [{ url: `${SITE_URL}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: [`${siteUrl}/assets/og/og-default.png`],
+      images: [`${SITE_URL}/assets/og/og-default.png`],
     },
     other: {
       'geo.region': 'VN-39',
@@ -87,7 +85,7 @@ export default async function HomePage({
         name: 'Solid Wood Flooring',
         serviceType: 'Flooring Manufacturing and Installation',
         description: 'Premium solid wood flooring in Keyaki (Japanese zelkova), Hinoki (Japanese cypress), oak, walnut, ash and select hardwoods. Kiln-dried, precision-milled, and finished in-house at our Biên Hòa factory. Professional installation for domestic clients; export-packaged for Japan and international markets.',
-        provider: { '@type': 'Organization', name: 'TNP', url: 'https://flow-canicula.github.io/tnp' },
+        provider: { '@type': 'Organization', name: 'TNP', url: SITE_URL },
         areaServed: ['VN', 'JP'],
         keywords: 'solid wood flooring, Hinoki flooring, Keyaki flooring, hardwood floor Vietnam',
       },
@@ -97,7 +95,7 @@ export default async function HomePage({
         name: 'Custom Timber Furniture',
         serviceType: 'Bespoke Furniture Manufacturing',
         description: 'One-of-a-kind furniture designed and manufactured to specification. Keyaki for its exceptional hardness and rich luster; Hinoki for its natural fragrance. Dining tables, shelving, cabinetry, desks, bedroom sets. Consultation, design, in-house manufacturing, delivery and installation all included.',
-        provider: { '@type': 'Organization', name: 'TNP', url: 'https://flow-canicula.github.io/tnp' },
+        provider: { '@type': 'Organization', name: 'TNP', url: SITE_URL },
         areaServed: ['VN', 'JP'],
         keywords: 'custom timber furniture, Keyaki furniture, Hinoki furniture, bespoke hardwood furniture Vietnam',
       },
@@ -107,7 +105,7 @@ export default async function HomePage({
         name: 'Delivery & Professional Installation',
         serviceType: 'Logistics and On-Site Installation',
         description: 'Scheduled and protected delivery across Vietnam and internationally to Japan and beyond. Professional on-site flooring and furniture installation for domestic clients. Export documentation, containerization, and installation guides for international orders.',
-        provider: { '@type': 'Organization', name: 'TNP', url: 'https://flow-canicula.github.io/tnp' },
+        provider: { '@type': 'Organization', name: 'TNP', url: SITE_URL },
         areaServed: ['VN', 'JP'],
       },
     ],

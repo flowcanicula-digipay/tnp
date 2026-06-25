@@ -24,4 +24,4 @@ Allow: /
 Disallow: /_next/
 Disallow: /api/
 
-Sitemap: https://flow-canicula.github.io/tnp/sitemap.xml
+Sitemap: https://tnp.skaldris.com/sitemap.xml

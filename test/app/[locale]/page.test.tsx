@@ -13,8 +13,8 @@ describe('Home page metadata', () => {
   it('builds locale-aware metadata with hreflang alternates', async () => {
     const meta = await generateMetadata({ params: Promise.resolve({ locale: 'ja' }) });
     expect(meta.title).toBe(ja.meta.home.title);
-    expect(meta.alternates?.canonical).toBe('https://flow-canicula.github.io/tnp/ja/');
-    expect(meta.alternates?.languages?.['x-default']).toBe('https://flow-canicula.github.io/tnp/en/');
+    expect(meta.alternates?.canonical).toBe('https://tnp.skaldris.com/ja/');
+    expect(meta.alternates?.languages?.['x-default']).toBe('https://tnp.skaldris.com/en/');
     expect(meta.openGraph?.locale).toBe('ja_JP');
   });
 

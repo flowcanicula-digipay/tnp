@@ -11,4 +11,4 @@
  */
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://flow-canicula.github.io/tnp');
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://tnp.skaldris.com');

@@ -16,8 +16,6 @@ export async function generateMetadata({
   const { locale } = await params;
   const messages = (await import(`@/messages/${locale}.json`)).default;
   const meta = messages.meta.portfolio;
-  const siteUrl = SITE_URL;
-  const baseUrl = 'https://flow-canicula.github.io/tnp';
   const ogLocale = locale === 'vi' ? 'vi_VN' : locale === 'ja' ? 'ja_JP' : 'en_US';
 
   return {
@@ -25,30 +23,30 @@ export async function generateMetadata({
     description: meta.description,
     keywords: meta.keywords,
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-    authors: [{ name: 'TNP', url: baseUrl }],
+    authors: [{ name: 'TNP', url: SITE_URL }],
     alternates: {
-      canonical: `${baseUrl}/${locale}/portfolio/`,
+      canonical: `${SITE_URL}/${locale}/portfolio/`,
       languages: {
-        en: `${baseUrl}/en/portfolio/`,
-        vi: `${baseUrl}/vi/portfolio/`,
-        ja: `${baseUrl}/ja/portfolio/`,
-        'x-default': `${baseUrl}/en/portfolio/`,
+        en: `${SITE_URL}/en/portfolio/`,
+        vi: `${SITE_URL}/vi/portfolio/`,
+        ja: `${SITE_URL}/ja/portfolio/`,
+        'x-default': `${SITE_URL}/en/portfolio/`,
       },
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `${baseUrl}/${locale}/portfolio/`,
+      url: `${SITE_URL}/${locale}/portfolio/`,
       siteName: 'TNP',
       locale: ogLocale,
       type: 'website',
-      images: [{ url: `${siteUrl}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.title }],
+      images: [{ url: `${SITE_URL}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: [`${siteUrl}/assets/og/og-default.png`],
+      images: [`${SITE_URL}/assets/og/og-default.png`],
     },
   };
 }
@@ -65,8 +63,8 @@ export default async function PortfolioPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TNP', item: `https://flow-canicula.github.io/tnp/${locale}/` },
-      { '@type': 'ListItem', position: 2, name: 'Portfolio', item: `https://flow-canicula.github.io/tnp/${locale}/portfolio/` },
+      { '@type': 'ListItem', position: 1, name: 'TNP', item: `${SITE_URL}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: 'Portfolio', item: `${SITE_URL}/${locale}/portfolio/` },
     ],
   };
 
@@ -75,7 +73,7 @@ export default async function PortfolioPage({
     '@type': 'CollectionPage',
     name: 'TNP Portfolio',
     description: 'A gallery of TNP solid wood flooring and timber furniture projects across Vietnam and export markets.',
-    url: `https://flow-canicula.github.io/tnp/${locale}/portfolio/`,
+    url: `${SITE_URL}/${locale}/portfolio/`,
     about: {
       '@type': 'LocalBusiness',
       name: 'TNP',

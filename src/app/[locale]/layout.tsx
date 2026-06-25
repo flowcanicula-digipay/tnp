@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
 import PrivacyBanner from '@/components/PrivacyBanner';
 import LocaleSetter from '@/components/LocaleSetter';
+import { SITE_URL } from '@/lib/siteUrl';
 
 export async function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -31,10 +32,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://flow-canicula.github.io/tnp/#organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'TNP',
-    url: 'https://flow-canicula.github.io/tnp',
-    logo: 'https://flow-canicula.github.io/tnp/assets/logo/tnp_logo_primary.png',
+    url: SITE_URL,
+    logo: `${SITE_URL}/assets/logo/tnp_logo_primary.png`,
     description: 'Premium solid wood flooring and custom timber furniture manufacturer. Japanese material standards, Vietnamese craftsmanship. Factory-direct from Biên Hòa, Vietnam.',
     telephone: '+84903333729',
     email: 'thuy@tnpgr.vn',
@@ -58,11 +59,11 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://flow-canicula.github.io/tnp/#website',
-    url: 'https://flow-canicula.github.io/tnp',
+    '@id': `${SITE_URL}/#website`,
+    url: SITE_URL,
     name: 'TNP',
     description: 'Supplying solid wood flooring and timber furniture.',
-    publisher: { '@id': 'https://flow-canicula.github.io/tnp/#organization' },
+    publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: ['en', 'vi', 'ja'],
   };
 
@@ -71,7 +72,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     '@type': 'FurnitureStore',
     name: 'TNP',
     description: 'Supplying solid wood flooring and timber furniture. Japanese material standards, Vietnamese manufacturing excellence.',
-    url: 'https://flow-canicula.github.io/tnp',
+    url: SITE_URL,
     telephone: '+84903333729',
     email: 'thuy@tnpgr.vn',
     address: {
