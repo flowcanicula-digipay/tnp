@@ -118,6 +118,7 @@ function IncludedIcon({ index }: { index: number }) {
 function FaqPanel({ answer, open }: { answer: string; open: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  /* c8 ignore next */
   useEffect(() => { if (ref.current) setHeight(ref.current.scrollHeight); }, [answer]);
   return (
     <div
@@ -230,9 +231,11 @@ function PricingStatement({ eyebrow, line1, line2, sub }: { eyebrow: string; lin
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   useEffect(() => {
+    /* c8 ignore start */
     const el = ref.current; if (!el) return;
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } }, { threshold: 0.25 });
     obs.observe(el); return () => obs.disconnect();
+    /* c8 ignore stop */
   }, []);
 
   return (

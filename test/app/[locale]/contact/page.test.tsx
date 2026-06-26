@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { screen } from '@testing-library/react';
 import en from '@/messages/en.json';
+import vi from '@/messages/vi.json';
 import ContactPage, { generateMetadata, generateStaticParams } from '@/app/[locale]/contact/page';
 import { renderServerPage } from '../../../renderServerPage';
 
@@ -13,6 +14,22 @@ describe('Contact page metadata', () => {
     const meta = await generateMetadata({ params: Promise.resolve({ locale: 'en' }) });
     expect(meta.alternates?.canonical).toBe('https://tnp.skaldris.com/en/contact/');
     expect(meta.other?.['geo.placename']).toBe('Biên Hòa, Đồng Nai, Vietnam');
+  });
+
+  it('sets ogLocale to en_US for English', async () => {
+    const meta = await generateMetadata({ params: Promise.resolve({ locale: 'en' }) });
+    expect((meta.openGraph as { locale?: string })?.locale).toBe('en_US');
+  });
+
+  it('sets ogLocale to vi_VN for Vietnamese', async () => {
+    const meta = await generateMetadata({ params: Promise.resolve({ locale: 'vi' }) });
+    expect((meta.openGraph as { locale?: string })?.locale).toBe('vi_VN');
+    expect(meta.title).toBe(vi.meta.contact.title);
+  });
+
+  it('sets ogLocale to ja_JP for Japanese', async () => {
+    const meta = await generateMetadata({ params: Promise.resolve({ locale: 'ja' }) });
+    expect((meta.openGraph as { locale?: string })?.locale).toBe('ja_JP');
   });
 });
 

@@ -26,4 +26,13 @@ describe('NotFound', () => {
     // No throw means the listener ran safely against window dimensions.
     expect(true).toBe(true);
   });
+
+  it('applies and removes box-shadow on the Back to Home link via mouse events', () => {
+    render(<NotFound />);
+    const homeLink = screen.getByText('Back to Home').closest('a') as HTMLAnchorElement;
+    fireEvent.mouseEnter(homeLink);
+    expect(homeLink.style.boxShadow).toBe('0 8px 32px rgba(200,150,90,0.35)');
+    fireEvent.mouseLeave(homeLink);
+    expect(homeLink.style.boxShadow).toBe('0 0 0 0 rgba(200,150,90,0)');
+  });
 });

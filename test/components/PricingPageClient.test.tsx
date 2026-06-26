@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { screen, fireEvent, within } from '@testing-library/react';
 import PricingPageClient from '@/components/PricingPageClient';
 import { renderWithIntl } from '../renderWithIntl';
@@ -143,5 +143,44 @@ describe('PricingPageClient', () => {
   it('links the bottom CTA to the contact page without a type param when no tier is selected', () => {
     renderWithIntl(<PricingPageClient locale="ja" messages={messages} cta={cta} />);
     expect(screen.getByText('Request a Free Quote').closest('a')).toHaveAttribute('href', '/ja/contact');
+  });
+
+  it('ignores keyDown events that are not Enter or Space', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    const flooringCard = screen.getByText('Solid Wood Flooring').closest('article')!;
+    fireEvent.keyDown(flooringCard, { key: 'Tab' });
+    expect(flooringCard).toHaveAttribute('aria-pressed', 'false');
+  });
+
+  it('deselects a tier via keyboard Enter when already selected', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    const completeCard = screen.getByText('Complete Projects').closest('article')!;
+    fireEvent.keyDown(completeCard, { key: 'Enter' });
+    expect(completeCard).toHaveAttribute('aria-pressed', 'true');
+    fireEvent.keyDown(completeCard, { key: 'Enter' });
+    expect(completeCard).toHaveAttribute('aria-pressed', 'false');
+  });
+
+  it('stopPropagation fires when clicking per-tier links (both inline and CTA)', () => {
+    renderWithIntl(<PricingPageClient locale="en" messages={messages} cta={cta} />);
+    const tierLinks = within(
+      screen.getByText('Solid Wood Flooring').closest('article')!
+    ).getAllByRole('link');
+    tierLinks.forEach((link) => {
+      const clickEvent = new MouseEvent('click', { bubbles: true, cancelable: true });
+      const spy = vi.spyOn(clickEvent, 'stopPropagation');
+      link.dispatchEvent(clickEvent);
+      expect(spy).toHaveBeenCalled();
+    });
+  });
+
+  it('renders statement section with an empty sub line (sub paragraph is absent)', () => {
+    const noSubMessages = {
+      ...messages,
+      statement: { ...messages.statement, sub: '' },
+    };
+    renderWithIntl(<PricingPageClient locale="en" messages={noSubMessages} cta={cta} />);
+    expect(screen.getByText('Eyebrow')).toBeInTheDocument();
+    expect(screen.queryByText('Sub line.')).not.toBeInTheDocument();
   });
 });

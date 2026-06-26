@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { screen } from '@testing-library/react';
 import { usePathname } from 'next/navigation';
-import LocaleLayout, { metadata } from '@/app/[locale]/layout';
+import LocaleLayout, { metadata, generateStaticParams } from '@/app/[locale]/layout';
 import { renderServerPage } from '../../renderServerPage';
 
 describe('LocaleLayout', () => {
@@ -11,6 +11,10 @@ describe('LocaleLayout', () => {
 
   it('exports empty page metadata (locale metadata is set per-page)', () => {
     expect(metadata).toEqual({});
+  });
+
+  it('lists all three locales for static generation', async () => {
+    expect(await generateStaticParams()).toEqual([{ locale: 'en' }, { locale: 'vi' }, { locale: 'ja' }]);
   });
 
   it('renders header, content, footer and privacy banner for a supported locale', async () => {

@@ -16,6 +16,21 @@ describe('Portfolio page metadata', () => {
     expect(meta.alternates?.languages?.en).toBe('https://tnp.skaldris.com/en/portfolio/');
     expect(meta.title).toBe(vi.meta.portfolio.title);
   });
+
+  it('sets ogLocale to en_US for English', async () => {
+    const meta = await generateMetadata({ params: Promise.resolve({ locale: 'en' }) });
+    expect((meta.openGraph as { locale?: string })?.locale).toBe('en_US');
+  });
+
+  it('sets ogLocale to vi_VN for Vietnamese', async () => {
+    const meta = await generateMetadata({ params: Promise.resolve({ locale: 'vi' }) });
+    expect((meta.openGraph as { locale?: string })?.locale).toBe('vi_VN');
+  });
+
+  it('sets ogLocale to ja_JP for Japanese', async () => {
+    const meta = await generateMetadata({ params: Promise.resolve({ locale: 'ja' }) });
+    expect((meta.openGraph as { locale?: string })?.locale).toBe('ja_JP');
+  });
 });
 
 describe('PortfolioPage', () => {
