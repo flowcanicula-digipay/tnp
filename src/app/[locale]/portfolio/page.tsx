@@ -77,6 +77,7 @@ export default async function PortfolioPage({
     about: {
       '@type': 'LocalBusiness',
       name: 'TNP',
+      legalName: 'Thinh Nguyen Phat Wooden Co., Ltd.',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Lô 35 đường số 9, Khu Công Nghiệp Tam Phước',

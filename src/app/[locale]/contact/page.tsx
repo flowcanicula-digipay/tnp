@@ -83,6 +83,7 @@ export default async function ContactPage({
     mainEntity: {
       '@type': 'LocalBusiness',
       name: 'TNP',
+      legalName: 'Thinh Nguyen Phat Wooden Co., Ltd.',
       telephone: '+84903333729',
       email: 'thuy@tnpgr.vn',
       address: {
