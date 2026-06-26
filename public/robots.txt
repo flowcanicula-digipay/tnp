@@ -25,3 +25,7 @@ Disallow: /_next/
 Disallow: /api/
 
 Sitemap: https://tnp.skaldris.com/sitemap.xml
+
+# AI agent context file (llms.txt standard)
+# See: https://llmstxt.org
+LLMs: https://tnp.skaldris.com/llms.txt

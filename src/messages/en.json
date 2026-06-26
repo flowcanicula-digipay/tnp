@@ -1,24 +1,28 @@
 {
   "meta": {
     "home": {
-      "title": "TNP — Premium Solid Wood Flooring & Custom Timber Furniture | Biên Hòa, Vietnam",
-      "description": "Factory-direct solid wood flooring and custom timber furniture. Keyaki, Hinoki, oak, walnut — manufactured to the highest Japanese standards in our own facility in Biên Hòa, Vietnam. Serving Vietnam, Japan, and international buyers. Free quote within 48 hours.",
-      "keywords": "solid wood flooring Vietnam, hardwood flooring manufacturer Vietnam, custom timber furniture Vietnam, Hinoki flooring Vietnam, Keyaki furniture Vietnam, Japanese wood flooring, wood flooring Bien Hoa, factory direct hardwood flooring, Hinoki cypress flooring, Keyaki zelkova furniture, premium solid wood floor, bespoke timber furniture Vietnam, wood flooring export Japan, solid wood flooring manufacturer"
+      "title": "Solid Wood Flooring, Doors & Stairs Vietnam | TNP",
+      "ogTitle": "Japanese-owned solid wood factory in Vietnam since 1997 — Hinoki, Keyaki, Oak",
+      "description": "Japanese family-owned manufacturer since 1997. Hinoki & solid wood flooring, interior & exterior doors, folding, sliding doors, and stairs. Factory-direct from Biên Hòa. Free quote in 48 hrs.",
+      "keywords": "solid wood flooring Vietnam, Hinoki flooring, solid wood doors Vietnam, interior doors Bien Hoa, exterior doors Vietnam, folding doors, sliding doors, solid wood stairs, Japanese wood manufacturer Vietnam, factory direct hardwood"
     },
     "pricing": {
-      "title": "Pricing — Premium Solid Wood Flooring & Custom Timber Furniture | TNP Vietnam",
-      "description": "Transparent factory-direct pricing for Hinoki and hardwood flooring, custom timber furniture, and full-space room projects. No middlemen, no hidden fees. Free quote from our Biên Hòa factory.",
-      "keywords": "solid wood flooring price Vietnam, hardwood flooring cost Vietnam, Hinoki flooring price per m2, custom furniture price Vietnam, wood flooring quote Vietnam, factory direct flooring price, Keyaki furniture price, timber furniture manufacturing Vietnam"
+      "title": "Flooring, Door & Stair Pricing | TNP Vietnam Factory",
+      "ogTitle": "Factory-direct solid wood pricing — no middlemen, free quote in 48 hrs",
+      "description": "Factory-direct pricing for Hinoki & solid wood flooring, interior & exterior doors, folding & sliding doors, and stairs. Six kiln-drying rooms, 9,950 m² facility in Biên Hòa. Free quote.",
+      "keywords": "solid wood flooring price Vietnam, solid wood door cost Vietnam, Hinoki flooring quote, interior door price Bien Hoa, exterior door cost, folding door price, sliding door price, wood stairs quote Vietnam, knotty alder door export price"
     },
     "portfolio": {
-      "title": "Portfolio — Real Solid Wood Flooring & Timber Furniture Projects | TNP Vietnam",
-      "description": "A gallery of TNP's solid wood flooring and timber furniture projects across Vietnam and export markets — real addresses, factory-direct craftsmanship, told honestly.",
-      "keywords": "solid wood flooring portfolio Vietnam, timber furniture projects Vietnam, Hinoki flooring projects, Keyaki furniture gallery, wood flooring case studies Vietnam, custom furniture Ho Chi Minh City"
+      "title": "Solid Wood Projects — Flooring, Doors & Stairs | TNP Vietnam",
+      "ogTitle": "Real projects: Hinoki flooring, solid wood doors & stairs by TNP Vietnam",
+      "description": "Completed projects in solid wood flooring, interior & exterior doors, folding & sliding doors, and stairs — real jobs, honest photography, factory-direct from Biên Hòa since 1997.",
+      "keywords": "solid wood flooring projects Vietnam, interior door installation Vietnam, exterior door examples, folding door portfolio, sliding door gallery, Hinoki flooring completed projects, knotty alder door USA export, solid wood stairs gallery"
     },
     "contact": {
-      "title": "Get a Free Quote — Solid Wood Flooring & Timber Furniture | TNP Vietnam",
-      "description": "Request a free quote from TNP — Vietnam's premium solid wood flooring and custom furniture manufacturer. We respond within 48 hours. Serving Vietnam, Japan, and international clients from our factory in Biên Hòa, Đồng Nai.",
-      "keywords": "contact wood flooring supplier Vietnam, request quote hardwood flooring, timber furniture quote Vietnam, solid wood flooring Bien Hoa, custom furniture order Vietnam, wood flooring manufacturer contact"
+      "title": "Request a Free Quote | TNP Solid Wood — Biên Hòa Vietnam",
+      "ogTitle": "Start your solid wood project — free quote from TNP in 48 hours",
+      "description": "Get a free quote for solid wood flooring, doors, or stairs from TNP — Japanese-owned factory, Biên Hòa. We respond within 48 hours. OEM & bespoke orders welcome.",
+      "keywords": "solid wood flooring quote Vietnam, solid wood door order, OEM wood products Vietnam, Hinoki flooring enquiry, contact TNP Bien Hoa, wood stairs bespoke Vietnam, knotty alder door enquiry USA, custom solid wood manufacturer"
     },
     "siteName": "TNP",
     "ogLocale": {
@@ -43,7 +47,7 @@
         "craft": "Solid wood. Honest craft."
       },
       "brand": {
-        "tagline": "Supplying solid wood flooring and timber furniture.",
+        "tagline": "Solid wood flooring, doors & stairs since 1997.",
         "social": "Follow us"
       },
       "quickLinks": {
@@ -62,7 +66,7 @@
       },
       "markets": {
         "title": "Markets",
-        "text": "Serving Vietnam, Japan, and international clients worldwide. Export-ready from our factory in Biên Hòa."
+        "text": "Exporting to Japan & Korea for 20+ years. Knotty alder doors to the USA. Serving Vietnam and international clients from our 9,950 m² factory in Biên Hòa."
       },
       "copyright": "© {year} TNP. All rights reserved.",
       "certifications": "Certifications"
@@ -132,72 +136,72 @@
   },
   "home": {
     "hero": {
-      "title": "Solid wood flooring and timber furniture.",
-      "titleAccent": "Japanese quality, built in Vietnam.",
-      "subtitle": "TNP brings together Japanese material standards and Vietnamese craftsmanship. From Hinoki flooring to custom timber furniture — we design, manufacture, deliver, and install. One team. One standard.",
-      "imageAlt": "TNP Hinoki solid wood flooring installed in a modern living room — warm grain, Japanese-Vietnamese craftsmanship"
+      "title": "Solid wood flooring, doors & stairs.",
+      "titleAccent": "Japanese-owned. Built in Vietnam since 1997.",
+      "subtitle": "TNP is a Japanese family-owned manufacturer with over 25 years of production in Biên Hòa. We make solid wood flooring, interior and exterior doors, folding and sliding doors, and stairs — in our own 9,950 m² factory with six kiln-drying rooms. One factory. One standard.",
+      "imageAlt": "TNP Hinoki solid wood flooring installed in a modern living room — warm grain, Japanese-owned Vietnamese craftsmanship"
     },
     "about": {
-      "ariaLabel": "About TNP — Japanese-Vietnamese timber company",
-      "title": "Where Japanese timber meets Vietnamese craft",
-      "narrative": "TNP was born from a connection between Japan and Vietnam. Japan has centuries of reverence for timber — particularly Keyaki, the exceptionally hard and beautiful hardwood prized for ancient temple pillars and premium furniture for its rich luster and durability, and Hinoki, the cypress valued for its fragrance, moisture resistance, and fine grain. Vietnam has generations of skilled woodworkers and a manufacturing tradition that turns raw timber into finished surfaces with precision and care. TNP brings both together. We source premium timbers — Keyaki, Hinoki, oak, walnut, ash, and select Southeast Asian hardwoods — and manufacture solid wood flooring and custom furniture in our own factory in Biên Hòa, Vietnam. Every board is kiln-dried, milled, finished, and inspected before it leaves our facility. We don't outsource. We don't cut corners. And we handle everything from first consultation to final installation.",
+      "ariaLabel": "About TNP — Japanese family-owned solid wood manufacturer",
+      "title": "Japanese ownership. Vietnamese craftsmanship. Since 1997.",
+      "narrative": "TNP was founded in Biên Hòa, Vietnam in 1997 by a Japanese family whose commitment to timber craftsmanship runs generations deep. For more than 25 years, we have manufactured solid wood flooring, solid wood doors — interior, exterior entrance, folding, and sliding — and stairs entirely within our own factory. We don't outsource. We don't cut corners.\n\nOur facility speaks for itself: 9,950 m² of land, 5,700 m² of production space, an in-house sawmill processing logs sourced directly from Japan and Europe, and six dedicated kiln-drying rooms that bring every board to a precise 8–10% moisture content — the threshold for long-term dimensional stability.\n\nThe materials we work with are the ones serious builders trust. Our signature timbers are Hinoki (Japanese cypress, 檜) and Keyaki (Japanese zelkova, 欅) — both established brand names in Japan's premium timber market — complemented by Oak, Acacia, Ash, Black Walnut, Pine, Cedar, and Sugi (Japanese cedar, 杉). For the North American market, we import American red alder and manufacture knotty alder doors exported to the USA. Our laminated freeboard has shipped continuously to Japan and Korea for over 20 years.\n\nWe work directly with renovators, contractors, builders, and architects — from single-room flooring projects to large-scale commercial fits. OEM and bespoke orders are welcome.",
       "pillars": {
         "heritage": {
-          "title": "Japanese-Vietnamese heritage",
-          "text": "Japanese material standards, Vietnamese manufacturing excellence."
+          "title": "Japanese-owned since 1997",
+          "text": "A Japanese family business, manufacturing in Biên Hòa for over 25 years."
         },
         "hinoki": {
-          "title": "Keyaki, Hinoki & premium hardwoods",
-          "text": "Japan's most treasured timbers — Keyaki for its hardness and rich luster, Hinoki for its fragrance and durability — plus a full range of solid woods."
+          "title": "Hinoki, Keyaki & premium hardwoods",
+          "text": "Our Rustic Oak and Hinoki flooring are trusted brand names in Japan. We also work with Oak, Acacia, Ash, Walnut, Sugi, and Cedar."
         },
         "factory": {
-          "title": "Factory-direct",
-          "text": "Our own facility in Biên Hòa — no middlemen, export-ready."
+          "title": "9,950 m² factory — direct",
+          "text": "In-house sawmill, six kiln-drying rooms, logs from Japan and Europe. No middlemen."
         },
         "endToEnd": {
-          "title": "End-to-end service",
-          "text": "Design, manufacturing, delivery, and installation by one team."
+          "title": "Flooring, doors & stairs",
+          "text": "Interior and exterior doors, folding and sliding doors, flooring, and stairs — all in one factory."
         }
       },
-      "imageAlt": "Close-up of Hinoki cypress grain — TNP's signature timber, sourced from Japan and manufactured in Vietnam"
+      "imageAlt": "Close-up of Hinoki cypress grain — TNP's signature timber, kiln-dried and manufactured in Biên Hòa, Vietnam"
     },
     "statement": {
       "eyebrow": "No middlemen. No shortcuts.",
       "line1": "Built in our factory.",
-      "line2": "Not assembled in someone else's.",
-      "sub": "Every board, every joint, every finish — made under one roof in Biên Hòa, by the same hands that ship it to your door."
+      "line2": "Since 1997.",
+      "sub": "Every board, every door, every stair — made under one roof in Biên Hòa, from logs we mill ourselves, in rooms we dry ourselves."
     },
     "process": {
       "title": "From raw timber to finished space",
-      "leadIn": "Every TNP project follows three stages. Whether you need solid wood flooring for an apartment in Tokyo or custom furniture for a home in Saigon — the process is the same.",
+      "leadIn": "Every TNP project follows three stages. Whether you need Hinoki flooring for a home in Tokyo, knotty alder doors for a project in the USA, or a complete interior for a home in Saigon — the process is the same.",
       "steps": {
         "creation": {
           "number": "01",
           "label": "Creation",
           "title": "We source, design, and build it",
-          "text": "It starts with your project brief. What do you need — flooring, furniture, or both? What species and finish? For flooring, we assess the area and subfloor requirements. For furniture, we develop design mockups and material samples. Once you approve, our factory in Biên Hòa takes over. Keyaki, Hinoki, oak, walnut — whatever the timber, it's kiln-dried, precision-milled, joined, sanded, and finished in-house. Every piece passes quality inspection before it ships.",
-          "imageAlt": "TNP factory — Hinoki planks being precision-milled in the Biên Hòa workshop"
+          "text": "It starts with your brief. Flooring, doors, stairs — or all three? What species and finish? We source logs from Japan and Europe, mill them in-house, and kiln-dry to 8–10% moisture content. Our DOUBLE LOCK door construction uses a rectangular block joining rails and stiles with two dowels from the top — preventing splitting from humidity and temperature changes. Every piece passes quality inspection before it ships.",
+          "imageAlt": "TNP factory — solid wood being precision-milled in the 9,950 m² Biên Hòa workshop"
         },
         "delivery": {
           "number": "02",
           "label": "Delivery",
           "title": "We ship it to you — anywhere",
-          "text": "When your order is ready, our logistics team packages, palletizes, and ships — domestically across Vietnam or internationally to Japan and beyond. We handle export documentation, containerization, and freight coordination. Your flooring or furniture arrives protected and on schedule, in the same condition it left our factory floor.",
-          "imageAlt": "Palletized Hinoki flooring planks export-packaged and ready for international shipment"
+          "text": "When your order is ready, our logistics team packages, palletizes, and ships — domestically across Vietnam or internationally to Japan, Korea, the USA, and beyond. We've been exporting to Japan and Korea for over 20 years. Export orders include containerization, freight coordination, and all necessary documentation.",
+          "imageAlt": "Palletized solid wood flooring planks export-packaged and ready for international shipment"
         },
         "installation": {
           "number": "03",
           "label": "Installation",
           "title": "We install it perfectly",
-          "text": "For domestic clients, our crew handles everything on-site: subfloor preparation and flooring installation, furniture assembly, leveling, and anchoring. Wall-mounted pieces, built-in units, full-room flooring — we do it all. For international and export clients, we provide detailed installation guides, technical specs, and remote support. Before we consider any project done, we confirm you're satisfied.",
-          "imageAlt": "TNP technician laying Hinoki solid wood flooring — professional installation in a Vietnamese home"
+          "text": "For domestic clients, our crew handles everything on-site: subfloor preparation and flooring installation, door fitting and hardware, stair assembly, leveling, and anchoring. For export and international clients, we provide detailed installation guides, technical specs, and remote support. Before we consider any project done, we confirm you're satisfied.",
+          "imageAlt": "TNP technician installing solid wood flooring — professional installation in a Vietnamese home"
         }
       }
     },
     "trust": {
-      "stat1": { "value": "300+", "label": "Projects completed" },
-      "stat2": { "value": "Japan & beyond", "label": "Export destinations" },
-      "stat3": { "value": "Biên Hòa, Vietnam", "label": "Our factory" },
+      "stat1": { "value": "Since 1997", "label": "Japanese-owned factory" },
+      "stat2": { "value": "20+ years", "label": "Exporting to Japan & Korea" },
+      "stat3": { "value": "9,950 m²", "label": "Factory in Biên Hòa" },
       "testimonialNote": "{/* TODO: add real testimonials/stats */}",
       "badges": {
         "precision": "Precision-checked",
@@ -214,39 +218,39 @@
   "pricing": {
     "hero": {
       "title": "Transparent pricing.",
-      "titleAccent": "Flooring and furniture, end to end.",
-      "subtitle": "Every TNP project covers sourcing, manufacturing, delivery, and installation where applicable. No hidden fees. Choose the product and service level that fits your project."
+      "titleAccent": "Flooring, doors & stairs — end to end.",
+      "subtitle": "Every TNP project covers sourcing, manufacturing, delivery, and installation where applicable. No hidden fees. From our 9,950 m² factory in Biên Hòa, serving Vietnam, Japan, Korea, the USA, and beyond."
     },
     "statement": {
       "eyebrow": "One quote. Everything included.",
       "line1": "One price.",
       "line2": "Every stage covered.",
-      "sub": "Sourcing, manufacturing, delivery, installation — quoted together, never piecemeal."
+      "sub": "Sourcing, kiln-drying, manufacturing, delivery, installation — quoted together, never piecemeal."
     },
     "tiers": {
-      "title": "Our Services",
+      "title": "Our Products",
       "flooring": {
-        "name": "Solid Wood Flooring",
-        "tagline": "Premium timber flooring, factory-direct",
-        "description": "Solid wood flooring in Keyaki, Hinoki, oak, walnut, ash, or select hardwoods. Kiln-dried, precision-milled, and finished in our Biên Hòa factory. Available for domestic delivery with professional installation, or export-packaged for international shipment.",
-        "examples": "Apartment flooring · Commercial spaces · Renovation reflooring",
+        "name": "Solid Wood Flooring & Stairs",
+        "tagline": "Hinoki, Oak, Acacia — kiln-dried, factory-direct",
+        "description": "Solid wood flooring and stairs in Hinoki (Japanese cypress), Keyaki (Japanese elm), Sugi (Japanese cedar), Oak, Acacia, Ash, Black Walnut, and more. Kiln-dried to 8–10% moisture content, precision-milled and finished in our Biên Hòa factory. Finishes: brushed line, oil, UV. Available in AB-grade clear and rustic. Our Rustic Oak and Hinoki flooring are trusted brand names in Japan.",
+        "examples": "Apartment flooring · Commercial spaces · Renovation reflooring · Stairs",
         "priceNote": "Priced per m²",
         "cta": "Request Quote",
         "badge": "Most popular"
       },
       "furniture": {
-        "name": "Custom Timber Furniture",
-        "tagline": "Bespoke pieces, built to your specifications",
-        "description": "One-of-a-kind furniture designed and manufactured to your brief. Keyaki's rich luster and exceptional hardness, or Hinoki's natural fragrance — your choice of timber, built to your brief. Includes consultation, design mockups, premium timber sourcing, in-house manufacturing, delivery, and installation. Ideal for dining tables, shelving, cabinetry, desks, and bedroom sets.",
-        "examples": "Hinoki dining table · Walnut bookshelf wall · Full bedroom set",
-        "priceNote": "Quoted per project",
+        "name": "Solid Wood Doors & Furniture",
+        "tagline": "Interior, exterior, folding & sliding doors — DOUBLE LOCK construction",
+        "description": "Four door types: interior doors, exterior entrance doors, folding doors, and sliding doors. All built with TNP's DOUBLE LOCK construction — a rectangular block joining rails and stiles with two dowels from the top, preventing splitting from humidity and temperature changes. Rubber-edged panel gaps allow natural wood movement. We also manufacture bespoke timber furniture and export knotty alder doors to the USA.",
+        "examples": "Interior doors · Exterior entrance doors · Folding & sliding doors · Custom furniture · Knotty alder (USA export)",
+        "priceNote": "Quoted per door / per project",
         "cta": "Request Quote"
       },
       "complete": {
-        "name": "Complete Projects",
-        "tagline": "Flooring and furniture for an entire space",
-        "description": "End-to-end outfitting for one or more rooms — solid wood flooring plus custom furniture, designed to work together. TNP handles space planning, material coordination, phased manufacturing, delivery, and full installation.",
-        "examples": "Full apartment fit-out · Restaurant interior · Boutique hotel",
+        "name": "Complete Projects & OEM",
+        "tagline": "Full interior fit-outs and OEM manufacturing",
+        "description": "End-to-end outfitting — solid wood flooring, doors, and stairs for an entire space. TNP also manufactures laminated freeboard for export to Japan and Korea (20+ years of supply). OEM and bespoke enquiries are welcome. We work closely with renovators, contractors, builders, and architects.",
+        "examples": "Full apartment fit-out · Restaurant interior · Boutique hotel · OEM export orders",
         "priceNote": "Custom quote",
         "cta": "Request Quote",
         "badge": "Best value"
@@ -255,51 +259,51 @@
     "included": {
       "title": "Always included",
       "items": [
-        "Material sourcing",
-        "Kiln-drying & milling",
-        "In-house manufacturing",
+        "Log sourcing (Japan, Europe, USA)",
+        "In-house sawmill processing",
+        "Kiln-drying to 8–10% MC (6 rooms)",
+        "Precision milling & finishing",
         "Quality inspection",
-        "Delivery & protection",
-        "Professional installation (domestic)",
-        "Export packaging (international)"
+        "Delivery & export packaging",
+        "Professional installation (domestic)"
       ]
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "subtitle": "Everything you need to know before starting your project.",
       "q1": {
-        "question": "What is Hinoki and why is it special?",
-        "answer": "Hinoki (檜 / ヒノキ) is Japanese cypress — one of Japan's most treasured building timbers. It's naturally aromatic, resistant to moisture, rot, and insects, and has a beautiful, fine grain. In Japan it's been used for centuries in temples, baths, and fine homes. TNP sources Hinoki and manufactures it into flooring and furniture at our factory in Vietnam, bringing this premium material to both domestic and international clients."
+        "question": "What is the DOUBLE LOCK door construction?",
+        "answer": "TNP uses a Rectangular Block to join door rails and stiles. Two dowels are inserted from the top, passing through the inner block of both rail and stile. This DOUBLE LOCK construction prevents the splitting that often occurs when wood is exposed to changes in humidity and temperature. The center panel edges are also designed with rubber-filled gaps, allowing the wood to naturally expand and contract with moisture changes — so the door performs reliably for decades."
       },
       "q2": {
-        "question": "How long does a project take?",
-        "answer": "Flooring orders typically take 3–5 weeks from confirmation to delivery. Custom furniture takes 4–8 weeks depending on complexity. Full-space projects with both flooring and furniture take 8–12 weeks. We confirm your timeline before any work begins."
+        "question": "What timber species do you work with?",
+        "answer": "Our signature materials are Hinoki (Japanese cypress, 檜 / ヒノキ) and Keyaki (Japanese elm/zelkova, 欅 / ケヤキ) — both trusted names in Japan. We also work with Japanese Cedar (Sugi), Oak, Acacia, Ash, Black Walnut, Pine, Cedar, and Cypress for flooring and stairs. For our USA door export line, we import American red alder and produce knotty alder doors. We source logs from Japan, Europe, and the USA."
       },
       "q3": {
-        "question": "What timber species do you work with?",
-        "answer": "Our signature materials are Keyaki (Japanese zelkova) and Hinoki (Japanese cypress). Keyaki is prized for its exceptional hardness, rich luster, and durability — used in ancient temple pillars and high-end furniture and tableware. Hinoki is valued for its natural fragrance, moisture resistance, and fine grain. We also work with oak, walnut, ash, teak, and select Vietnamese and Southeast Asian hardwoods. You choose the species during the consultation — we'll provide samples and explain the characteristics of each."
+        "question": "How long does TNP take on a project?",
+        "answer": "Flooring orders typically take 3–5 weeks from confirmation to delivery. Door orders take 4–8 weeks depending on quantity and species. Full-space projects combining flooring, doors, and stairs take 8–12 weeks. We confirm your timeline before any work begins."
       },
       "q4": {
-        "question": "Do you ship internationally?",
-        "answer": "Yes. TNP is export-ready. We serve domestic clients across Vietnam and ship to Japan and international markets. Export orders include containerization, freight coordination, and all necessary documentation. International shipping is quoted based on destination and volume."
+        "question": "Do you export internationally?",
+        "answer": "Yes. TNP has exported to Japan and Korea for over 20 years, primarily laminated freeboard and Hinoki flooring. We export knotty alder doors to the USA. We also serve other international markets. Export orders include containerization, freight coordination, and all necessary documentation."
       },
       "q5": {
-        "question": "Is installation included?",
-        "answer": "For domestic clients in Vietnam — yes. Our crew handles flooring installation (subfloor prep, laying, finishing) and furniture assembly on-site. For international clients, we provide detailed installation guides and remote technical support."
+        "question": "What flooring finishes do you offer?",
+        "answer": "We offer three finishes: brushed line, oil, and UV. These are available across our full range of species — Hinoki, Keyaki, Oak, Acacia, Ash, and Black Walnut. Flooring comes in both clear AB-grade and rustic treatments. Our Rustic Oak and Hinoki flooring ranges have become established brand names in Japan."
       },
       "q6": {
-        "question": "What if I need changes after installation?",
-        "answer": "We offer a post-install adjustment period for domestic projects. If flooring needs a touch-up or a furniture piece needs realignment, we come back and fix it — no extra charge within the adjustment window."
+        "question": "Is installation included?",
+        "answer": "For domestic clients in Vietnam — yes. Our crew handles flooring installation (subfloor prep, laying, finishing), door fitting and hardware, and stair assembly on-site. For international clients, we provide detailed installation guides and remote technical support."
       },
       "q7": {
         "question": "Can I visit your factory?",
-        "answer": "Absolutely. Our facility is in Tam Phước Industrial Zone, Biên Hòa — about an hour from Ho Chi Minh City. Contact us to arrange a visit and see our production process firsthand."
+        "answer": "Absolutely. Our 9,950 m² facility is in Tam Phước Industrial Zone, Biên Hòa — about an hour from Ho Chi Minh City. You'll see our in-house sawmill, six kiln-drying rooms, and the full production line. Contact us to arrange a visit."
       }
     },
     "finalCta": {
       "title": "Ready to start?",
-      "subtitle": "Tell us about your space and we'll get back within 48 hours with a free quote.",
-      "imageAlt": "Finished TNP installation at dusk"
+      "subtitle": "Tell us about your project and we'll get back within 48 hours with a free quote.",
+      "imageAlt": "Finished TNP solid wood flooring and doors installation"
     }
   },
   "contact": {
@@ -327,23 +331,23 @@
         "label": "Project type",
         "placeholder": "Select project type",
         "options": {
-          "flooring": "Solid wood flooring",
-          "furniture": "Custom furniture",
-          "both": "Flooring + furniture",
-          "commercial": "Commercial / developer project",
-          "other": "Other"
+          "flooring": "Solid wood flooring & stairs",
+          "furniture": "Solid wood doors & furniture",
+          "both": "Flooring + doors + furniture",
+          "commercial": "Complete project / commercial",
+          "other": "Other / OEM enquiry"
         }
       },
       "timberPreference": {
         "label": "Timber preference",
         "hint": "Select all that apply",
         "options": {
-          "keyaki": "Keyaki (Japanese zelkova)",
-          "hinoki": "Hinoki (Japanese cypress)",
+          "keyaki": "Keyaki — Japanese elm (欅)",
+          "hinoki": "Hinoki — Japanese cypress (檜)",
           "oak": "Oak",
-          "walnut": "Walnut",
+          "walnut": "Black Walnut",
           "ash": "Ash",
-          "teak": "Teak",
+          "teak": "Acacia",
           "other": "Other / not sure yet"
         }
       },
@@ -407,21 +411,21 @@
       "eyebrow": "TNP · Portfolio",
       "title": "The work,",
       "titleAccent": "not the pitch.",
-      "subtitle": "A gallery of solid wood flooring and timber furniture we've built, delivered, and installed — real projects, real addresses, told honestly.",
+      "subtitle": "A gallery of solid wood flooring, doors, and stairs we've built, delivered, and installed — real projects, told honestly. Japanese-owned since 1997.",
       "ctaPrimary": "Start Your Project",
-      "ctaSecondary": "See Our Services",
-      "imageAlt": "A finished TNP project — solid wood flooring and timber furniture installed in a Vietnamese home"
+      "ctaSecondary": "See Our Products",
+      "imageAlt": "A finished TNP project — solid wood flooring and doors installed in a Vietnamese home"
     },
     "philosophy": {
       "eyebrow": "What This Is",
       "line1": "A portfolio,",
       "line2": "not a highlight reel.",
-      "sub": "No staged renders, no borrowed photos. Every floor and every piece here was milled in our factory, delivered on our trucks, and installed by our own crew."
+      "sub": "No staged renders, no borrowed photos. Every floor, every door, and every stair here was milled in our factory, dried in our kilns, and installed by our own crew."
     },
     "geo": {
       "eyebrow": "Where We Build",
       "title": "Rooted in Biên Hòa. Reaching every province.",
-      "subtitle": "From our factory floor in Đồng Nai, TNP ships solid wood flooring and timber furniture across Vietnam — and to Japan and international clients beyond.",
+      "subtitle": "From our 9,950 m² factory in Đồng Nai, TNP ships solid wood flooring, doors, and stairs across Vietnam — and exports to Japan, Korea, the USA, and beyond.",
       "locations": [
         "Phú Mỹ Hưng",
         "Thảo Điền",
@@ -436,28 +440,68 @@
     },
     "gallery": {
       "eyebrow": "Selected Work",
-      "title": "Flooring, furniture, and the spaces they share.",
-      "subtitle": "Filter by what you're planning — flooring, furniture, or a complete space.",
+      "title": "Flooring, doors, furniture, and the spaces they share.",
+      "subtitle": "Filter by what you're planning — flooring, doors, furniture, or a complete space.",
       "filters": {
         "all": "All",
-        "flooring": "Flooring",
-        "furniture": "Furniture",
+        "flooring": "Flooring & Stairs",
+        "furniture": "Doors & Furniture",
         "complete": "Complete Projects"
       },
       "viewProject": "View project",
       "items": [
-        { "title": "Walnut & Marble Staircase", "category": "flooring" },
-        { "title": "Painted Timber Bar Cabinet", "category": "furniture" },
-        { "title": "Built-In Media Wall", "category": "complete" },
-        { "title": "Navy Lacquer Interior Door", "category": "complete" },
-        { "title": "Walnut & Marble Staircase, Curved Hall", "category": "flooring" },
-        { "title": "Timber Bar Interior Fit-Out", "category": "complete" },
-        { "title": "Custom Wardrobe", "category": "furniture" },
-        { "title": "Arched Double Door", "category": "complete" },
-        { "title": "Fluted Oak Built-In Desk", "category": "furniture" },
-        { "title": "Bathroom Vanity, Export to Japan", "category": "furniture" },
-        { "title": "Arched Door, In Production at Our Factory", "category": "complete" },
-        { "title": "Display Pedestal", "category": "furniture" }
+        { "title": "Grand Curved Staircase with Solid Wood Steps", "category": "flooring" },
+        { "title": "Walnut Stair Treads & Marble Risers", "category": "flooring" },
+        { "title": "Solid Wood Stair Balustrade — Dark & White", "category": "flooring" },
+        { "title": "Oak Stairs with Glass Balustrade", "category": "flooring" },
+        { "title": "Oak Stair Treads — Oil Finish", "category": "flooring" },
+        { "title": "Wood Stair with Ironwork Balustrade", "category": "flooring" },
+        { "title": "Solid Wood Staircase — Installed", "category": "flooring" },
+        { "title": "Walnut & Marble Stair Detail", "category": "flooring" },
+        { "title": "Installed Wood Floor — Beauty Shot", "category": "flooring" },
+        { "title": "Classic 4-Panel Interior Door", "category": "furniture" },
+        { "title": "3-Panel Ivory Interior Door", "category": "furniture" },
+        { "title": "Louvred Double Interior Door", "category": "furniture" },
+        { "title": "Ventilated Panel Interior Door", "category": "furniture" },
+        { "title": "Walnut Circle-Panel Interior Door", "category": "furniture" },
+        { "title": "Rustic Solid Wood Interior Door", "category": "furniture" },
+        { "title": "Vertical Slat Dark Interior Door", "category": "furniture" },
+        { "title": "Minimalist Walnut Interior Door", "category": "furniture" },
+        { "title": "Knotty Alder Arched Interior Door — USA Export", "category": "furniture" },
+        { "title": "Arched White Exterior Door", "category": "furniture" },
+        { "title": "Arched Double White Entrance Door", "category": "furniture" },
+        { "title": "Arched Dark Solid Exterior Door", "category": "furniture" },
+        { "title": "White Double Panelled Entrance", "category": "furniture" },
+        { "title": "Rustic Pine Double Exterior Door", "category": "furniture" },
+        { "title": "Walnut Double Exterior Door", "category": "furniture" },
+        { "title": "Arched Knotty Alder Double Door", "category": "furniture" },
+        { "title": "Exterior Entrance Door — Installed On Site", "category": "furniture" },
+        { "title": "White Glass Folding Door — Exterior", "category": "furniture" },
+        { "title": "Folding Door with Stained Glass Panels", "category": "furniture" },
+        { "title": "White Folding Door — Installed", "category": "furniture" },
+        { "title": "Folding Door — Open View", "category": "furniture" },
+        { "title": "White Glass Sliding Doors", "category": "furniture" },
+        { "title": "Sliding Doors to Walk-In Wardrobe", "category": "furniture" },
+        { "title": "Glass Sliding Doors — Living Room", "category": "furniture" },
+        { "title": "Grey Sliding Doors with Wainscoting", "category": "furniture" },
+        { "title": "Door Panel Being Made — TNP Factory Floor", "category": "complete" },
+        { "title": "Door Frames in Production — Biên Hòa", "category": "complete" },
+        { "title": "Painted Doors Lined Up — Ready for Delivery", "category": "complete" },
+        { "title": "Doors in Progress — TNP Factory", "category": "complete" },
+        { "title": "Frames & Components Being Assembled", "category": "complete" },
+        { "title": "TNP Workers Assembling Door Panels", "category": "complete" },
+        { "title": "Timber Slat Craftsmanship — Factory Close-Up", "category": "complete" },
+        { "title": "Painted Doors Ready for Shipment", "category": "complete" },
+        { "title": "Coffered Timber Ceiling — Custom Project", "category": "complete" },
+        { "title": "Built-In Cabinet Installation", "category": "complete" },
+        { "title": "Interior Doors — On-Site Installation", "category": "complete" },
+        { "title": "Full Room Install — Flooring & Joinery", "category": "complete" },
+        { "title": "Door Hardware & Detail", "category": "complete" },
+        { "title": "Factory Floor — Timber Processing", "category": "complete" },
+        { "title": "Custom Furniture — Workshop Build", "category": "complete" },
+        { "title": "Timber Furniture — Finished Piece", "category": "complete" },
+        { "title": "Custom Joinery — Completed", "category": "complete" },
+        { "title": "Bespoke Timber Piece — Delivered", "category": "complete" }
       ]
     },
     "closingCta": {

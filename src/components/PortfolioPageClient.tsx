@@ -11,17 +11,70 @@ const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 type Category = 'flooring' | 'furniture' | 'complete';
 type FilterKey = 'all' | Category;
 
-/* Each gallery item is paired explicitly with its real photo — no index-cycling,
-   so the image always matches what the title/category actually describe. */
-const GALLERY_IMAGE_KEYS = [
-  'installation-stairs-1', 'furniture-1', 'installation-cabinet-1',
-  'installation-doors-1', 'installation-stairs-2', 'installation-grand-2',
-  'furniture-2', 'installation-door-4', 'furniture-3',
-  'installation-beauty-2', 'creation-1', 'furniture-0',
+/* Gallery image pool — all real TNP photos, one per gallery item by index. */
+const GALLERY_IMAGES = [
+  // ── stairs & flooring ───────────────────────────────────────────────────
+  'stair-grand-curved-hall.jpg',
+  'stair-walnut-marble-treads.jpg',
+  'stair-solid-wood-balustrade.jpg',
+  'stair-oak-glass-balustrade.jpg',
+  'stair-oak-treads-closeup.jpg',
+  'stair-ironwork-balustrade.jpg',
+  'installation-stairs-1.jpg',
+  'installation-stairs-2.jpg',
+  'installation-beauty-2.jpg',
+  // ── interior doors ──────────────────────────────────────────────────────
+  'door-interior-classic-panel.jpg',
+  'door-interior-3panel-ivory.jpg',
+  'door-interior-louvred-double.jpg',
+  'door-interior-ventilated-panel.jpg',
+  'door-interior-walnut-circle.jpg',
+  'door-interior-rustic-solid.jpg',
+  'door-interior-vertical-slat.jpg',
+  'door-interior-minimalist-walnut.jpg',
+  'door-interior-knotty-alder-arched.jpg',
+  // ── exterior doors ──────────────────────────────────────────────────────
+  'door-exterior-arched-white.jpg',
+  'door-exterior-arched-double-white.jpg',
+  'door-exterior-arched-dark.jpg',
+  'door-exterior-white-double-panel.jpg',
+  'door-exterior-rustic-pine-double.jpg',
+  'door-exterior-walnut-double.jpg',
+  'exterior-door-arched.jpg',
+  'exterior-door-installed.jpg',
+  // ── folding doors ───────────────────────────────────────────────────────
+  'door-folding-glass-exterior.jpg',
+  'door-folding-stained-glass.jpg',
+  'door-folding-white-brick.jpg',
+  'door-folding-white-open.jpg',
+  // ── sliding doors ───────────────────────────────────────────────────────
+  'door-sliding-glass-white.jpg',
+  'door-sliding-wardrobe.jpg',
+  'door-sliding-glass-room.jpg',
+  'door-sliding-grey-wainscoting.jpg',
+  // ── factory / complete projects ─────────────────────────────────────────
+  'factory-door-making.jpg',
+  'factory-door-frames.jpg',
+  'factory-doors-lined-up.jpg',
+  'factory-doors-in-progress.jpg',
+  'factory-frames-production.jpg',
+  'factory-workers-assembling.jpg',
+  'factory-slat-craft.jpg',
+  'factory-doors-painted.jpg',
+  'coffered-ceiling-wood.jpg',
+  'installation-cabinet-1.jpg',
+  'installation-doors-1.jpg',
+  'installation-grand-2.jpg',
+  'installation-door-4.jpg',
+  'creation-1.jpg',
+  'furniture-0.jpg',
+  'furniture-1.jpg',
+  'furniture-2.jpg',
+  'furniture-3.jpg',
 ] as const;
 
-function galleryImageSrc(key: typeof GALLERY_IMAGE_KEYS[number]) {
-  return `${base}/assets/images/portfolio/${key}.jpg`;
+function galleryImageSrc(filename: typeof GALLERY_IMAGES[number]) {
+  return `${base}/assets/images/portfolio/${filename}`;
 }
 
 interface GalleryItem { title: string; category: Category }
@@ -180,7 +233,7 @@ export default function PortfolioPageClient({ locale, messages: p }: PortfolioPa
 
   const filterKeys: FilterKey[] = ['all', 'flooring', 'furniture', 'complete'];
   const filteredItems = p.gallery.items
-    .map((item, idx) => ({ ...item, img: galleryImageSrc(GALLERY_IMAGE_KEYS[idx % GALLERY_IMAGE_KEYS.length]) }))
+    .map((item, idx) => ({ ...item, img: galleryImageSrc(GALLERY_IMAGES[idx % GALLERY_IMAGES.length]) }))
     .filter((item) => filter === 'all' || item.category === filter);
 
   return (
@@ -188,7 +241,7 @@ export default function PortfolioPageClient({ locale, messages: p }: PortfolioPa
       {/* ─── HERO ──────────────────────────────────────────────────────── */}
       <section className="relative min-h-[70vh] flex flex-col justify-end overflow-hidden bg-forest-950">
         <Image
-          src={`${base}/assets/images/portfolio/installation-grand-1.jpg`}
+          src={`${base}/assets/images/portfolio/installation-grand-3.jpg`}
           alt="" fill priority aria-hidden="true"
           className="object-cover animate-ken-burns"
           sizes="100vw"
