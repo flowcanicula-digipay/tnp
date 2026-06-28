@@ -85,7 +85,7 @@ export default async function ContactPage({
       name: 'TNP',
       legalName: 'Thịnh Nguyên Phát Wooden Co., Ltd.',
       telephone: '+84903333729',
-      email: 'thuy@tnpgr.vn',
+      email: 'thuyken52914@yahoo.com.vn',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Lô 35 đường số 9, Khu Công Nghiệp Tam Phước',

@@ -148,7 +148,7 @@ describe('ContactForm', () => {
     renderWithIntl(<ContactForm locale="en" messages={messages} />);
     fireEvent.click(screen.getByRole('button', { name: messages.submit }));
     await waitFor(() => {
-      expect(alertSpy).toHaveBeenCalledWith(expect.stringContaining('thuy@tnpgr.vn'));
+      expect(alertSpy).toHaveBeenCalledWith(expect.stringContaining('thuyken52914@yahoo.com.vn'));
     });
     expect(screen.queryByText('Thank you!')).not.toBeInTheDocument();
   });

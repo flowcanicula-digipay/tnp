@@ -38,7 +38,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     logo: `${SITE_URL}/assets/logo/tnp_logo_primary.png`,
     description: 'Premium solid wood flooring and custom timber furniture manufacturer. Japanese material standards, Vietnamese craftsmanship. Factory-direct from Biên Hòa, Vietnam.',
     telephone: '+84903333729',
-    email: 'thuy@tnpgr.vn',
+    email: 'thuyken52914@yahoo.com.vn',
     foundingLocation: 'Biên Hòa, Đồng Nai, Vietnam',
     address: {
       '@type': 'PostalAddress',
@@ -77,7 +77,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     description: 'Supplying solid wood flooring and timber furniture. Japanese material standards, Vietnamese manufacturing excellence.',
     url: SITE_URL,
     telephone: '+84903333729',
-    email: 'thuy@tnpgr.vn',
+    email: 'thuyken52914@yahoo.com.vn',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Lô 35 đường số 9, Khu Công Nghiệp Tam Phước',

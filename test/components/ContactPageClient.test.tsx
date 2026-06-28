@@ -83,7 +83,7 @@ describe('ContactPageClient', () => {
   it('renders real contact details — phone and email', () => {
     renderWithIntl(<ContactPageClient locale="en" messages={messages} />);
     expect(screen.getByText('+84 90 333 37 29')).toBeInTheDocument();
-    expect(screen.getByText('thuy@tnpgr.vn')).toBeInTheDocument();
+    expect(screen.getByText('thuyken52914@yahoo.com.vn')).toBeInTheDocument();
   });
 
   it('renders the factory address', () => {

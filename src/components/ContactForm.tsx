@@ -192,7 +192,7 @@ export default function ContactForm({ locale, messages: m }: ContactFormProps) {
       });
       if (res.ok) setSubmitted(true);
     } catch {
-      alert('Something went wrong. Please email us directly at thuy@tnpgr.vn');
+      alert('Something went wrong. Please email us directly at thuyken52914@yahoo.com.vn');
     } finally {
       setSubmitting(false);
     }

@@ -187,10 +187,10 @@ export default function ContactPageClient({ locale, messages: c }: ContactPageCl
 
                   <address className="not-italic flex flex-col gap-0 divide-y divide-white/10">
                     {/* Email primary */}
-                    <a href="mailto:thuy@tnpgr.vn"
+                    <a href="mailto:thuyken52914@yahoo.com.vn"
                       className="flex items-center gap-4 py-3.5 group">
                       <span className="text-timber-400/60 text-[10px] uppercase tracking-widest w-14 shrink-0">Email</span>
-                      <span className="text-white/70 text-sm group-hover:text-timber-400 transition-colors truncate">thuy@tnpgr.vn</span>
+                      <span className="text-white/70 text-sm group-hover:text-timber-400 transition-colors truncate">thuyken52914@yahoo.com.vn</span>
                     </a>
                     {/* Email alt */}
                     <a href="mailto:anhkiet3333@yahoo.com"

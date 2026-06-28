@@ -48,7 +48,7 @@ describe('Footer', () => {
 
   it('renders direct contact details', () => {
     renderWithIntl(<Footer locale="en" messages={messages} />);
-    expect(screen.getByText('thuy@tnpgr.vn').closest('a')).toHaveAttribute('href', 'mailto:thuy@tnpgr.vn');
+    expect(screen.getAllByText('thuyken52914@yahoo.com.vn')[0].closest('a')).toHaveAttribute('href', 'mailto:thuyken52914@yahoo.com.vn');
     expect(screen.getByText('+84 90 333 37 29').closest('a')).toHaveAttribute('href', 'tel:+84903333729');
   });
 });
