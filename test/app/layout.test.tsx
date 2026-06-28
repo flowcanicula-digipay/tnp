@@ -14,7 +14,8 @@ describe('RootLayout', () => {
 
     const body = element.props.children as React.ReactElement;
     expect(body.type).toBe('body');
-    expect(body.props.children).toBe('hello');
+    const bodyChildren = body.props.children as React.ReactNode[];
+    expect(bodyChildren[0]).toBe('hello');
   });
 
   it('declares favicon via metadata.icons', () => {
