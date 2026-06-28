@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: p.meta.title,
       description: p.meta.description,
       url: `${SITE_URL}/${locale}/privacy/`,
-      siteName: 'TNP',
+      siteName: 'TNP Wood',
       images: [{ url: `${SITE_URL}/assets/og/og-default.png`, width: 1200, height: 630 }],
     },
     twitter: {

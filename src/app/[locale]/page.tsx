@@ -43,7 +43,7 @@ export async function generateMetadata({
       title: meta.ogTitle ?? meta.title,
       description: meta.description,
       url: `${SITE_URL}/${locale}/`,
-      siteName: 'TNP',
+      siteName: 'TNP Wood',
       locale: ogLocale,
       type: 'website',
       images: [{ url: `${SITE_URL}/assets/og/og-default.png`, width: 1200, height: 630, alt: meta.ogTitle ?? meta.title }],

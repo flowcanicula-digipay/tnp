@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'TNP — Premium Solid Wood Flooring & Custom Timber Furniture',
     description: 'Factory-direct solid wood flooring and custom timber furniture. Keyaki, Hinoki, oak, walnut — manufactured in our own facility in Biên Hòa, Vietnam.',
     url: siteUrl,
-    siteName: 'TNP',
+    siteName: 'TNP Wood',
     type: 'website',
     images: [{ url: `${siteUrl}/assets/og/og-default.png`, width: 1200, height: 630, alt: 'TNP — Solid Wood Flooring & Timber Furniture' }],
   },
