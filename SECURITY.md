@@ -3,9 +3,9 @@
 ## About This Project
 
 TNP's website is a **fully static export** — HTML, CSS, and JavaScript files
-served from Hostinger shared hosting or GitHub Pages. There is no server
-runtime, no database, no authentication system, and no admin panel. The attack
-surface is intentionally minimal.
+served from **Vercel**. There is no server runtime, no database, no
+authentication system, and no admin panel. The attack surface is intentionally
+minimal.
 
 The contact/quote form submits to **Formspree**, a third-party static form
 service. No form data touches our infrastructure.
@@ -22,7 +22,7 @@ Security fixes are applied directly to the `main` branch and re-deployed.
 | XSS in client-side React components | Yes |
 | Sensitive data exposure (contact info, form submissions) | Yes |
 | Dependency vulnerabilities (`npm audit`) | Yes |
-| Misconfigured HTTP headers / `.htaccess` | Yes |
+| Misconfigured HTTP headers / `vercel.json` cache headers | Yes |
 | Formspree endpoint abuse / spam | Yes (report to Formspree and to us) |
 | Server-side vulnerabilities | No — there is no server |
 | SQL injection | No — there is no database |
@@ -71,7 +71,7 @@ npm audit fix   # applies non-breaking fixes automatically
 
 The following are **not** considered security vulnerabilities for this project:
 
-- Missing security headers that Hostinger's shared hosting does not support
+- Missing security headers beyond what Vercel's static serving supports
 - Rate limiting on the Formspree endpoint (report to Formspree directly)
 - Clickjacking on public marketing pages with no sensitive actions
 - Self-XSS or social engineering attacks requiring physical access

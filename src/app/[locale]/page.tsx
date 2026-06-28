@@ -77,7 +77,7 @@ export default async function HomePage({
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'TNP Services — Solid Wood Flooring & Timber Furniture',
-    description: 'Premium solid wood flooring and custom timber furniture. Japanese material standards, Vietnamese craftsmanship. Factory-direct from Biên Hòa, Vietnam.',
+    description: 'Solid wood manufacturer in Vietnam since 1997. Premium solid wood flooring, doors, and stairs. Japanese family-owned. Factory-direct from Biên Hòa, Vietnam.',
     itemListElement: [
       {
         '@type': 'Service',
